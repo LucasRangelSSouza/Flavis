@@ -1,0 +1,18 @@
+[administrator@flavis ~]$ sudo passwd root
+Mudando senha para o usuário root.
+Nova senha:
+SENHA INCORRETA: A senha é menor do que 8 caracteres
+Redigite a nova senha:
+passwd: todos os tokens de autenticações foram atualizados com sucesso.
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo passwd administrator
+Changing password for user administrator.
+New password:
+BAD PASSWORD: The password fails the dictionary check - it is too simplistic/systematic
+Retype new password:
+passwd: all authentication tokens updated successfully.
+[administrator@flavis ~]$ 

@@ -1,0 +1,184 @@
+[administrator@flavis conf]$ yum list available | grep pgadmin
+pgadmin3.x86_64                          1.22.1-1.el7                   epel    
+pgadmin3_94.x86_64                       1.22.1-1.rhel7                 pgdg94  
+pgadmin3_94-debuginfo.x86_64             1.22.1-1.rhel7                 pgdg94  
+pgadmin3_94-docs.x86_64                  1.22.1-1.rhel7                 pgdg94  
+pgadmin3_95.x86_64                       1.22.1-1.rhel7                 pgdg95  
+pgadmin3_95-debuginfo.x86_64             1.22.1-1.rhel7                 pgdg95  
+pgadmin3_95-docs.x86_64                  1.22.1-1.rhel7                 pgdg95  
+pgadmin4.x86_64                          4.13-1.rhel7                   pgdg10  
+pgadmin4-babel.noarch                    2.3.4-2.rhel7.1                pgdg10  
+pgadmin4-babel-doc.noarch                2.3.4-2.rhel7.1                pgdg10  
+pgadmin4-debuginfo.x86_64                1.0-2.rhel7                    pgdg94  
+pgadmin4-desktop-common.x86_64           4.13-1.rhel7                   pgdg10  
+pgadmin4-desktop-gnome.noarch            4.13-1.rhel7                   pgdg10  
+pgadmin4-docs.noarch                     4.13-1.rhel7                   pgdg10  
+pgadmin4-python-Flask-Mail.noarch        0.9.1-4.rhel7.1                pgdg10  
+pgadmin4-python-alembic.noarch           0.9.7-3.rhel7.1                pgdg10  
+pgadmin4-python-babel.noarch             2.3.4-2.rhel7.1                pgdg10  
+pgadmin4-python-backports.csv.noarch     1:1.0.5-3.rhel7.1              pgdg10  
+pgadmin4-python-beautifulsoup4.noarch    4.5.1-3.rhel7.1                pgdg10  
+pgadmin4-python-blinker.noarch           1.4-3.rhel7.1                  pgdg10  
+pgadmin4-python-dateutil.noarch          1:2.7.2-1.rhel7.1              pgdg10  
+pgadmin4-python-dateutil-doc.noarch      1:2.7.2-1.rhel7.1              pgdg10  
+pgadmin4-python-extras.noarch            1.0.0-2.rhel7.1                pgdg10  
+pgadmin4-python-fixtures.noarch          3.0.0-5.rhel7.1                pgdg10  
+pgadmin4-python-flask.noarch             1:1.0.2-1.rhel7                pgdg10  
+pgadmin4-python-flask-babel.noarch       0.11.1-4.rhel7.1               pgdg10  
+pgadmin4-python-flask-babelex.noarch     0.9.3-1.rhel7.1                pgdg10  
+pgadmin4-python-flask-gravatar.noarch    0.5.0-1.rhel7.1                pgdg10  
+pgadmin4-python-flask-htmlmin.noarch     1.5.0-1.rhel7                  pgdg10  
+pgadmin4-python-flask-login.noarch       0.4.1-1.rhel7                  pgdg10  
+pgadmin4-python-flask-migrate.noarch     2.4.0-1.rhel7                  pgdg10  
+pgadmin4-python-flask-paranoid.noarch    0.2-1.rhel7.1                  pgdg10  
+pgadmin4-python-flask-principal.noarch   0.4.0-14.rhel7.1               pgdg10  
+pgadmin4-python-flask-security.noarch    3.0.0-1.rhel7.1                pgdg10  
+pgadmin4-python-flask-sqlalchemy.noarch  2.3.2-1.rhel7                  pgdg10  
+pgadmin4-python-flask-wtf.noarch         0.14.2-1.rhel7                 pgdg10  
+pgadmin4-python-html5lib.noarch          1:1.0.1-1.rhel7.1              pgdg10  
+pgadmin4-python-htmlmin.noarch           0.1.12-1.rhel7.1               pgdg10  
+pgadmin4-python-htmlmin-doc.noarch       0.1.10-7.gitcc611c3.rhel7      pgdg10  
+pgadmin4-python-itsdangerous.noarch      0.24-10.rhel7.1                pgdg10  
+pgadmin4-python-jinja2.noarch            2.8-9.rhel7.1                  pgdg10  
+pgadmin4-python-markupsafe.x86_64        0.23-13.rhel7.1                pgdg10  
+pgadmin4-python-markupsafe-debuginfo.x86_64
+pgadmin4-python-mimeparse.noarch         1.6.0-1.rhel7.1                pgdg10  
+pgadmin4-python-passlib.noarch           1.7.1-1.rhel7.1                pgdg10  
+pgadmin4-python-pbr.noarch               3.1.1-1.rhel7.1                pgdg10  
+pgadmin4-python-psutil.x86_64            5.5.1-1.rhel7                  pgdg10  
+pgadmin4-python-psutil-debuginfo.x86_64  5.5.1-1.rhel7                  pgdg10  
+pgadmin4-python-pyrsistent.x86_64        0.14.2-1.rhel7.1               pgdg10  
+pgadmin4-python-pyrsistent-debuginfo.x86_64
+pgadmin4-python-simplejson.x86_64        3.16.0-1.rhel7                 pgdg10  
+pgadmin4-python-simplejson-debuginfo.x86_64
+pgadmin4-python-six.noarch               1.12.0-3.rhel7                 pgdg10  
+pgadmin4-python-sqlalchemy.x86_64        1.2.18-1.rhel7                 pgdg10  
+pgadmin4-python-sqlalchemy-debuginfo.x86_64
+pgadmin4-python-sqlparse.noarch          0.2.4-1.rhel7.1                pgdg10  
+pgadmin4-python-sshtunnel.noarch         0.1.4-1.rhel7                  pgdg10  
+pgadmin4-python-werkzeug.noarch          0.15.4-1.rhel7                 pgdg10  
+pgadmin4-python-wtforms.noarch           2.2.1-1.rhel7                  pgdg10  
+pgadmin4-pytz.noarch                     2018.9-1.rhel7                 pgdg10  
+pgadmin4-v1.x86_64                       1.6-2.rhel7                    pgdg94  
+pgadmin4-v1-debuginfo.x86_64             1.6-2.rhel7                    pgdg94  
+pgadmin4-v1-docs.noarch                  1.6-2.rhel7                    pgdg94  
+pgadmin4-v1-web.noarch                   1.6-2.rhel7                    pgdg94  
+pgadmin4-v2.x86_64                       2.1-1.rhel7                    pgdg94  
+pgadmin4-v2-debuginfo.x86_64             2.0-1.rhel7                    pgdg94  
+pgadmin4-v2-docs.noarch                  2.1-1.rhel7                    pgdg94  
+pgadmin4-v2-web.noarch                   2.1-1.rhel7                    pgdg94  
+pgadmin4-web.noarch                      4.13-1.rhel7                   pgdg10  
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$
+
+
+
+
+[administrator@flavis conf]$ sudo yum install pgadmin3_94.x86_64
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote pgadmin3_94.x86_64 0:1.22.1-1.rhel7 será instalado
+--> Processando dependência: wxGTK para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_xrc-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_stc-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_html-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_core-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_aui-2.8.so.0(WXU_2.8.5)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_aui-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_adv-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu_xml-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu_net-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu-2.8.so.0(WXU_2.8.5)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu-2.8.so.0(WXU_2.8)(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_xrc-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_stc-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_html-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_core-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_aui-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_gtk2u_adv-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu_xml-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu_net-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Processando dependência: libwx_baseu-2.8.so.0()(64bit) para o pacote: pgadmin3_94-1.22.1-1.rhel7.x86_64
+--> Executando verificação da transação
+---> O pacote wxBase.x86_64 0:2.8.12-20.el7 será instalado
+---> O pacote wxGTK.x86_64 0:2.8.12-20.el7 será instalado
+--> Processando dependência: libSDL-1.2.so.0()(64bit) para o pacote: wxGTK-2.8.12-20.el7.x86_64
+--> Executando verificação da transação
+---> O pacote SDL.x86_64 0:1.2.15-14.el7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+================================================================================
+ Package             Arq.           Versão                 Repo            Tam.
+================================================================================
+Instalando:
+ pgadmin3_94         x86_64         1.22.1-1.rhel7         pgdg94         3.2 M
+Instalando para as dependências:
+ SDL                 x86_64         1.2.15-14.el7          base           204 k
+ wxBase              x86_64         2.8.12-20.el7          epel           588 k
+ wxGTK               x86_64         2.8.12-20.el7          epel           2.9 M
+
+Resumo da transação
+================================================================================
+Instalar  1 Package (+3 Dependent packages)
+
+Tamanho total do download: 6.9 M
+Tamanho depois de instalado: 27 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/4): SDL-1.2.15-14.el7.x86_64.rpm                        | 204 kB   00:01     
+warning: /var/cache/yum/x86_64/7/epel/packages/wxBase-2.8.12-20.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+A chave pública para o wxBase-2.8.12-20.el7.x86_64.rpm não está instalada
+(2/4): wxBase-2.8.12-20.el7.x86_64.rpm                     | 588 kB   00:02     
+(3/4): wxGTK-2.8.12-20.el7.x86_64.rpm                      | 2.9 MB   00:00     
+(4/4): pgadmin3_94-1.22.1-1.rhel7.x86_64.rpm               | 3.2 MB   00:04     
+--------------------------------------------------------------------------------
+Total                                              1.6 MB/s | 6.9 MB  00:04     
+Recuperando chave de file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Importing GPG key 0x352C64E5:
+ Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+ Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+ Package    : epel-release-7-11.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Correto? [s/N]:s
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : wxBase-2.8.12-20.el7.x86_64                                1/4 
+  Instalando   : SDL-1.2.15-14.el7.x86_64                                   2/4 
+  Instalando   : wxGTK-2.8.12-20.el7.x86_64                                 3/4 
+  Instalando   : pgadmin3_94-1.22.1-1.rhel7.x86_64                          4/4 
+  Verifying    : SDL-1.2.15-14.el7.x86_64                                   1/4 
+  Verifying    : wxGTK-2.8.12-20.el7.x86_64                                 2/4 
+  Verifying    : wxBase-2.8.12-20.el7.x86_64                                3/4 
+  Verifying    : pgadmin3_94-1.22.1-1.rhel7.x86_64                          4/4 
+
+Instalados:
+  pgadmin3_94.x86_64 0:1.22.1-1.rhel7                                           
+
+Dependência(s) instalada(s):
+  SDL.x86_64 0:1.2.15-14.el7             wxBase.x86_64 0:2.8.12-20.el7          
+  wxGTK.x86_64 0:2.8.12-20.el7          
+
+Concluído!
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis conf]$ 
+[administrator@flavis ~]$ pgadmin3 -v
+pgAdmin III 1.22.1
+[administrator@flavis ~]$

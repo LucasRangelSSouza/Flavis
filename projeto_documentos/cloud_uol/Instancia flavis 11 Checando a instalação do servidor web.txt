@@ -1,0 +1,33 @@
+=>Valida os requisitos do PHP no servidor
+http://localhost/flavis/app/check.php
+
+Symfony2 Requirements Checker ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ > PHP is using the following php.ini file: /etc/php.ini > Checking Symfony requirements: ...EEE........EW.............W....W 
+[ERROR] Your system is not ready to run Symfony2 projects Fix the following mandatory requirements
+=> nosso sistema não está pronto para executar projetos Symfony2 Corrija os seguintes requisitos obrigatórios
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+* app/cache/ or var/cache/ directory must be writable > Change the permissions of either "app/cache/" or "var/cache/" > directory so that the web server can write into it. 
+=> * o diretório app / cache / ou var / cache / deve ser gravável> Altere as permissões do diretório "app / cache /" ou "var / cache /"> para que o servidor da Web possa gravar nele.
+
+* app/logs/ or var/logs/ directory must be writable > Change the permissions of either "app/logs/" or "var/logs/" > directory so that the web server can write into it. 
+=> * O diretório app / logs / ou var / logs / deve ser gravável> Altere as permissões do diretório "app / logs /" ou "var / logs /"> para que o servidor da Web possa gravar nele.
+
+* date.timezone setting must be set > Set the "date.timezone" setting in php.ini* (like Europe/Paris). 
+=> * a configuração date.timezone deve ser definida> Defina a configuração "date.timezone" no php.ini * para America/Brasilia.
+
+* string functions should not be overloaded > Set "mbstring.func_overload" to 0 in php.ini
+=> * as funções de string não devem ser sobrecarregadas> Defina "mbstring.func_overload" como 0 no php.ini
+
+* to disable function > overloading by the mbstring extension. Optional recommendations to improve your setup
+=> * para desativar a função> sobrecarga pela extensão mbstring. Recomendações opcionais para melhorar sua configuração
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+* Requirements file should be up-to-date > Your requirements file is outdated. Run composer install and > re-check your configuration. 
+=> O arquivo de requisitos deve estar atualizado> Seu arquivo de requisitos está desatualizado. Execute a instalação do compositor e verifique novamente sua configuração.
+
+* a PHP accelerator should be installed > Install and/or enable a PHP accelerator (highly recommended). 
+=> * um acelerador PHP deve ser instalado> Instalar e / ou ativar um acelerador PHP (altamente recomendado).
+
+* PDO should be installed > Install PDO (mandatory for Doctrine). Note The command console could use a different php.ini file ~~~~ than the one used with your web server. To be on the safe side, please check the requirements from your web server using the web/config.php script. 
+=> * O PDO deve ser instalado> Instalar PDO (obrigatório para o Doctrine).
+Nota O console de comando pode usar um arquivo php.ini diferente do usado no servidor da web.
+Para garantir a segurança, verifique os requisitos do seu servidor da Web usando o script web / config.php.

@@ -1,0 +1,95 @@
+{% if object.isCancelada == false %}
+
+    {% if object.isHomologada %}
+        <button class="btn btn-sm btn-success view_link disabled" style="width: 120px;">
+           <i class="fa fa-check" aria-hidden="true"></i>
+            Homologada
+        </button>
+    {% else %}
+        <button class="btn btn-sm btn-primary homologaOs" style="width: 120px;"
+           data-os="{{ object.id }}">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Homologar OS
+        </button>
+    {% endif %}
+
+{% endif %}
+
+<style>
+
+    #validate{
+        display: none;
+        color: #ff0000;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .modal-dialog .modal-title, .modal-dialog label{
+        color: #111 !important;
+    }
+
+</style>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modalHomologacao" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Homologação de OS</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Valor da OS</label>
+                        <input type="text" class="form-control dinheiro" id="valorOs"/>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Qtd. Parcelas</label>
+                        <select id="numParcelasOs">
+                            <option value="">Selecione</option>
+                            <option value="1">01x</option>
+                            <option value="2">02x</option>
+                            <option value="3">03x</option>
+                            <option value="4">04x</option>
+                            <option value="5">05x</option>
+                            <option value="6">06x</option>
+                            <option value="7">07x</option>
+                            <option value="8">08x</option>
+                            <option value="9">09x</option>
+                            <option value="10">10x</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Meio de pagamento</label>
+                        <select id="meioPagamentoOs">
+                            <option value="">Selecione</option>
+                            <option value="cheque">Cheque</option>
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="boleto">Boleto</option>
+                            <option value="cartao">Cartão</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-12">
+                        <label>Observações</label>
+                        <textarea class="form-control" id="obsHomologaOs"></textarea>
+                    </div>
+                </div>
+
+                <div class="row" id="validateHomologaOs" style="color: #ff0000;padding-top: 10px;text-align: center;">
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+                </div>
+
+                <input type="hidden" id="idOS">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnCloseModal" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" id="btnHomologaOs">Homologar OS</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

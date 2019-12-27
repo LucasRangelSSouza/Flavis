@@ -1,0 +1,49 @@
+Microsoft Windows [versão 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\viniciusam.SISTEMAFIEG>php -v
+PHP 5.6.40 (cli) (built: Jan  9 2019 15:12:01)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+    with Zend Guard Loader v3.3, Copyright (c) 1998-2014, by Zend Technologies
+    with Zend OPcache v7.0.4-dev, Copyright (c) 1999-2015, by Zend Technologies
+
+C:\Users\moisesvidal.senai>php -m
+[PHP Modules]
+bcmath
+calendar
+Core
+ctype
+date
+dom
+ereg
+filter
+ftp
+hash
+iconv
+json
+libxml
+mcrypt
+mhash
+mysqlnd
+odbc
+pcre
+PDO
+Phar
+Reflection
+session
+SimpleXML
+SPL
+standard
+tokenizer
+wddx
+xml
+xmlreader
+xmlwriter
+zip
+zlib
+
+[Zend Modules]
+
+
+C:\Users\moisesvidal.senai>

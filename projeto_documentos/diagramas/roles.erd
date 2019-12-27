@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="roles" time="201906181254">
+	<entities>
+		<data-source id="postgres-jdbc-16b6b0023fc-24cfbaf8df4dfd57">
+			<entity id="1" name="acl_classes" fq-name="public.acl_classes">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="acl_entries" fq-name="public.acl_entries">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="acl_object_identities" fq-name="public.acl_object_identities">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="acl_object_identity_ancestors" fq-name="public.acl_object_identity_ancestors">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="5" name="acl_security_identities" fq-name="public.acl_security_identities">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes/>
+	<relations>
+		<relation name="fk_46c8b806ea000b10" fq-name="public.acl_entries.fk_46c8b806ea000b10" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="fk_46c8b8063d9ab4a6" fq-name="public.acl_entries.fk_46c8b8063d9ab4a6" type="fk" pk-ref="3" fk-ref="2"/>
+		<relation name="fk_9407e54977fa751a" fq-name="public.acl_object_identities.fk_9407e54977fa751a" type="fk" pk-ref="3" fk-ref="3"/>
+		<relation name="fk_825de2993d9ab4a6" fq-name="public.acl_object_identity_ancestors.fk_825de2993d9ab4a6" type="fk" pk-ref="3" fk-ref="4"/>
+		<relation name="fk_825de299c671cea1" fq-name="public.acl_object_identity_ancestors.fk_825de299c671cea1" type="fk" pk-ref="3" fk-ref="4"/>
+		<relation name="fk_46c8b806df9183c9" fq-name="public.acl_entries.fk_46c8b806df9183c9" type="fk" pk-ref="5" fk-ref="2"/>
+	</relations>
+</diagram>

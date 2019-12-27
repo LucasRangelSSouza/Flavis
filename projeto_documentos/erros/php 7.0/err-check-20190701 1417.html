@@ -1,0 +1,42 @@
+
+<!-- saved from url=(0054)http://localhost:8080/flavis/projeto-php/app/check.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Symfony2 Requirements Checker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+&gt; PHP is using the following php.ini file:
+  C:\php\php.ini
+
+&gt; Checking Symfony requirements:
+  ...............EW..............W........
+
+                                                   
+ [ERROR]                                           
+ Your system is not ready to run Symfony2 projects 
+                                                   
+
+Fix the following mandatory requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * string functions should not be overloaded
+   &gt; Set "mbstring.func_overload" to 0 in php.ini* to disable function
+   &gt; overloading by the mbstring extension.
+
+
+Optional recommendations to improve your setup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * Requirements file should be up-to-date
+   &gt; Your requirements file is outdated. Run composer install and
+   &gt; re-check your configuration.
+
+ * intl.error_level should be 0 in php.ini
+   &gt; Set "intl.error_level" to "0" in php.ini* to inhibit the messages
+   &gt; when an error occurs in ICU functions.
+
+
+Note  The command console could use a different php.ini file
+~~~~  than the one used with your web server. To be on the
+      safe side, please check the requirements from your web
+      server using the web/config.php script.
+
+</body></html>

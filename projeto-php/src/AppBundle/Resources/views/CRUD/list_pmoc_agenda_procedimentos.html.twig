@@ -1,0 +1,344 @@
+{#
+
+This file is part of the Sonata package.
+
+(c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+
+{% extends 'SonataAdminBundle:CRUD:list.html.twig' %}
+{% block list_table %}
+
+    {#{{ 'Data: ' ~ data_calendario }}<br/>#}
+    {#{{ dump(dataToCalendario) }}#}
+
+    <style>
+        .hover-end{
+            display: none;
+            position: fixed;
+            z-index: 999999;
+            padding: 10px;
+            background: rgb(129, 32, 59);
+            top: 0;
+            left:0;
+            color: #fff;
+        }
+        .fc-content td:hover{background: #adf4fa;}
+    </style>
+
+    <div class="hover-end"></div>
+
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-primary">
+            <div class="box-body">
+                <a class="btn btn-primary pull-left" href="{{ app.request.getBaseURL() ~ '/app/execucaodeprocedimentoequipamento/list?date=' ~ data_calendario}}">Voltar</a>
+                <h4 style="text-align: center;">Procedimentos Agendados - <u>{{ nome_cliente }}</u></h4>
+                <hr/>
+                <div id='calendar'></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalDetalheProcedimento" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detalhe de Procedimento</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="dealhe-procedimento"></p>
+                    <hr/>
+                    <p>
+                        <label>Técnico que vai executar o serviço</label>
+                        <select id="colaboradores">
+                            <option value="">Selecione o Técnico</option>
+
+                            {% set colaboradores = colaborador_model.getColaborares() %}
+
+                            {% for colaborador in colaboradores %}
+                                <option value="{{ colaborador.id }}">{{ colaborador.nome }}</option>
+                            {% endfor %}
+
+                        </select>
+                    </p>
+                    <p>
+                        <label>Endereço de execução do serviço</label>
+                        <select id="enderecos"><option value="">Selecione um Endereço</option></select>
+                    </p>
+                    <p>
+                        <label for="horario_atendimento">Horário de atendimento</label><br/>
+                        <input type="time" id="horario_atendimento" name="horario_atendimento">
+                    </p>
+                    <input type="hidden" id="idProcedimento">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="btnCloseModalOs" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="btnCreateOs">Criar OS</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <script>
+
+        var __eventCliked = '';
+
+        jQuery(document).ready(function() {
+
+            jQuery('#calendar').fullCalendar({
+//                customButtons: {
+//                    myCustomButton: {
+//                        text: 'Botão Customizado',
+//                        click: function() {
+//                            alert('Executar alguma ação customizada!');
+//                        }
+//                    }
+//                },
+                header: {
+                    left: 'prev,next today myCustomButton',
+                    center: 'title',
+                    //right: 'month,basicWeek,basicDay,listDay'
+                },
+                views: {
+                    listDay: { buttonText: 'Listar dia' },
+                    listWeek: { buttonText: 'Lista de Hoje' }
+                },
+                locale: 'pt-br',
+                defaultDate: '{{ data_calendario }}',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    {% for evento in dataToCalendario %}
+
+                        {% if evento.os is null %}
+
+                            {
+                                'have_os': false,
+                                'is_homologada': false,
+                                'os_id': null,
+                                'id' : {{ evento.id }},
+                                'id_evento': {{ evento.id }},
+                                'id_cliente' : '{{ evento.clienteEquipamento.cliente.id }}',
+                                'cliente' : '{{ evento.clienteEquipamento.cliente.nome }}',
+                                'cnpj' : '{{ evento.clienteEquipamento.cliente.cpfCnpj }}',
+                                'equipamento' : '{{ evento.clienteEquipamento.equipamento.marca.titulo }} - {{ evento.clienteEquipamento.equipamento.modelo.titulo }}',
+                                'procedimento' : '{{ evento.procedimentoPmoc.titulo.titulo }}',
+
+                                'title': '{{ evento.clienteEquipamento.cliente.nome }}',
+                                'start' : '{{ evento.dataAgendadaExecucao|date('Y-m-d') }}',
+                                'allDay' : false,
+                                'color' : '{{ evento.colorBackgroundCalendar }}'
+                            },
+
+                        {% else %}
+
+                            {% if evento.os.isHomologada is not null and evento.os.isHomologada==true%}
+
+                                {% set homologada=1 %}
+
+                            {% else %}
+
+                                {% set homologada=0 %}
+
+                            {% endif %}
+
+                            {
+                                'have_os': true,
+                                'is_homologada': {{ homologada }},
+                                'os_id': {{ evento.os.id }},
+                                'id' : {{ evento.os.id }},
+                                'id_evento': {{ evento.id }},
+                                'id_cliente' : '{{ evento.clienteEquipamento.cliente.id }}',
+                                'cliente' : '{{ evento.clienteEquipamento.cliente.nome }}',
+                                'cnpj' : '{{ evento.clienteEquipamento.cliente.cpfCnpj }}',
+                                'equipamento' : '{{ evento.clienteEquipamento.equipamento.marca.titulo }} - {{ evento.clienteEquipamento.equipamento.modelo.titulo }}',
+                                'procedimento' : '{{ evento.procedimentoPmoc.titulo.titulo }}',
+
+                                'title': '{{ evento.clienteEquipamento.cliente.nome }}',
+                                'start' : '{{ evento.dataAgendadaExecucao|date('Y-m-d') }}',
+                                'allDay' : false,
+                                'color' : '{{ evento.colorBackgroundCalendar }}'
+                            },
+
+                        {% endif %}
+
+                    {% endfor %}
+                ],
+                eventDrop:function(event, delta, revertFunc){
+
+                    if(event.is_homologada){
+                        alert('Estes procedimentos já estão vinculados a uma OS HOMOLOGADA e não podem ser reagendados');
+                        revertFunc();
+                    }else{
+                        reagendaProcedimentos(event);
+                    }
+
+                },
+                eventMouseover: function(event, jsEvent, view) {
+
+                    var html =  '<h4>Detalhes com foco</h4>' +
+                                '<b>Cliente:</b> ' + event.title + ' <b>CNPJ:</b> ' + event.cnpj +
+                                '<br/><b>Equipamento:</b> ' + event.equipamento +
+                                '<br/><b>Procedimento:</b> ' + event.procedimento
+
+                    $('.hover-end').html(html);
+                    $('.hover-end').show();
+                },
+                eventMouseout: function(event, jsEvent, view) {
+                    $('.hover-end').hide();
+                    $('.hover-end').html('');
+                },
+                eventClick: function(calEvent, jsEvent, view){
+
+                    __eventCliked = calEvent;
+
+                    //var evento = $("#calendar").fullCalendar('clientEvents', response.idEvent);
+
+                    if(calEvent.have_os){
+
+                        alert('Já existe uma OS criada para esta manutenção!');
+                        return;
+
+                    }else{
+
+                        var htmlDetalhe  = '<strong>Cliente: </strong>'+calEvent.cliente+'<br/>'+
+                                '<strong>CNPJ: </strong>'+calEvent.cnpj+'<br/>'+
+                                '<strong>Equipamento: </strong>'+calEvent.equipamento+'<br/>'+
+                                '<strong>Procedimento: </strong>'+calEvent.procedimento+'<br/>'+
+                                '<p style="font-style: italic;"><small>* Na criação da OS serão vincuadas todos os procedimentos conscidentes nesta data.</small></p>';
+
+                        $('#dealhe-procedimento').empty();
+                        $('#dealhe-procedimento').html(htmlDetalhe);
+
+                        $('#idProcedimento').val(calEvent.id);
+
+                        getEnderecosCliente(calEvent.id_cliente);
+
+                        $('#modalDetalheProcedimento').modal('show');
+
+                    }
+
+                }
+            });
+
+            // Detect paginate
+            $('.fc-next-button, .fc-prev-button, .fc-today-button').click(function(){
+
+                $('.fc-view-container').hide();
+                $('.fc-header-toolbar').html('Carregando...');
+
+                var moment = $('#calendar').fullCalendar('getDate');
+
+                var urlRedirect = "{{ app.request.getBaseURL() ~ '/app/execucaodeprocedimentoequipamento/listprocedimentos?date='}}" +
+                    moment.format() + "&cliente={{ id_cliente }}";
+
+                document.location.href = urlRedirect;
+
+            });
+
+            // Click Generate OS
+            $('#btnCreateOs').click(function(){
+
+                var idProcedimento = $('#idProcedimento').val();
+                var btnCreate = $(this);
+                var idColaboradorTecnico = $('#colaboradores').val();
+                var id_endereco = $('#enderecos').val();
+                var horario_atendimento = $('#horario_atendimento').val();
+
+                if(idColaboradorTecnico==''){
+                    alert('Selecione um Técnico que vai executar esta OS');
+                    return;
+                }else if(id_endereco==''){
+                    alert('Selecione um endereço de execução para esta OS');
+                    return;
+                }else if(horario_atendimento=='') {
+                    alert('Selecione um horário de atendimento para esta OS');
+                    return;
+                }
+
+                btnCreate.html('carregando...').attr('disabled',true);
+                $('#btnCloseModalOs').hide();
+
+                $.ajax({
+                    method: "POST",
+                    url: "{{ path('create_os_by_procedimento_agendado') }}",
+                    data: {
+                        id_procedimento: idProcedimento,
+                        id_colaboradorTecnico: idColaboradorTecnico,
+                        id_endereco: id_endereco,
+                        horario: horario_atendimento
+                    },
+                    success: function (data) {
+                        btnCreate.html('Criar OS').attr('disabled',false);
+                        $('#btnCloseModalOs').show();
+                        alert(data);
+                        $('#modalDetalheProcedimento').modal('hide');
+                        __eventCliked.backgroundColor = 'rgb(255, 196, 0)';
+                        __eventCliked.borderColor = 'rgb(255, 196, 0)';
+                        $('#calendar').fullCalendar( 'rerenderEvents' );
+
+                        document.location.reload();
+
+                    },
+                    error: function (request, status, error) {
+                        alert(error);
+                    }
+                })
+
+            });
+
+        });
+
+        function getEnderecosCliente(id_cliente)
+        {
+            var html = '';
+
+            $.ajax({
+                method: "POST",
+                dataType: "json",
+                url: "{{ path('get_enderecos_cliente') }}",
+                data: { id_cliente: id_cliente},
+                success: function (data) {
+
+                    $.each( data, function( index, value ){
+                        html += '<option value="'+value.id+'">'+value.cep+'</option>';
+                    });
+
+                    $('#enderecos').html(html);
+
+                },
+                error: function (request, status, error) {
+                    return  '<option value="">Este cliente não tem endereço cadastrado</option>';
+                }
+            });
+        }
+
+        function reagendaProcedimentos(event){
+
+            if(event.have_os){
+                var id_execucao = event.id_evento;
+            }else{
+                var id_execucao = event.id;
+            }
+
+            $.ajax({
+                method: "POST",
+                url: "{{ path('reagenda_execucoes_procedimentos') }}",
+                data: { id_execucao_procedimento: id_execucao,nova_data:event.start.format()},
+                success: function (data) {
+                    alert(data);
+                },
+                error: function (request, status, error) {
+                    alert('Houve um erro inesperado! Favor entrar em contato com o suporte');
+                    console.log(error);
+                }
+            });
+        }
+
+    </script>
+{% endblock %}

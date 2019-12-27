@@ -1,0 +1,81 @@
+-----------------------------------------------Unidade federativa---------------------------------------------------------------------------------
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (1, 'MT');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (2, 'MS');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (3, 'TO');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (4, 'GO');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (5, 'DF');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (6, 'ES');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (7, 'MG');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (8, 'AC');
+
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (9, 'AL');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (10, 'AP');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (11, 'AM');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (12, 'BA');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (13, 'CE');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (14, 'MA');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (15, 'PA');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (16, 'PB');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (17, 'PR');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (18, 'PE');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (19, 'PI');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (20, 'RJ');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (21, 'RN');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (22, 'RS');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (23, 'RO');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (24, 'RR');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (25, 'SC');
+
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (26, 'SP');
+
+INSERT INTO public.unidade_federativa (id, sigla) VALUES (27, 'SE');
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

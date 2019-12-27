@@ -1,0 +1,343 @@
+Last login: Tue Oct  1 17:54:24 2019 from 177.107.32.46
+[administrator@flavis ~]$ sudo yum install postgres96
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: mirror.siena.edu
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: uk.repo.webtatic.com
+Nenhum pacote postgres96 disponível.
+Error: Nada a ser feito
+[administrator@flavis ~]$ sudo yum install postgresql96
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: mirror.siena.edu
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote postgresql95.x86_64 0:9.6.15-1PGDG.rhel7 será instalado
+--> Processando dependência: postgresql95-libs(x86-64) = 9.6.15-1PGDG.rhel7 para o pacote: postgresql95-9.6.15-1PGDG.rhel7.x86_64
+--> Executando verificação da transação
+---> O pacote postgresql95-libs.x86_64 0:9.6.15-1PGDG.rhel7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                     Arq.             Versão                         Repo              Tam.
+====================================================================================================
+Instalando:
+ postgresql95                x86_64           9.5.15-1PGDG.rhel7             pgdg96           1.4 M
+Instalando para as dependências:
+ postgresql95-libs           x86_64           9.5.15-1PGDG.rhel7             pgdg96           319 k
+
+Resumo da transação
+====================================================================================================
+Instalar  1 Package (+1 Dependent package)
+
+Tamanho total do download: 1.7 M
+Tamanho depois de instalado: 8.7 M
+Is this ok [y/d/N]: s
+Downloading packages:
+(1/2): postgresql95-libs-9.5.15-1PGDG.rhel7.x86_64.rpm                       | 319 kB  00:00:01
+(2/2): postgresql95-9.5.15-1PGDG.rhel7.x86_64.rpm                            | 1.4 MB  00:00:02
+----------------------------------------------------------------------------------------------------
+Total                                                               826 kB/s | 1.7 MB  00:00:02
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : postgresql95-libs-9.5.15-1PGDG.rhel7.x86_64                                    1/2
+  Instalando   : postgresql95-9.5.15-1PGDG.rhel7.x86_64                                         2/2
+  Verifying    : postgresql95-libs-9.5.15-1PGDG.rhel7.x86_64                                    1/2
+  Verifying    : postgresql95-9.5.15-1PGDG.rhel7.x86_64                                         2/2
+
+Instalados:
+  postgresql95.x86_64 0:9.5.15-1PGDG.rhel7
+
+Dependência(s) instalada(s):
+  postgresql95-libs.x86_64 0:9.5.15-1PGDG.rhel7
+
+Concluído!
+[administrator@flavis ~]$ sudo yum install postgresql95-contrib postgresql95-server
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: mirror.siena.edu
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote postgresql95-contrib.x86_64 0:9.5.15-1PGDG.rhel7 será instalado
+---> O pacote postgresql95-server.x86_64 0:9.5.15-1PGDG.rhel7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                       Arq.            Versão                         Repo             Tam.
+====================================================================================================
+Instalando:
+ postgresql95-contrib          x86_64          9.5.15-1PGDG.rhel7             pgdg96          571 k
+ postgresql95-server           x86_64          9.5.15-1PGDG.rhel7             pgdg96          4.5 M
+
+Resumo da transação
+====================================================================================================
+Instalar  2 Packages
+
+Tamanho total do download: 5.0 M
+Tamanho depois de instalado: 21 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/2): postgresql95-contrib-9.5.15-1PGDG.rhel7.x86_64.rpm                    | 571 kB  00:00:01
+(2/2): postgresql95-server-9.5.15-1PGDG.rhel7.x86_64.rpm                     | 4.5 MB  00:00:02
+----------------------------------------------------------------------------------------------------
+Total                                                               2.0 MB/s | 5.0 MB  00:00:02
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : postgresql95-contrib-9.5.15-1PGDG.rhel7.x86_64                                 1/2
+  Instalando   : postgresql95-server-9.5.15-1PGDG.rhel7.x86_64                                  2/2
+  Verifying    : postgresql95-server-9.5.15-1PGDG.rhel7.x86_64                                  1/2
+  Verifying    : postgresql95-contrib-9.5.15-1PGDG.rhel7.x86_64                                 2/2
+
+Instalados:
+  postgresql95-contrib.x86_64 0:9.5.15-1PGDG.rhel7  postgresql95-server.x86_64 0:9.5.15-1PGDG.rhel7
+
+Concluído!
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ sudo systemctl enable postgresql-9.5.service
+Created symlink from /etc/systemd/system/multi-user.target.wants/postgresql-9.5.service to /usr/lib/systemd/system/postgresql-9.5.service.
+[administrator@flavis ~]$
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+bash: ,: comando não encontrado...
+[administrator@flavis ~]$ sudo /usr/pgsql-9.5/bin/postgresql95-setup initdb
+Initializing database ... OK
+
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ 
+[administrator@flavis ~]$ sudo systemctl start postgresql-9.5.service
+Job for postgresql-9.5.service failed because the control process exited with error code. See "systemctl status postgresql-9.5.service" and "journalctl -xe" for details.
+[administrator@flavis ~]$
+
+
+
+[administrator@flavis ~]$ sudo yum provides "*/pg_config"
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: d2lzkl7pfhq30w.cloudfront.net
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+pgdg11/7/x86_64/filelists_db                                                 | 792 kB  00:00:00
+pgdg12/7/x86_64/filelists_db                                                 | 118 kB  00:00:00
+pgdg94/7/x86_64/filelists_db                                                 | 276 kB  00:00:00
+pgdg95/7/x86_64/filelists_db                                                 | 170 kB  00:00:00
+pgdg96/7/x86_64/filelists_db                                                 | 104 kB  00:00:00
+webtatic/x86_64/filelists_db                                                 |  79 kB  00:00:00
+postgresql-9.2.24-1.el7_5.i686 : PostgreSQL client programs
+Repo        : base
+Resultado a partir de:
+Nome de arquivo    : /usr/bin/pg_config
+
+
+
+postgresql-9.2.24-1.el7_5.x86_64 : PostgreSQL client programs
+Repo        : base
+Resultado a partir de:
+Nome de arquivo    : /usr/bin/pg_config
+
+
+
+postgresql11-11.2-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg11
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-11/bin/pg_config
+
+
+
+postgresql11-11.2-2PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg11
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-11/bin/pg_config
+
+
+
+postgresql11-11.3-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg11
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-11/bin/pg_config
+
+
+
+postgresql11-11.4-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg11
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-11/bin/pg_config
+
+
+
+postgresql11-11.5-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg11
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-11/bin/pg_config
+
+
+
+postgresql94-9.4.20-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg94
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.4/bin/pg_config
+
+
+
+postgresql94-9.4.21-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg94
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.4/bin/pg_config
+
+
+
+postgresql94-9.4.22-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg94
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.4/bin/pg_config
+
+
+
+postgresql94-9.4.23-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg94
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.4/bin/pg_config
+
+
+
+postgresql94-9.4.24-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg94
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.4/bin/pg_config
+
+
+
+postgresql95-9.5.15-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg95
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.5/bin/pg_config
+
+
+
+postgresql95-9.5.16-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg95
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.5/bin/pg_config
+
+
+
+postgresql95-9.5.17-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg95
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.5/bin/pg_config
+
+
+
+postgresql95-9.5.18-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg95
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.5/bin/pg_config
+
+
+
+postgresql95-9.5.19-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : pgdg95
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-9.5/bin/pg_config
+
+
+
+postgresql11-11.5-1PGDG.rhel7.x86_64 : PostgreSQL client programs and libraries
+Repo        : @pgdg11
+Resultado a partir de:
+Nome de arquivo    : /usr/pgsql-11/bin/pg_config
+
+
+
+[administrator@flavis ~]$
+
+
+[administrator@flavis ~]$ sudo su postgres
+Senha:
+bash-4.2$ psql -c "ALTER USER postgres WITH PASSWORD 'postgres'" -d
+could not change directory to "/home/administrator": Permissão negada
+psql: option requires an argument -- 'd'
+Try "psql --help" for more information.
+bash-4.2$
+bash-4.2$
+bash-4.2$
+bash-4.2$ psql
+could not change directory to "/home/administrator": Permissão negada
+psql (9.5.19)
+Type "help" for help.
+
+postgres=# \du
+                                    List of roles
+ Role name  |                         Attributes                         | Member of
+------------+------------------------------------------------------------+-----------
+ flavis_usr | Superuser, Create role, Create DB, Replication            +| {}
+            | Password valid until infinity                              |
+ postgres   | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres-# \q
+bash-4.2$ psql -c "ALTER USER postgres WITH PASSWORD 'postgres'" -d template1
+could not change directory to "/home/administrator": Permissão negada
+ALTER ROLE
+bash-4.2$
+bash-4.2$
+bash-4.2$exit
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=# \du
+                              List of roles
+ Role name  |                   Attributes                   | Member of 
+------------+------------------------------------------------+-----------
+ flavis_usr | idem + Password valid until infinity           | {}
+ postgres   | Superuser, Create role, Create DB, Replication | {}
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=# DROP ROLE flavis_usr;
+DROP ROLE
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=# CREATE USER flavis_usr WITH SUPERUSER PASSWORD 'Tp83$mh4';
+CREATE ROLE
+postgres=#

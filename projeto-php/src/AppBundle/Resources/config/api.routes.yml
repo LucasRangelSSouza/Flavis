@@ -1,0 +1,21 @@
+apiSecurity:
+    resource: "AppBundle\Controller\APISecurityController"
+    prefix:   /v1
+    name_prefix:  api_1_ # naming collision
+    type:     rest
+
+apiOs:
+    resource: "AppBundle\Controller\APIOsController"
+    prefix:   /v1
+    name_prefix:  api_1_ # naming collision
+    type:     rest
+    requirements:
+        _format: json|xml
+
+apiTecnico:
+    resource: "AppBundle\Controller\APITecnicoController"
+    prefix:   /v1
+    name_prefix:  api_1_ # naming collision
+    type:     rest
+    requirements:
+        _format: json|xml

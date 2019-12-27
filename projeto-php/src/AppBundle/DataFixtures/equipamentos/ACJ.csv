@@ -1,0 +1,22 @@
+ACJ;Acionamento do damper de ar externo;MENSAL
+ACJ;Verificação de ruidos;MENSAL
+ACJ;Ruídos e/ou vibrações anormais;MENSAL
+ACJ;Temperaturas de insuflamento ;MENSAL
+ACJ;Temperaturas de retorno;MENSAL
+ACJ;Temperaturas do ambiente ;MENSAL
+ACJ;Temperaturas do ambiente externo;MENSAL
+ACJ;Tensão elétrica de motor;MENSAL
+ACJ;Tensão elétrica do compressor;MENSAL
+ACJ;Corrente elétrica de motor;MENSAL
+ACJ;Corrente elétrica do compressor;MENSAL
+ACJ;Termostato / chave seletora;MENSAL
+ACJ;Vedação das tampas do gabinete do equipamento;MENSAL
+ACJ;Bandeja e dreno;TRIMESTRAL
+ACJ;Componentes do quadro elétrico / relé térmico;TRIMESTRAL
+ACJ;Conjunto de ventilação;TRIMESTRAL
+ACJ;Estado do isolamento termo-acústico;TRIMESTRAL
+ACJ;Filtro secador capilar;TRIMESTRAL
+ACJ;Focos de corrossão e estado da pintura;TRIMESTRAL
+ACJ;Gabinete interno e externo;TRIMESTRAL
+ACJ;Serpentina lavar com jatos d'água alta pressão (jatear);TRIMESTRAL
+ACJ;Vazamento de gás refrigerante;TRIMESTRAL

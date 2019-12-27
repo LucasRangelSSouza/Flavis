@@ -1,0 +1,1 @@
+arquivo necessário para subir a pasta views para o git

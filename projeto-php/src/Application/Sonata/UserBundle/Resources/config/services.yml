@@ -1,0 +1,28 @@
+parameters:
+    sonata.user.admin.groupname: sonata_user
+
+services:
+    api_token_user_provider:
+        class: Application\Sonata\UserBundle\Security\ApiTokenUserProvider
+        arguments: ["@service_container"]
+
+    api_token_authenticator:
+        class:     Application\Sonata\UserBundle\Security\ApiTokenAuthenticator
+        arguments: ["@api_token_user_provider"]
+
+    sonata.user.admin.user:
+        class: %sonata.user.admin.user.class%
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: '%sonata.user.admin.groupname%', icon: '<i class="fa fa-user"></i>', label: users, label_catalogue: SonataUserBundle, label_translator_strategy: sonata.admin.label.strategy.underscore }
+        arguments: ['', '%sonata.user.admin.user.entity%', '%sonata.user.admin.user.controller%']
+        calls:
+            - [setUserManager, ['@fos_user.user_manager']]
+            - [setTranslationDomain, ['%sonata.user.admin.user.translation_domain%']]
+
+    sonata.user.admin.group:
+        class: %sonata.user.admin.group.class%
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: '%sonata.user.admin.groupname%', icon: '<i class="fa fa-user"></i>', label: groups, label_catalogue: SonataUserBundle, label_translator_strategy: sonata.admin.label.strategy.underscore }
+        arguments: ['', '%sonata.user.admin.group.entity%', '%sonata.user.admin.group.controller%']
+        calls:
+            - [setTranslationDomain, ['%sonata.user.admin.group.translation_domain%']]

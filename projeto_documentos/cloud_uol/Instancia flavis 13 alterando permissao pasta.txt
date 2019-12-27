@@ -1,0 +1,37 @@
+Last login: Thu Oct  3 14:36:53 2019 from 177.107.32.46
+[administrator@flavis ~]$ su
+Senha:
+[root@flavis administrator]# cd /
+[root@flavis /]# cd var
+[root@flavis var]# cd www
+[root@flavis www]# cd html
+[root@flavis html]# cd flavis
+
+# Ownership
+[root@flavis flavis]# chown apache:apache -R *
+[root@flavis flavis]#
+
+# File permissions, recursive
+[root@flavis flavis]# find . -type f -exec chmod 0644 {} \;
+
+# Dir permissions, recursive
+[root@flavis flavis]# find . -type d -exec chmod 0755 {} \;
+
+# SELinux serve files off Apache, resursive
+[root@flavis flavis]# chcon -t httpd_sys_content_t * -R
+
+# Allow write only to specific dirs
+[root@flavis flavis]# chcon -t httpd_sys_rw_content_t * -R
+[root@flavis flavis]# chcon -t httpd_sys_rw_content_t/logs -R
+[root@flavis flavis]# chcon -t httpd_sys_rw_content_t/uploads -R
+
+=> "Unable to create the cache directory (/var/www/html/flavis/app/cache/prod/twig/7/3)." 
+at /var/www/html/flavis/app/cache/prod/classes.php
+[root@localhost html]# sudo chown apache flavis/*
+[root@localhost html]# 
+
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo chown -R apache.apache /var/www/html/flavis
+
+[root@flavis flavis]# systemctl restart httpd
+[root@flavis flavis]#

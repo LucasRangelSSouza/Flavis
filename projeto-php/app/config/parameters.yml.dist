@@ -1,0 +1,26 @@
+# This file is a "template" of what your parameters.yml file should look like
+parameters:
+    database_driver:   pdo_pgsql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name: flavis
+    database_user: postgres
+    database_password: 123456
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data.db3"
+
+    mailer_transport: smtp
+    mailer_host: smtp.zoho.com
+    mailer_user: agendamento@flavis.com.br
+    mailer_password: agflavis2017
+
+    locale:            pt_BR
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            l7RG9P$hDNACUMbEz29%@u9LPupr3nj4
+    api_app_token:     iFH46!^K7LD0lwTu%Wn6#uD6Ow!WeqRHObE8qw!5eJtOo3KWq^jT
+
+#    push_ios_timeout: 60 # Seconds to wait for connection timeout, default is 60
+#    push_ios_sandbox: true
+#    push_ios_pem: config/certificates/NOMEDOAPPCK-Dev.pem # can be absolute or relative path (from app directory)
+#    push_ios_passphrase: nato5&Laotians

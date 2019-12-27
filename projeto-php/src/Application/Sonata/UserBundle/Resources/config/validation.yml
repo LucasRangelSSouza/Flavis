@@ -1,0 +1,13 @@
+Application\Sonata\UserBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [username, email, emailCanonical]
+            message: 'Este usuário já existe.'
+    properties:
+        email:
+            - Email:
+                message: O email {{ value }} não é um e-mail válido!
+                checkMX: true
+            - NotNull: ~
+        plainPassword:
+            - NotNull: ~

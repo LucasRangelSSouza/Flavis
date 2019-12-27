@@ -1,0 +1,66 @@
+[administrator@flavis ~]$ sudo yum install vim
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: centos.xpg.com.br
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+base                                                                         | 3.6 kB  00:00:00
+extras                                                                       | 2.9 kB  00:00:00
+updates                                                                      | 2.9 kB  00:00:00
+(1/4): base/7/x86_64/group_gz                                                | 165 kB  00:00:00
+(2/4): extras/7/x86_64/primary_db                                            | 152 kB  00:00:00
+(3/4): base/7/x86_64/primary_db                                              | 6.0 MB  00:00:00
+(4/4): updates/7/x86_64/primary_db                                           | 1.1 MB  00:00:02
+Resolving Dependencies
+--> Running transaction check
+---> Package vim-enhanced.x86_64 2:7.4.160-4.el7 will be updated
+---> Package vim-enhanced.x86_64 2:7.4.629-6.el7 will be an update
+--> Processing Dependency: vim-common = 2:7.4.629-6.el7 for package: 2:vim-enhanced-7.4.629-6.el7.x86_64
+--> Running transaction check
+---> Package vim-common.x86_64 2:7.4.160-4.el7 will be updated
+---> Package vim-common.x86_64 2:7.4.629-6.el7 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+====================================================================================================
+ Package                   Arch                Version                      Repository         Size
+====================================================================================================
+Updating:
+ vim-enhanced              x86_64              2:7.4.629-6.el7              base              1.1 M
+Updating for dependencies:
+ vim-common                x86_64              2:7.4.629-6.el7              base              5.9 M
+
+Transaction Summary
+====================================================================================================
+Upgrade  1 Package (+1 Dependent package)
+
+Total download size: 7.0 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/2): vim-enhanced-7.4.629-6.el7.x86_64.rpm                                 | 1.1 MB  00:00:00
+(2/2): vim-common-7.4.629-6.el7.x86_64.rpm                                   | 5.9 MB  00:00:00
+----------------------------------------------------------------------------------------------------
+Total                                                               8.9 MB/s | 7.0 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : 2:vim-common-7.4.629-6.el7.x86_64                                                1/4
+  Updating   : 2:vim-enhanced-7.4.629-6.el7.x86_64                                              2/4
+  Cleanup    : 2:vim-enhanced-7.4.160-4.el7.x86_64                                              3/4
+  Cleanup    : 2:vim-common-7.4.160-4.el7.x86_64                                                4/4
+  Verifying  : 2:vim-enhanced-7.4.629-6.el7.x86_64                                              1/4
+  Verifying  : 2:vim-common-7.4.629-6.el7.x86_64                                                2/4
+  Verifying  : 2:vim-common-7.4.160-4.el7.x86_64                                                3/4
+  Verifying  : 2:vim-enhanced-7.4.160-4.el7.x86_64                                              4/4
+
+Updated:
+  vim-enhanced.x86_64 2:7.4.629-6.el7
+
+Dependency Updated:
+  vim-common.x86_64 2:7.4.629-6.el7
+
+Complete!
+[administrator@flavis ~]$

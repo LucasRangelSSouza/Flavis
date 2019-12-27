@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+                                        <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/bootstrap.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/font-awesome.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/ionicons.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/AdminLTE.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/skin-blue.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/blue.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/bootstrap-datetimepicker.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery-ui.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/select2.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/select2-bootstrap.min.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/bootstrap-editable.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/styles.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/layout.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/tree.css">
+                            <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/override.css">
+                                    <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/fullcalendar.min.css">
+                <link rel="stylesheet" href="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/fullcalendar.print.min.css" media="print">
+
+    
+            <script>
+            window.SONATA_CONFIG = {
+                CONFIRM_EXIT: true,
+                USE_SELECT2: true,
+                USE_ICHECK: true            };
+            window.SONATA_TRANSLATIONS = {
+                CONFIRM_EXIT:  'Voc\u00EA\x20tem\x20mudan\u00E7as\x20sem\x20salvar.'
+            };
+
+            // http://getbootstrap.com/getting-started/#support-ie10-width
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style');
+                msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+                document.querySelector('head').appendChild(msViewportStyle);
+            }
+
+            var __global_path_save_homologacao_os = '/flavis/projeto-php/web/app.php/ajax/create-homologacao-os';
+
+        </script>
+
+                        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery.scrollTo.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/moment.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/bootstrap.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/bootstrap-datetimepicker.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery-ui.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery-ui-i18n.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery.form.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery.confirmExit.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/bootstrap-editable.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/select2.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/app.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/icheck.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery.slimscroll.min.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/Admin.js.download"></script>
+                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/treeview.js.download"></script>
+                
+                                <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/pt-BR.js.download"></script>
+        
+                        
+                        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/select2_locale_pt-BR.js.download"></script>
+                        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/maskinput.js.download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/app.js.download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/accounting.min.js.download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/moment.min.js(1).download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/fullcalendar.min.js.download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/pt-BR.js(1).download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/jquery.maskMoney.js.download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/chart-util.js.download"></script>
+        <script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/Chart.min.js.download"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+
+    
+    <title>
+                    Admin
+
+                                        Criar
+    
+                        </title>
+<script type="text/javascript" charset="UTF-8" src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/util.js.download"></script></head>
+<body class="sonata-bc skin-blue fixed">
+
+<div class="wrapper">
+
+    <header class="main-header">
+                    <noscript>
+                <div class="noscript-warning">
+                    noscript_warning
+                </div>
+            </noscript>
+                                            <a class="logo" href="http://localhost:8080/flavis/projeto-php/web/app.php/dashboard"><img src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/logo_app.png" alt="Flavis"></a>                                                        <nav class="navbar navbar-static-top" role="navigation">
+                    <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+
+                    <div class="navbar-left">
+                                                    <div class="hidden-xs">
+                                                                    <ol class="nav navbar-top-links breadcrumb">
+                                                                                                                                                                                                                                                <li>
+                                                                                                                            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/dashboard">Dashboard</a>
+                                                                                                                    </li>
+                                                                                                                                                                                                                <li>
+                                                                                                                            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/list">Orcamento Produto List</a>
+                                                                                                                    </li>
+                                                                                                                                                                                                                <li class="active"><span>-</span></li>
+                                                                                                                                                                                                                            </ol>
+                                                            </div>
+                                            </div>
+
+                                            <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#">
+                                        <i class="fa fa-plus-square fa-fw"></i> <i class="fa fa-caret-down"></i>
+                                    </a>
+                                            
+            
+                                                                                    
+                                        
+                                                                                    
+                                                                                    
+                                                                                                        
+                                                                                    
+                                                                                    
+                                                                            
+    
+    <div class="dropdown-menu multi-column dropdown-add" style="width: 560px;">
+                                
+            
+                                                            <div class="container-fluid">
+                            <div class="row">
+                    
+                    <ul class="dropdown-menu col-md-3">
+                
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-database"></i>
+                    Cadastro Auxiliar
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/tiponegocio/create">Tipos de Negócio</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/tipoendereco/create">Tipo de Endereço</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/tipodocumento/create">Tipos de Documento</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                
+                                    <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-institution"></i>
+                    Institucional
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/filialempresa/create">Filiais</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/colaborador/create">Colaborador</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fornecedor/create">Fornecedor</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                                                            </ul>
+                    
+                    <ul class="dropdown-menu col-md-3">
+                
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    Cliente
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/cliente/create">Cliente</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/equipamentocliente/create">Catálogo de Equipamentos</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/clienteequipamento/create">Equipamentos de Clientes</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/responsavelcliente/create">Responsáveis de Clientes</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/usuariocliente/create">Usuários de Clientes</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                
+                                    <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                    Almoxarifado
+                </li>
+
+                                                                                                                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/produtoalmoxarifado/create">Produtos</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/ferramentaalmoxarifado/create">Ferramentas</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/entradaprodutosemnota/create">Entrada de Produtos Sem Nota</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/entradaproduto/create">Entrada de Produtos</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/requisicaoproduto/create">Requisição de Produto</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                                                            </ul>
+                    
+                    <ul class="dropdown-menu col-md-3">
+                
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Compras
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create">Orçamento</a>
+                            </li>
+                                                                                                
+                
+                                            
+            
+                
+                                    <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    Ordem de Serviço
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/ordemservico/create">Ordem de Serviço</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/ordens-de-servico-homologadas/create">OS's Homologadas</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/agendamentoordemservico/create">Retorno de OS</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fotoos/create">Fotos</a>
+                            </li>
+                                                            
+                
+                                            
+            
+                                                            </ul>
+                    
+                    <ul class="dropdown-menu col-md-3">
+                
+                                <li role="presentation" class="dropdown-header">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    PMOC
+                </li>
+
+                                                                                        <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/execucaodeprocedimentoequipamento/create">Relatório de Procedimentos</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/norma/create">Normas Técnicas</a>
+                            </li>
+                                                                                                                                    <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fichatecnicaproduto/create">Ficha Técnica Produto</a>
+                            </li>
+                                                            
+                                            </ul>
+                        </div>
+                    </div>
+                
+                        </div>
+                                </li>
+                                <li class="dropdown user-menu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#">
+                                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                                                                                            
+        
+        <li class="user-header bg-light-blue">
+                            <img src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/default_avatar.png" class="img-circle" alt="Avatar">
+                        <p>marconi@flavis.com.br</p>
+        </li>
+
+
+        <li class="user-footer">
+            <div class="pull-left">
+                <a href="http://localhost:8080/flavis/projeto-php/web/app.php/user/2/edit" class="btn btn-default btn-flat"><i class="fa fa-user"></i> Perfil</a>
+            </div>
+
+            <div class="pull-right">
+                <a href="http://localhost:8080/flavis/projeto-php/web/app.php/logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out fa-fw"></i> Sair</a>
+            </div>
+        </li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                                    </nav>
+                        </header>
+
+            <aside class="main-sidebar">
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 602px;"><section class="sidebar" style="height: 602px; overflow: hidden; width: auto;">
+                                                                                        <form action="http://localhost:8080/flavis/projeto-php/web/app.php/search" method="GET" class="sidebar-form" role="search">
+                                <div class="input-group custom-search-form">
+                                    <input type="text" name="q" value="" class="form-control" placeholder="Busca">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-flat" type="submit">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </span>
+                                </div>
+                            </form>
+                                            
+                                                                                                         <ul class="sidebar-menu">
+                    
+                            <li class="treeview first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-database"></i><span>Cadastro Auxiliar</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/tiponegocio/list"><i class="fa fa-angle-double-right"></i>Tipos de Negócio</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/tipoendereco/list"><i class="fa fa-angle-double-right"></i>Tipo de Endereço</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/tipodocumento/list"><i class="fa fa-angle-double-right"></i>Tipos de Documento</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-usd" aria-hidden="true"></i><span>Financeiro</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/homologacaoos/list"><i class="fa fa-angle-double-right"></i>OS' Homologadas</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-institution"></i><span>Institucional</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/filialempresa/list"><i class="fa fa-angle-double-right"></i>Filiais</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/colaborador/list"><i class="fa fa-angle-double-right"></i>Colaborador</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fornecedor/list"><i class="fa fa-angle-double-right"></i>Fornecedor</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-users" aria-hidden="true"></i><span>Cliente</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/cliente/list"><i class="fa fa-angle-double-right"></i>Cliente</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/equipamentocliente/list"><i class="fa fa-angle-double-right"></i>Catálogo de Equipamentos</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/clienteequipamento/list"><i class="fa fa-angle-double-right"></i>Equipamentos de Clientes</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/responsavelcliente/list"><i class="fa fa-angle-double-right"></i>Responsáveis de Clientes</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/usuariocliente/list"><i class="fa fa-angle-double-right"></i>Usuários de Clientes</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-retweet" aria-hidden="true"></i><span>Almoxarifado</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/produtoestoque/list"><i class="fa fa-angle-double-right"></i>Estoque</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/produtoalmoxarifado/list"><i class="fa fa-angle-double-right"></i>Produtos</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/ferramentaalmoxarifado/list"><i class="fa fa-angle-double-right"></i>Ferramentas</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/entradaprodutosemnota/list"><i class="fa fa-angle-double-right"></i>Entrada de Produtos Sem Nota</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/entradaproduto/list"><i class="fa fa-angle-double-right"></i>Entrada de Produtos</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/requisicaoproduto/list"><i class="fa fa-angle-double-right"></i>Requisição de Produto</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview active">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Compras</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="active treeview-menu menu_level_1">
+                    
+                <li class="active first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/list"><i class="fa fa-angle-double-right"></i>Orçamento</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/ordemcompraproduto/list"><i class="fa fa-angle-double-right"></i>Ordem de Compra</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-truck" aria-hidden="true"></i><span>Ordem de Serviço</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/ordemservico/list"><i class="fa fa-angle-double-right"></i>Ordem de Serviço</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/ordens-de-servico-homologadas/list"><i class="fa fa-angle-double-right"></i>OS's Homologadas</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/agendamentoordemservico/list"><i class="fa fa-angle-double-right"></i>Retorno de OS</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fotoos/list"><i class="fa fa-angle-double-right"></i>Fotos</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+            
+                            <li class="treeview last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#"><i class="fa fa-clock-o" aria-hidden="true"></i><span>PMOC</span><i class="fa pull-right fa-angle-left"></i></a>                <ul class="treeview-menu menu_level_1">
+                    
+                <li class="first">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/execucaodeprocedimentoequipamento/list"><i class="fa fa-angle-double-right"></i>Relatório de Procedimentos</a>        
+    </li>
+
+    
+            
+                <li>            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/norma/list"><i class="fa fa-angle-double-right"></i>Normas Técnicas</a>        
+    </li>
+
+    
+            
+                <li class="last">            <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fichatecnicaproduto/list"><i class="fa fa-angle-double-right"></i>Ficha Técnica Produto</a>        
+    </li>
+
+    
+
+    </ul>
+
+    </li>
+
+    
+
+    </ul>
+
+                                                                                        <p class="text-center small" style="border-top: 1px solid #444444; padding-top: 10px"><a href="https://logics.com.br/" rel="noreferrer" target="_blank">
+                                <img src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/logics_logo.png" style="width: 80px;">
+                        </a></p>
+                                                </section><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 602px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        </aside>
+    
+    <div class="content-wrapper" style="min-height: 652px;">
+                    <section class="content-header">
+
+                                                                                        <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                                                                                                        <div class="navbar-header">
+                                                <a class="navbar-brand" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#">                Criar
+    
+</a>
+                                            </div>
+                                                                            
+                                    <div class="navbar-collapse">
+                                        <div class="navbar-left">
+                                                                                    </div>
+
+                                        
+                                                                                    <ul class="nav navbar-nav navbar-right">
+                                                <li class="dropdown sonata-actions">
+                                                    <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#" class="dropdown-toggle" data-toggle="dropdown">Ações <b class="caret"></b></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                            <li>
+</li>
+    <li>
+</li>
+    <li>
+</li>
+    <li>
+    <a class="sonata-action-element" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/list">
+        <i class="fa fa-list"></i>
+        Retornar para a listagem</a>
+</li>
+    <li>
+            <a class="sonata-action-element" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create">
+            <i class="fa fa-plus-circle"></i>
+            Adicionar novo</a>
+    </li>
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        
+                                                                            </div>
+                                </div>
+                            </nav>
+                                                                        </section>
+
+            <section class="content">
+                
+                                                                                        
+                    
+                    
+                    
+                                            <div class="sonata-ba-form">        
+
+    
+            <form role="form" action="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create?uniqid=s5d2470b5011b6" method="POST" data-original="s5d2470b5011b6%5BdataPrevistaEntrega%5D=&amp;s5d2470b5011b6%5BdataEntrega%5D=&amp;s5d2470b5011b6%5Bobservacoes%5D=&amp;s5d2470b5011b6%5B_token%5D=wIZ9l8c8t9RV-eLUvPdRcTCxR00OVtU_1QiM6B3uE-w">
+            
+                            <div class="row">
+            
+                            
+                <div class="col-md-12">
+                                            <div class="nav-tabs-custom">
+                            <ul class="nav nav-tabs" role="tablist">
+                                                                    <li class=""><a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#tab_s5d2470b5011b6_1" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-exclamation-sign has-errors hide"></span> Geral</a></li>
+                                                                    <li class="active"><a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#tab_s5d2470b5011b6_2" data-toggle="tab" aria-expanded="true"><span class="glyphicon glyphicon-exclamation-sign has-errors hide"></span> Itens para Orçamento</a></li>
+                                                            </ul>
+                            <div class="tab-content">
+                                                                    <div class="tab-pane fade" id="tab_s5d2470b5011b6_1">
+                                        <div class="box-body  container-fluid">
+                                            <div class="sonata-ba-collapsed-fields">
+                                                
+                                                    <div class="row">
+
+            
+        <div class="col-md-8">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h4 class="box-title">
+                        Dados
+                    </h4>
+                </div>
+                                <div class="box-body">
+                    <div class="sonata-ba-collapsed-fields">
+                        
+                                                                                        <div class="form-group" id="sonata-ba-field-container-s5d2470b5011b6_dataPrevistaEntrega">
+                            
+        
+        
+        
+        <label class="control-label required" for="s5d2470b5011b6_dataPrevistaEntrega">
+                                    Data Prevista de entrega
+                            </label>
+
+                    
+                    
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                <div class="form-group"><div class="input-group date" id="dp_s5d2470b5011b6_dataPrevistaEntrega"><input type="text" id="s5d2470b5011b6_dataPrevistaEntrega" name="s5d2470b5011b6[dataPrevistaEntrega]" required="required" class="sonata-medium-date form-control" data-date-format="DD/MM/YYYY"><span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span></div></div><script type="text/javascript">
+            jQuery(function ($) {
+                $('#dp_s5d2470b5011b6_dataPrevistaEntrega').datetimepicker({"pickTime":false,"useCurrent":true,"maxDate":null,"showToday":true,"language":"pt_BR","defaultDate":"","disabledDates":[],"enabledDates":[],"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":[],"minDate":"1-1-1900","useSeconds":false});
+            });
+        </script> 
+            
+                    </div>
+    </div>
+
+                                                                                                                    <div class="form-group" id="sonata-ba-field-container-s5d2470b5011b6_dataEntrega">
+                            
+        
+        
+        
+        <label class=" control-label" for="s5d2470b5011b6_dataEntrega">
+                                    Data de entrega
+                            </label>
+
+                    
+                    
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                <div class="form-group"><div class="input-group date" id="dp_s5d2470b5011b6_dataEntrega"><input type="text" id="s5d2470b5011b6_dataEntrega" name="s5d2470b5011b6[dataEntrega]" class="sonata-medium-date form-control" data-date-format="DD/MM/YYYY"><span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span></div></div><script type="text/javascript">
+            jQuery(function ($) {
+                $('#dp_s5d2470b5011b6_dataEntrega').datetimepicker({"pickTime":false,"useCurrent":true,"maxDate":null,"showToday":true,"language":"pt_BR","defaultDate":"","disabledDates":[],"enabledDates":[],"icons":{"time":"glyphicon glyphicon-time","date":"glyphicon glyphicon-calendar","up":"glyphicon glyphicon-chevron-up","down":"glyphicon glyphicon-chevron-down"},"useStrict":false,"sideBySide":false,"daysOfWeekDisabled":[],"minDate":"1-1-1900","useSeconds":false});
+            });
+        </script> 
+            
+                    </div>
+    </div>
+
+                                                                                                                    <div class="form-group" id="sonata-ba-field-container-s5d2470b5011b6_observacoes">
+                            
+        
+        
+        
+        <label class=" control-label" for="s5d2470b5011b6_observacoes">
+                                    Observações
+                            </label>
+
+                    
+                    
+        
+        <div class="sonata-ba-field sonata-ba-field-standard-natural">
+                    <textarea id="s5d2470b5011b6_observacoes" name="s5d2470b5011b6[observacoes]" class=" form-control"></textarea>
+ 
+            
+                    </div>
+    </div>
+
+                                                                        </div>
+                </div>
+                            </div>
+        </div>
+        </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="tab-pane fade active in" id="tab_s5d2470b5011b6_2">
+                                        <div class="box-body  container-fluid">
+                                            <div class="sonata-ba-collapsed-fields">
+                                                
+                                                    <div class="row">
+
+            
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h4 class="box-title">
+                        Itens para Orçamento
+                    </h4>
+					<br>
+					Erro na tela Itens para Orçamento: Comentar a linha 748<br>
+                </div>
+                                <div class="box-body">
+                    <div class="sonata-ba-collapsed-fields">
+                        
+                                                                                        <div class="form-group" id="sonata-ba-field-container-s5d2470b5011b6_produtos">
+                            
+        
+                            
+        
+        
+
+                    
+                                                
+        
+        <div class="sonata-ba-field sonata-collection-row-without-label sonata-ba-field-inline-table form-inline">
+                        
+    
+                    
+    
+        <br>
+<b>Warning</b>:  count(): Parameter must be an array or an object that implements Countable in <b>C:\Apache2.4\htdocs\flavis\projeto-php\vendor\symfony\symfony\src\Symfony\Component\Form\Form.php</b> on line <b>748</b><br>
+            
+    
+        <div id="field_container_s5d2470b5011b6_produtos" class="field-container">
+        <span id="field_widget_s5d2470b5011b6_produtos">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                
+                                                            <div class="panel panel-default container-row-form-custom-many-to-many">
+                                    <div class="panel-heading" role="tab" id="heading_produtos_1">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#collapse_produtos_1" aria-expanded="true" aria-controls="collapse_produtos_1">
+                                                                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                                                
+                                                                                                    <label style="color: #0000ff;">Conclua o cadastro deste registro!</label>
+                                                                                            </a>
+
+                                            <button type="button" class="btn btn-sm btn-danger pull-right bt-deletar-row-form-custom-many-to-many" style="margin-top: -4px;margin-right: -9px;"><i class="fa fa-minus-circle"></i> Deletar</button>
+
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_produtos_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_produtos_1">
+                                        <div class="panel-body">
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label required" for="s5d2470b5011b6_produtos_0_produto">
+                                    Selecione um Produto
+                            </label><br>
+                                                                <div class="select2-container form-control" id="s2id_s5d2470b5011b6_produtos_0_produto_autocomplete_input"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-13"><b>VALVULA DE CO2 ROTAREX</b> - Cód. Fabricante: 68B04390030</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen13" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-13" id="s2id_autogen13"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen13_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-13" id="s2id_autogen13_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-13">   </ul></div></div><input type="text" id="s5d2470b5011b6_produtos_0_produto_autocomplete_input" value="" required="required" tabindex="-1" title="" class="select2-offscreen"><div id="s5d2470b5011b6_produtos_0_produto_hidden_inputs_wrap"><input type="hidden" name="s5d2470b5011b6[produtos][0][produto]" value="1"></div><script>
+        (function ($) {
+            var autocompleteInput = $('#s5d2470b5011b6_produtos_0_produto_autocomplete_input');
+            autocompleteInput.select2({placeholder: '', // allowClear needs placeholder to work properly
+                allowClear: false,
+                enable: true,
+                readonly: false,
+                minimumInputLength: 3,
+                multiple: false,
+                width: '',
+                dropdownAutoWidth: false,
+                containerCssClass: ' form-control',
+                dropdownCssClass: '',
+                ajax: {
+                    url:  '\x2Fflavis\x2Fprojeto\x2Dphp\x2Fweb\x2Fapp.php\x2Fcore\x2Fget\x2Dautocomplete\x2Ditems',
+                    dataType: 'json',
+                    quietMillis: 100,
+                    data: function (term, page) { // page is the one-based page number tracked by Select2
+                                                return {
+                                //search term
+                                'q': term,
+
+                                // page size
+                                '_per_page': 10,
+
+                                // page number
+                                '_page': page,
+
+                                // admin
+                                                                    'uniqid': 's5d2470c85551c',
+                                    'admin_code': 'app.admin.produto_solicitacao',
+                                
+                                                                    'field':  'produto'
+                                
+                                // other parameters
+                                                        };
+                                            },
+                    results: function (data, page) {
+                        // notice we return the value of more so Select2 knows if more results can be loaded
+                        return {results: data.items, more: data.more};
+                    }
+                },
+                formatResult: function (item) {
+                    return '<div class="">'+item.label+'<\/div>';// format of one dropdown item
+                },
+                formatSelection: function (item) {
+                    return item.label;// format selected item '<b>'+item.label+'</b>';
+                },
+                escapeMarkup: function (m) { return m; } // we do not want to escape markup since we are displaying html in results
+            });
+
+            autocompleteInput.on('change', function(e) {
+
+                // console.log('change '+JSON.stringify({val:e.val, added:e.added, removed:e.removed}));
+
+                // remove input
+                if (undefined !== e.removed && null !== e.removed) {
+                    var removedItems = e.removed;
+
+                    $('#s5d2470b5011b6_produtos_0_produto_hidden_inputs_wrap input:hidden').val('');                }
+
+                // add new input
+                var el = null;
+                if (undefined !== e.added) {
+
+                    var addedItems = e.added;
+
+                    $('#s5d2470b5011b6_produtos_0_produto_hidden_inputs_wrap input:hidden').val(addedItems.id);                }
+            });
+
+            // Initialise the autocomplete
+            var data = [];data ={id: '1', label:'\x3Cb\x3EVALVULA\x20DE\x20CO2\x20ROTAREX\x3C\x2Fb\x3E\x20\x2D\x20C\u00F3d.\x20Fabricante\x3A\x2068B04390030'};
+            if (undefined==data.length || 0<data.length) { // Leave placeholder if no data set
+                autocompleteInput.select2('data', data);
+            }
+
+            // remove unneeded autocomplete text input before form submit
+            $('#s5d2470b5011b6_produtos_0_produto_autocomplete_input').closest('form').submit(function()
+            {
+                $('#s5d2470b5011b6_produtos_0_produto_autocomplete_input').remove();
+                return true;
+            });
+        })(jQuery);
+    </script>
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label required" for="s5d2470b5011b6_produtos_0_fornecedor">
+                                    Fornecedor
+                            </label><br>
+                                                                
+    
+                
+    <div id="field_container_s5d2470b5011b6_produtos_0_fornecedor" class="field-container">
+                    <span id="field_widget_s5d2470b5011b6_produtos_0_fornecedor">
+                <div class="select2-container" id="s2id_s5d2470b5011b6_produtos_0_fornecedor" style="width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-15">Officer</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen15" class="select2-offscreen">
+                                    Fornecedor
+                            </label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-15" id="s2id_autogen15"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen15_search" class="select2-offscreen">
+                                    Fornecedor
+                            </label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-15" id="s2id_autogen15_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-15">   </ul></div></div><select id="s5d2470b5011b6_produtos_0_fornecedor" name="s5d2470b5011b6[produtos][0][fornecedor]" required="required" class="select2-offscreen" tabindex="-1" title="
+                                    Fornecedor
+                            "><option value="">
+                    Selecione um fornecedor                </option><option value="1">A.Q INDUSTRIA E COMERCIO DE EQUIPAMENTO LTDA</option><option value="5">ROTAREX BRASIL LTDA</option><option value="4">GOIAS DISTRIBUIDORA DE ACUMULADORES LTDA</option><option value="6">3A Química e Farmacêutica LTDA</option><option value="7" selected="selected">Officer</option><option value="8">MultQuímica</option><option value="3">AÇO ITALIA</option><option value="2">ABAFIRE COMERCIO E SERVIÇO LTDA</option></select>
+            </span>
+        
+        <span id="field_actions_s5d2470b5011b6_produtos_0_fornecedor" class="field-actions">
+            <span class="btn-group">
+                
+                                    <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fornecedor/create?uniqid=s5d2470c855ced&amp;code=app.admin.fornecedor&amp;pcode=app.admin.produto_solicitacao&amp;puniqid=s5d2470c85551c" onclick="return start_field_dialog_form_add_s5d2470b5011b6_produtos_0_fornecedor(this);" class="btn btn-success btn-sm sonata-ba-action" title="Adicionar novo">
+                        <i class="fa fa-plus-circle"></i>
+                        Adicionar novo
+                    </a>
+                            </span>
+
+            <span class="btn-group">
+                            </span>
+        </span>
+
+        
+<div class="modal fade" id="field_dialog_s5d2470b5011b6_produtos_0_fornecedor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    
+
+
+
+
+<!-- edit many association -->
+
+<script type="text/javascript">
+
+    
+    var field_dialog_form_list_link_s5d2470b5011b6_produtos_0_fornecedor = function(event) {
+        initialize_popup_s5d2470b5011b6_produtos_0_fornecedor();
+
+        var target = jQuery(this);
+
+        // return if the link is an anchor inside the same page
+        if (this.nodeName == 'A' && (target.attr('href').length == 0 || target.attr('href')[0] == '#')) {
+            Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_link] element is an anchor, skipping action', this);
+            return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_link] handle link click in a list');
+
+        var element = jQuery(this).parents('#field_dialog_s5d2470b5011b6_produtos_0_fornecedor .sonata-ba-list-field');
+
+        // the user does not click on a row column
+        if (element.length == 0) {
+            Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_link] the user does not click on a row column, make ajax call to retrieve inner html');
+            // make a recursive call (ie: reset the filter)
+            jQuery.ajax({
+                type: 'GET',
+                url: jQuery(this).attr('href'),
+                dataType: 'html',
+                success: function(html) {
+                    Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_link] callback success, attach valid js event');
+
+                    field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html(html);
+                    field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_0_fornecedor();
+
+                    Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+                }
+            });
+
+            return;
+        }
+
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_link] the user select one element, update input and hide the modal');
+
+        jQuery('#s5d2470b5011b6_produtos_0_fornecedor').val(element.attr('objectId'));
+        jQuery('#s5d2470b5011b6_produtos_0_fornecedor').trigger('change');
+
+        field_dialog_s5d2470b5011b6_produtos_0_fornecedor.modal('hide');
+    };
+
+    // this function handle action on the modal list when inside a selected list
+    var field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_0_fornecedor  =  function() {
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_handle_action] attaching valid js event');
+
+        // capture the submit event to make an ajax call, ie : POST data to the
+        // related create admin
+        jQuery('a', field_dialog_s5d2470b5011b6_produtos_0_fornecedor).on('click', field_dialog_form_list_link_s5d2470b5011b6_produtos_0_fornecedor);
+        jQuery('form', field_dialog_s5d2470b5011b6_produtos_0_fornecedor).on('submit', function(event) {
+            event.preventDefault();
+
+            var form = jQuery(this);
+
+            Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_handle_action] catching submit event, sending ajax request');
+
+            jQuery(form).ajaxSubmit({
+                type: form.attr('method'),
+                url: form.attr('action'),
+                dataType: 'html',
+                data: {_xml_http_request: true},
+                success: function(html) {
+
+                    Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list_handle_action] form submit success, restoring event');
+
+                    field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html(html);
+                    field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_0_fornecedor();
+
+                    Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+                }
+            });
+        });
+    };
+
+    // handle the list link
+    var field_dialog_form_list_s5d2470b5011b6_produtos_0_fornecedor = function(event) {
+
+        initialize_popup_s5d2470b5011b6_produtos_0_fornecedor();
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list] open the list modal');
+
+        var a = jQuery(this);
+
+        field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html('');
+
+        // retrieve the form element from the related admin generator
+        jQuery.ajax({
+            url: a.attr('href'),
+            dataType: 'html',
+            success: function(html) {
+
+                Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_list] retrieving the list content');
+
+                // populate the popup container
+                field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html(html);
+
+                field_dialog_title_s5d2470b5011b6_produtos_0_fornecedor.html("Fornecedor");
+
+                Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+
+                field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_0_fornecedor();
+
+                // open the dialog in modal mode
+                field_dialog_s5d2470b5011b6_produtos_0_fornecedor.modal();
+
+                Admin.setup_list_modal(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+            }
+        });
+    };
+
+    // handle the add link
+    var field_dialog_form_add_s5d2470b5011b6_produtos_0_fornecedor = function(event) {
+        initialize_popup_s5d2470b5011b6_produtos_0_fornecedor();
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        var a = jQuery(this);
+
+        field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html('');
+
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_add] add link action');
+
+        // retrieve the form element from the related admin generator
+        jQuery.ajax({
+            url: a.attr('href'),
+            dataType: 'html',
+            success: function(html) {
+
+                Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_add] ajax success', field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+
+                // populate the popup container
+                field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html(html);
+                field_dialog_title_s5d2470b5011b6_produtos_0_fornecedor.html("Fornecedor");
+
+                Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+
+                // capture the submit event to make an ajax call, ie : POST data to the
+                // related create admin
+                jQuery('a', field_dialog_s5d2470b5011b6_produtos_0_fornecedor).on('click', field_dialog_form_action_s5d2470b5011b6_produtos_0_fornecedor);
+                jQuery('form', field_dialog_s5d2470b5011b6_produtos_0_fornecedor).on('submit', field_dialog_form_action_s5d2470b5011b6_produtos_0_fornecedor);
+
+                // open the dialog in modal mode
+                field_dialog_s5d2470b5011b6_produtos_0_fornecedor.modal();
+
+                Admin.setup_list_modal(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+            }
+        });
+    };
+
+    // handle the post data
+    var field_dialog_form_action_s5d2470b5011b6_produtos_0_fornecedor = function(event) {
+
+        var element = jQuery(this);
+
+        // return if the link is an anchor inside the same page
+        if (this.nodeName == 'A' && (element.attr('href').length == 0 || element.attr('href')[0] == '#')) {
+            Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_action] element is an anchor, skipping action', this);
+            return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_action] action catch', this);
+
+        initialize_popup_s5d2470b5011b6_produtos_0_fornecedor();
+
+        if (this.nodeName == 'FORM') {
+            var url  = element.attr('action');
+            var type = element.attr('method');
+        } else if (this.nodeName == 'A') {
+            var url  = element.attr('href');
+            var type = 'GET';
+        } else {
+            alert('unexpected element : @' + this.nodeName + '@');
+            return;
+        }
+
+        if (element.hasClass('sonata-ba-action')) {
+            Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_action] reserved action stop catch all events');
+            return;
+        }
+
+        var data = {
+            _xml_http_request: true
+        }
+
+        var form = jQuery(this);
+
+        Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_action] execute ajax call');
+
+        // the ajax post
+        jQuery(form).ajaxSubmit({
+            url: url,
+            type: type,
+            data: data,
+            success: function(data) {
+                Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog_form_action] ajax success');
+
+                // if the crud action return ok, then the element has been added
+                // so the widget container must be refresh with the last option available
+                if (typeof data != 'string' && data.result == 'ok') {
+                    field_dialog_s5d2470b5011b6_produtos_0_fornecedor.modal('hide');
+
+                    
+                        // reload the form element
+                        jQuery('#field_widget_s5d2470b5011b6_produtos_0_fornecedor').closest('form').ajaxSubmit({
+                            url: '/flavis/projeto-php/web/app.php/core/get-form-field-element?elementId=s5d2470b5011b6_produtos_0_fornecedor&uniqid=s5d2470b5011b6&code=app.admin.orcamento_produto',
+                            data: {_xml_http_request: true },
+                            dataType: 'html',
+                            type: 'POST',
+                            success: function(html) {
+                                jQuery('#field_container_s5d2470b5011b6_produtos_0_fornecedor').replaceWith(html);
+                                var newElement = jQuery('#s5d2470b5011b6_produtos_0_fornecedor [value="' + data.objectId + '"]');
+                                if (newElement.is("input")) {
+                                    newElement.attr('checked', 'checked');
+                                } else {
+                                    newElement.attr('selected', 'selected');
+                                }
+
+                                jQuery('#field_container_s5d2470b5011b6_produtos_0_fornecedor').trigger('sonata-admin-append-form-element');
+                            }
+                        });
+
+                    
+                    return;
+                }
+
+                // otherwise, display form error
+                field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor.html(data);
+
+                Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+
+                // reattach the event
+                jQuery('form', field_dialog_s5d2470b5011b6_produtos_0_fornecedor).submit(field_dialog_form_action_s5d2470b5011b6_produtos_0_fornecedor);
+            }
+        });
+
+        return false;
+    };
+
+    var field_dialog_s5d2470b5011b6_produtos_0_fornecedor         = false;
+    var field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor = false;
+    var field_dialog_title_s5d2470b5011b6_produtos_0_fornecedor   = false;
+
+    function initialize_popup_s5d2470b5011b6_produtos_0_fornecedor() {
+        // initialize component
+        if (!field_dialog_s5d2470b5011b6_produtos_0_fornecedor) {
+            field_dialog_s5d2470b5011b6_produtos_0_fornecedor         = jQuery("#field_dialog_s5d2470b5011b6_produtos_0_fornecedor");
+            field_dialog_content_s5d2470b5011b6_produtos_0_fornecedor = jQuery(".modal-body", "#field_dialog_s5d2470b5011b6_produtos_0_fornecedor");
+            field_dialog_title_s5d2470b5011b6_produtos_0_fornecedor   = jQuery(".modal-title", "#field_dialog_s5d2470b5011b6_produtos_0_fornecedor");
+
+            // move the dialog as a child of the root element, nested form breaks html ...
+            jQuery(document.body).append(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+
+            Admin.log('[s5d2470b5011b6_produtos_0_fornecedor|field_dialog] move dialog container as a document child');
+        }
+    }
+
+        // this function initialize the popup
+    // this can be only done this way has popup can be cascaded
+    function start_field_dialog_form_add_s5d2470b5011b6_produtos_0_fornecedor(link) {
+
+        // remove the html event
+        link.onclick = null;
+
+        initialize_popup_s5d2470b5011b6_produtos_0_fornecedor();
+
+        // add the jQuery event to the a element
+        jQuery(link)
+            .click(field_dialog_form_add_s5d2470b5011b6_produtos_0_fornecedor)
+            .trigger('click')
+        ;
+
+        return false;
+    }
+
+    if (field_dialog_s5d2470b5011b6_produtos_0_fornecedor) {
+        Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_0_fornecedor);
+    }
+
+    
+
+</script>
+<!-- / edit many association -->
+
+
+    
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class=" control-label" for="s5d2470b5011b6_produtos_0_valor">
+                                    Valor unitário
+                            </label><br>
+                                                                                    <input type="text" id="s5d2470b5011b6_produtos_0_valor" name="s5d2470b5011b6[produtos][0][valor]" class=" form-control">
+
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label required" for="s5d2470b5011b6_produtos_0_quantidade">
+                                    Quantidade
+                            </label><br>
+                                                                                    <input type="number" id="s5d2470b5011b6_produtos_0_quantidade" name="s5d2470b5011b6[produtos][0][quantidade]" required="required" class=" form-control" value="1">
+
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                                                            <div class="panel panel-default container-row-form-custom-many-to-many">
+                                    <div class="panel-heading" role="tab" id="heading_produtos_2">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="http://localhost:8080/flavis/projeto-php/web/app.php/app/orcamentoproduto/create#collapse_produtos_2" aria-expanded="true" aria-controls="collapse_produtos_2">
+                                                                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+                                                
+                                                                                                    <label style="color: #0000ff;">Conclua o cadastro deste registro!</label>
+                                                                                            </a>
+
+                                            <button type="button" class="btn btn-sm btn-danger pull-right bt-deletar-row-form-custom-many-to-many" style="margin-top: -4px;margin-right: -9px;"><i class="fa fa-minus-circle"></i> Deletar</button>
+
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_produtos_2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_produtos_2">
+                                        <div class="panel-body">
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label required" for="s5d2470b5011b6_produtos_1_produto">
+                                    Selecione um Produto
+                            </label><br>
+                                                                <div class="select2-container form-control" id="s2id_s5d2470b5011b6_produtos_1_produto_autocomplete_input"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-14">&nbsp;</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen14" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-14" id="s2id_autogen14"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen14_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-14" id="s2id_autogen14_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-14">   </ul></div></div><input type="text" id="s5d2470b5011b6_produtos_1_produto_autocomplete_input" value="" required="required" tabindex="-1" title="" class="select2-offscreen"><div id="s5d2470b5011b6_produtos_1_produto_hidden_inputs_wrap"><input type="hidden" name="s5d2470b5011b6[produtos][1][produto]" value=""></div><script>
+        (function ($) {
+            var autocompleteInput = $('#s5d2470b5011b6_produtos_1_produto_autocomplete_input');
+            autocompleteInput.select2({placeholder: '', // allowClear needs placeholder to work properly
+                allowClear: false,
+                enable: true,
+                readonly: false,
+                minimumInputLength: 3,
+                multiple: false,
+                width: '',
+                dropdownAutoWidth: false,
+                containerCssClass: ' form-control',
+                dropdownCssClass: '',
+                ajax: {
+                    url:  '\x2Fflavis\x2Fprojeto\x2Dphp\x2Fweb\x2Fapp.php\x2Fcore\x2Fget\x2Dautocomplete\x2Ditems',
+                    dataType: 'json',
+                    quietMillis: 100,
+                    data: function (term, page) { // page is the one-based page number tracked by Select2
+                                                return {
+                                //search term
+                                'q': term,
+
+                                // page size
+                                '_per_page': 10,
+
+                                // page number
+                                '_page': page,
+
+                                // admin
+                                                                    'uniqid': 's5d2470c8564bd',
+                                    'admin_code': 'app.admin.produto_solicitacao',
+                                
+                                                                    'field':  'produto'
+                                
+                                // other parameters
+                                                        };
+                                            },
+                    results: function (data, page) {
+                        // notice we return the value of more so Select2 knows if more results can be loaded
+                        return {results: data.items, more: data.more};
+                    }
+                },
+                formatResult: function (item) {
+                    return '<div class="">'+item.label+'<\/div>';// format of one dropdown item
+                },
+                formatSelection: function (item) {
+                    return item.label;// format selected item '<b>'+item.label+'</b>';
+                },
+                escapeMarkup: function (m) { return m; } // we do not want to escape markup since we are displaying html in results
+            });
+
+            autocompleteInput.on('change', function(e) {
+
+                // console.log('change '+JSON.stringify({val:e.val, added:e.added, removed:e.removed}));
+
+                // remove input
+                if (undefined !== e.removed && null !== e.removed) {
+                    var removedItems = e.removed;
+
+                    $('#s5d2470b5011b6_produtos_1_produto_hidden_inputs_wrap input:hidden').val('');                }
+
+                // add new input
+                var el = null;
+                if (undefined !== e.added) {
+
+                    var addedItems = e.added;
+
+                    $('#s5d2470b5011b6_produtos_1_produto_hidden_inputs_wrap input:hidden').val(addedItems.id);                }
+            });
+
+            // Initialise the autocomplete
+            var data = [];if (undefined==data.length || 0<data.length) { // Leave placeholder if no data set
+                autocompleteInput.select2('data', data);
+            }
+
+            // remove unneeded autocomplete text input before form submit
+            $('#s5d2470b5011b6_produtos_1_produto_autocomplete_input').closest('form').submit(function()
+            {
+                $('#s5d2470b5011b6_produtos_1_produto_autocomplete_input').remove();
+                return true;
+            });
+        })(jQuery);
+    </script>
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label required" for="s5d2470b5011b6_produtos_1_fornecedor">
+                                    Fornecedor
+                            </label><br>
+                                                                
+    
+                
+    <div id="field_container_s5d2470b5011b6_produtos_1_fornecedor" class="field-container">
+                    <span id="field_widget_s5d2470b5011b6_produtos_1_fornecedor">
+                <div class="select2-container" id="s2id_s5d2470b5011b6_produtos_1_fornecedor" style="width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-16">
+                    Selecione um fornecedor                </span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen16" class="select2-offscreen">
+                                    Fornecedor
+                            </label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-16" id="s2id_autogen16"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen16_search" class="select2-offscreen">
+                                    Fornecedor
+                            </label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-16" id="s2id_autogen16_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-16">   </ul></div></div><select id="s5d2470b5011b6_produtos_1_fornecedor" name="s5d2470b5011b6[produtos][1][fornecedor]" required="required" class="select2-offscreen" tabindex="-1" title="
+                                    Fornecedor
+                            "><option value="" selected="selected">
+                    Selecione um fornecedor                </option><option value="1">A.Q INDUSTRIA E COMERCIO DE EQUIPAMENTO LTDA</option><option value="5">ROTAREX BRASIL LTDA</option><option value="4">GOIAS DISTRIBUIDORA DE ACUMULADORES LTDA</option><option value="6">3A Química e Farmacêutica LTDA</option><option value="7">Officer</option><option value="8">MultQuímica</option><option value="3">AÇO ITALIA</option><option value="2">ABAFIRE COMERCIO E SERVIÇO LTDA</option></select>
+            </span>
+        
+        <span id="field_actions_s5d2470b5011b6_produtos_1_fornecedor" class="field-actions">
+            <span class="btn-group">
+                
+                                    <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/fornecedor/create?uniqid=s5d2470c8568a5&amp;code=app.admin.fornecedor&amp;pcode=app.admin.produto_solicitacao&amp;puniqid=s5d2470c8564bd" onclick="return start_field_dialog_form_add_s5d2470b5011b6_produtos_1_fornecedor(this);" class="btn btn-success btn-sm sonata-ba-action" title="Adicionar novo">
+                        <i class="fa fa-plus-circle"></i>
+                        Adicionar novo
+                    </a>
+                            </span>
+
+            <span class="btn-group">
+                            </span>
+        </span>
+
+        
+<div class="modal fade" id="field_dialog_s5d2470b5011b6_produtos_1_fornecedor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    
+
+
+
+
+<!-- edit many association -->
+
+<script type="text/javascript">
+
+    
+    var field_dialog_form_list_link_s5d2470b5011b6_produtos_1_fornecedor = function(event) {
+        initialize_popup_s5d2470b5011b6_produtos_1_fornecedor();
+
+        var target = jQuery(this);
+
+        // return if the link is an anchor inside the same page
+        if (this.nodeName == 'A' && (target.attr('href').length == 0 || target.attr('href')[0] == '#')) {
+            Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_link] element is an anchor, skipping action', this);
+            return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_link] handle link click in a list');
+
+        var element = jQuery(this).parents('#field_dialog_s5d2470b5011b6_produtos_1_fornecedor .sonata-ba-list-field');
+
+        // the user does not click on a row column
+        if (element.length == 0) {
+            Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_link] the user does not click on a row column, make ajax call to retrieve inner html');
+            // make a recursive call (ie: reset the filter)
+            jQuery.ajax({
+                type: 'GET',
+                url: jQuery(this).attr('href'),
+                dataType: 'html',
+                success: function(html) {
+                    Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_link] callback success, attach valid js event');
+
+                    field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html(html);
+                    field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_1_fornecedor();
+
+                    Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+                }
+            });
+
+            return;
+        }
+
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_link] the user select one element, update input and hide the modal');
+
+        jQuery('#s5d2470b5011b6_produtos_1_fornecedor').val(element.attr('objectId'));
+        jQuery('#s5d2470b5011b6_produtos_1_fornecedor').trigger('change');
+
+        field_dialog_s5d2470b5011b6_produtos_1_fornecedor.modal('hide');
+    };
+
+    // this function handle action on the modal list when inside a selected list
+    var field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_1_fornecedor  =  function() {
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_handle_action] attaching valid js event');
+
+        // capture the submit event to make an ajax call, ie : POST data to the
+        // related create admin
+        jQuery('a', field_dialog_s5d2470b5011b6_produtos_1_fornecedor).on('click', field_dialog_form_list_link_s5d2470b5011b6_produtos_1_fornecedor);
+        jQuery('form', field_dialog_s5d2470b5011b6_produtos_1_fornecedor).on('submit', function(event) {
+            event.preventDefault();
+
+            var form = jQuery(this);
+
+            Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_handle_action] catching submit event, sending ajax request');
+
+            jQuery(form).ajaxSubmit({
+                type: form.attr('method'),
+                url: form.attr('action'),
+                dataType: 'html',
+                data: {_xml_http_request: true},
+                success: function(html) {
+
+                    Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list_handle_action] form submit success, restoring event');
+
+                    field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html(html);
+                    field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_1_fornecedor();
+
+                    Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+                }
+            });
+        });
+    };
+
+    // handle the list link
+    var field_dialog_form_list_s5d2470b5011b6_produtos_1_fornecedor = function(event) {
+
+        initialize_popup_s5d2470b5011b6_produtos_1_fornecedor();
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list] open the list modal');
+
+        var a = jQuery(this);
+
+        field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html('');
+
+        // retrieve the form element from the related admin generator
+        jQuery.ajax({
+            url: a.attr('href'),
+            dataType: 'html',
+            success: function(html) {
+
+                Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_list] retrieving the list content');
+
+                // populate the popup container
+                field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html(html);
+
+                field_dialog_title_s5d2470b5011b6_produtos_1_fornecedor.html("Fornecedor");
+
+                Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+
+                field_dialog_form_list_handle_action_s5d2470b5011b6_produtos_1_fornecedor();
+
+                // open the dialog in modal mode
+                field_dialog_s5d2470b5011b6_produtos_1_fornecedor.modal();
+
+                Admin.setup_list_modal(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+            }
+        });
+    };
+
+    // handle the add link
+    var field_dialog_form_add_s5d2470b5011b6_produtos_1_fornecedor = function(event) {
+        initialize_popup_s5d2470b5011b6_produtos_1_fornecedor();
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        var a = jQuery(this);
+
+        field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html('');
+
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_add] add link action');
+
+        // retrieve the form element from the related admin generator
+        jQuery.ajax({
+            url: a.attr('href'),
+            dataType: 'html',
+            success: function(html) {
+
+                Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_add] ajax success', field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+
+                // populate the popup container
+                field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html(html);
+                field_dialog_title_s5d2470b5011b6_produtos_1_fornecedor.html("Fornecedor");
+
+                Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+
+                // capture the submit event to make an ajax call, ie : POST data to the
+                // related create admin
+                jQuery('a', field_dialog_s5d2470b5011b6_produtos_1_fornecedor).on('click', field_dialog_form_action_s5d2470b5011b6_produtos_1_fornecedor);
+                jQuery('form', field_dialog_s5d2470b5011b6_produtos_1_fornecedor).on('submit', field_dialog_form_action_s5d2470b5011b6_produtos_1_fornecedor);
+
+                // open the dialog in modal mode
+                field_dialog_s5d2470b5011b6_produtos_1_fornecedor.modal();
+
+                Admin.setup_list_modal(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+            }
+        });
+    };
+
+    // handle the post data
+    var field_dialog_form_action_s5d2470b5011b6_produtos_1_fornecedor = function(event) {
+
+        var element = jQuery(this);
+
+        // return if the link is an anchor inside the same page
+        if (this.nodeName == 'A' && (element.attr('href').length == 0 || element.attr('href')[0] == '#')) {
+            Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_action] element is an anchor, skipping action', this);
+            return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_action] action catch', this);
+
+        initialize_popup_s5d2470b5011b6_produtos_1_fornecedor();
+
+        if (this.nodeName == 'FORM') {
+            var url  = element.attr('action');
+            var type = element.attr('method');
+        } else if (this.nodeName == 'A') {
+            var url  = element.attr('href');
+            var type = 'GET';
+        } else {
+            alert('unexpected element : @' + this.nodeName + '@');
+            return;
+        }
+
+        if (element.hasClass('sonata-ba-action')) {
+            Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_action] reserved action stop catch all events');
+            return;
+        }
+
+        var data = {
+            _xml_http_request: true
+        }
+
+        var form = jQuery(this);
+
+        Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_action] execute ajax call');
+
+        // the ajax post
+        jQuery(form).ajaxSubmit({
+            url: url,
+            type: type,
+            data: data,
+            success: function(data) {
+                Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog_form_action] ajax success');
+
+                // if the crud action return ok, then the element has been added
+                // so the widget container must be refresh with the last option available
+                if (typeof data != 'string' && data.result == 'ok') {
+                    field_dialog_s5d2470b5011b6_produtos_1_fornecedor.modal('hide');
+
+                    
+                        // reload the form element
+                        jQuery('#field_widget_s5d2470b5011b6_produtos_1_fornecedor').closest('form').ajaxSubmit({
+                            url: '/flavis/projeto-php/web/app.php/core/get-form-field-element?elementId=s5d2470b5011b6_produtos_1_fornecedor&uniqid=s5d2470b5011b6&code=app.admin.orcamento_produto',
+                            data: {_xml_http_request: true },
+                            dataType: 'html',
+                            type: 'POST',
+                            success: function(html) {
+                                jQuery('#field_container_s5d2470b5011b6_produtos_1_fornecedor').replaceWith(html);
+                                var newElement = jQuery('#s5d2470b5011b6_produtos_1_fornecedor [value="' + data.objectId + '"]');
+                                if (newElement.is("input")) {
+                                    newElement.attr('checked', 'checked');
+                                } else {
+                                    newElement.attr('selected', 'selected');
+                                }
+
+                                jQuery('#field_container_s5d2470b5011b6_produtos_1_fornecedor').trigger('sonata-admin-append-form-element');
+                            }
+                        });
+
+                    
+                    return;
+                }
+
+                // otherwise, display form error
+                field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor.html(data);
+
+                Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+
+                // reattach the event
+                jQuery('form', field_dialog_s5d2470b5011b6_produtos_1_fornecedor).submit(field_dialog_form_action_s5d2470b5011b6_produtos_1_fornecedor);
+            }
+        });
+
+        return false;
+    };
+
+    var field_dialog_s5d2470b5011b6_produtos_1_fornecedor         = false;
+    var field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor = false;
+    var field_dialog_title_s5d2470b5011b6_produtos_1_fornecedor   = false;
+
+    function initialize_popup_s5d2470b5011b6_produtos_1_fornecedor() {
+        // initialize component
+        if (!field_dialog_s5d2470b5011b6_produtos_1_fornecedor) {
+            field_dialog_s5d2470b5011b6_produtos_1_fornecedor         = jQuery("#field_dialog_s5d2470b5011b6_produtos_1_fornecedor");
+            field_dialog_content_s5d2470b5011b6_produtos_1_fornecedor = jQuery(".modal-body", "#field_dialog_s5d2470b5011b6_produtos_1_fornecedor");
+            field_dialog_title_s5d2470b5011b6_produtos_1_fornecedor   = jQuery(".modal-title", "#field_dialog_s5d2470b5011b6_produtos_1_fornecedor");
+
+            // move the dialog as a child of the root element, nested form breaks html ...
+            jQuery(document.body).append(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+
+            Admin.log('[s5d2470b5011b6_produtos_1_fornecedor|field_dialog] move dialog container as a document child');
+        }
+    }
+
+        // this function initialize the popup
+    // this can be only done this way has popup can be cascaded
+    function start_field_dialog_form_add_s5d2470b5011b6_produtos_1_fornecedor(link) {
+
+        // remove the html event
+        link.onclick = null;
+
+        initialize_popup_s5d2470b5011b6_produtos_1_fornecedor();
+
+        // add the jQuery event to the a element
+        jQuery(link)
+            .click(field_dialog_form_add_s5d2470b5011b6_produtos_1_fornecedor)
+            .trigger('click')
+        ;
+
+        return false;
+    }
+
+    if (field_dialog_s5d2470b5011b6_produtos_1_fornecedor) {
+        Admin.shared_setup(field_dialog_s5d2470b5011b6_produtos_1_fornecedor);
+    }
+
+    
+
+</script>
+<!-- / edit many association -->
+
+
+    
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class=" control-label" for="s5d2470b5011b6_produtos_1_valor">
+                                    Valor unitário
+                            </label><br>
+                                                                                    <input type="text" id="s5d2470b5011b6_produtos_1_valor" name="s5d2470b5011b6[produtos][1][valor]" class=" form-control">
+
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                            
+                                                                                                    <div class="row" style="margin-bottom: 10px;">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label required" for="s5d2470b5011b6_produtos_1_quantidade">
+                                    Quantidade
+                            </label><br>
+                                                                                    <input type="number" id="s5d2470b5011b6_produtos_1_quantidade" name="s5d2470b5011b6[produtos][1][quantidade]" required="required" class=" form-control" value="1">
+
+                                                        </div>
+                                                    </div>
+                                                                                                <div class="help-inline sonata-ba-field-error-messages"></div>
+                                                
+                                                                                    </div>
+                                    </div>
+                                </div>
+
+                            
+                                                
+        
+
+            
+                                    <span id="field_actions_s5d2470b5011b6_produtos">
+                    <a href="http://localhost:8080/flavis/projeto-php/web/app.php/app/produtosolicitacao/create?uniqid=s5d2470c8564bd&amp;code=app.admin.produto_solicitacao&amp;pcode=app.admin.orcamento_produto&amp;puniqid=s5d2470b5011b6" onclick="return start_field_retrieve_s5d2470b5011b6_produtos(this);" class="btn btn-success btn-sm sonata-ba-action" title="Adicionar novo">
+                        <i class="fa fa-plus-circle"></i>
+                        Adicionar novo
+                    </a>
+                </span>
+                
+                                
+
+
+
+<!-- edit one association -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+ $(".mask_telefone").unmask().mask("(99) 9999-9999");
+
+$(".select_telefone").change(function(){
+        var e = $(this).find('option:selected').attr('value')
+        if(e == "2"){
+            $(".mask_telefone").unmask().mask("(99) 9 9999-9999")
+        }
+        else{
+            $(".mask_telefone").unmask().mask("(99) 9999-9999")
+        }
+    });
+
+
+ $(".input_cep").unmask().mask("99999-999");
+
+
+            function limpa_formulário_cep() {
+                // Limpa valores do formulário de cep.
+                $("#rua").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#uf").val("");
+                $("#ibge").val("");
+            }
+            
+            //Quando o campo cep perde o foco.
+            $(".input_cep").blur(function() {
+
+                //Nova variável "cep" somente com dígitos.
+                var cep = $(this).val().replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if(validacep.test(cep)) {
+
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        $(".input_logradouro").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#uf").val("...");
+                        $("#ibge").val("...");
+
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $(".input_logradouro").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                                $("#ibge").val(dados.ibge);
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                limpa_formulário_cep();
+                                alert("CEP não encontrado.");
+                            }
+                        });
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                } //end if.
+                else {
+                    //cep sem valor, limpa formulário.
+                    limpa_formulário_cep();
+                }
+            });
+        });
+
+    // handle the add link
+    var field_add_s5d2470b5011b6_produtos = function(event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        var form = jQuery(this).closest('form');
+
+        // the ajax post
+        jQuery(form).ajaxSubmit({
+            url: '/flavis/projeto-php/web/app.php/core/append-form-field-element?code=app.admin.orcamento_produto&elementId=s5d2470b5011b6_produtos&uniqid=s5d2470b5011b6',
+            type: "POST",
+            dataType: 'html',
+            data: { _xml_http_request: true },
+            success: function(html) {
+                if (!html.length) {
+                    return;
+                }
+
+                jQuery('#field_container_s5d2470b5011b6_produtos').replaceWith(html); // replace the html
+
+                Admin.shared_setup(jQuery('#field_container_s5d2470b5011b6_produtos'));
+
+                if(jQuery('input[type="file"]', form).length > 0) {
+                    jQuery(form).attr('enctype', 'multipart/form-data');
+                    jQuery(form).attr('encoding', 'multipart/form-data');
+                }
+                jQuery('#sonata-ba-field-container-s5d2470b5011b6_produtos').trigger('sonata.add_element');
+                jQuery('#field_container_s5d2470b5011b6_produtos').trigger('sonata.add_element');
+            }
+        });
+
+        return false;
+    };
+
+    var field_widget_s5d2470b5011b6_produtos = false;
+
+    // this function initialize the popup
+    // this can be only done this way has popup can be cascaded
+    function start_field_retrieve_s5d2470b5011b6_produtos(link) {
+
+        link.onclick = null;
+
+        // initialize component
+        field_widget_s5d2470b5011b6_produtos = jQuery("#field_widget_s5d2470b5011b6_produtos");
+
+        // add the jQuery event to the a element
+        jQuery(link)
+            .click(field_add_s5d2470b5011b6_produtos)
+            .trigger('click')
+        ;
+
+        return false;
+    }
+</script>
+
+<!-- / edit one association -->
+
+
+                    </div>
+        </span></div>
+    
+
+    
+    
+
+    
+    
+
+     
+            
+                    </div>
+    </div>
+
+                                                                        </div>
+                </div>
+                            </div>
+        </div>
+        </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            
+                            </div>
+            
+                                    <input type="hidden" id="s5d2470b5011b6__token" name="s5d2470b5011b6[_token]" class=" form-control" value="wIZ9l8c8t9RV-eLUvPdRcTCxR00OVtU_1QiM6B3uE-w">
+
+
+                            <div class="well well-small form-actions">
+                                                                                                                                                <button class="btn btn-success" type="submit" name="btn_create_and_edit"><i class="fa fa-save"></i> Criar</button>
+                                                                                        <button type="submit" class="btn btn-success" name="btn_create_and_list"><i class="fa fa-save"></i> <i class="fa fa-list"></i> Criar e retornar para a lista</button>
+                                                        <button class="btn btn-success" type="submit" name="btn_create_and_create"><i class="fa fa-plus-circle"></i> Criar e adicionar outro</button>
+                                                                            </div>
+                    </form>
+    
+    
+
+
+</div>
+                    
+                                                </section>
+            </div>
+</div>
+
+
+<script>
+
+    $(document).ready(function () {
+
+        // Mostra só no dashboard
+        
+    });
+
+
+    //
+    //
+    // // Gráficos
+    //
+    // var randomScalingFactor = function() {
+    //     return Math.round(Math.random() * 100);
+    // };
+    //
+    // var config = {
+    //     type: 'pie',
+    //     data: {
+    //         datasets: [{
+    //             data: [
+    //                 randomScalingFactor(),
+    //                 randomScalingFactor(),
+    //                 randomScalingFactor(),
+    //                 randomScalingFactor(),
+    //                 randomScalingFactor(),
+    //             ],
+    //             backgroundColor: [
+    //                 window.chartColors.red,
+    //                 window.chartColors.orange,
+    //                 window.chartColors.yellow,
+    //                 window.chartColors.green,
+    //                 window.chartColors.blue,
+    //             ],
+    //             label: 'Dataset 1'
+    //         }],
+    //         labels: [
+    //             'Red',
+    //             'Orange',
+    //             'Yellow',
+    //             'Green',
+    //             'Blue'
+    //         ]
+    //     },
+    //     options: {
+    //         responsive: true
+    //     }
+    // };
+    //
+    // window.onload = function() {
+    //     var ctx = document.getElementById('chart-area').getContext('2d');
+    //     window.myPie = new Chart(ctx, config);
+    // };
+    //
+    // document.getElementById('randomizeData').addEventListener('click', function() {
+    //     config.data.datasets.forEach(function(dataset) {
+    //         dataset.data = dataset.data.map(function() {
+    //             return randomScalingFactor();
+    //         });
+    //     });
+    //
+    //     window.myPie.update();
+    // });
+    //
+    // var colorNames = Object.keys(window.chartColors);
+    // document.getElementById('addDataset').addEventListener('click', function() {
+    //     var newDataset = {
+    //         backgroundColor: [],
+    //         data: [],
+    //         label: 'New dataset ' + config.data.datasets.length,
+    //     };
+    //
+    //     for (var index = 0; index < config.data.labels.length; ++index) {
+    //         newDataset.data.push(randomScalingFactor());
+    //
+    //         var colorName = colorNames[index % colorNames.length];
+    //         var newColor = window.chartColors[colorName];
+    //         newDataset.backgroundColor.push(newColor);
+    //     }
+    //
+    //     config.data.datasets.push(newDataset);
+    //     window.myPie.update();
+    // });
+    //
+    // document.getElementById('removeDataset').addEventListener('click', function() {
+    //     config.data.datasets.splice(0, 1);
+    //     window.myPie.update();
+    // });
+
+</script>
+
+<script src="./erro-Funcao-Admin Criar-ItensParaOrcamento-20190709 0800_files/js"></script>
+
+
+
+<div class="bootstrap-datetimepicker-widget dropdown-menu bottom" style="display: none; position: absolute; top: 309px; bottom: auto; left: 838px; right: auto;"><div class="datepicker"><div class="datepicker-days" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">julho 2019</th><th class="next">›</th></tr><tr><th class="dow">dom</th><th class="dow">2ª</th><th class="dow">3ª</th><th class="dow">4ª</th><th class="dow">5ª</th><th class="dow">6ª</th><th class="dow">sáb</th></tr></thead><tbody><tr><td class="day old">30</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td></tr><tr><td class="day">7</td><td class="day">8</td><td class="day active today">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td></tr><tr><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td></tr><tr><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td></tr><tr><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day">31</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">jan</span><span class="month">fev</span><span class="month">mar</span><span class="month">abr</span><span class="month">mai</span><span class="month">jun</span><span class="month active">jul</span><span class="month">ago</span><span class="month">set</span><span class="month">out</span><span class="month">nov</span><span class="month">dez</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></div><div class="bootstrap-datetimepicker-widget dropdown-menu bottom" style="display: none; position: absolute; top: 383px; bottom: auto; left: 838px; right: auto;"><div class="datepicker"><div class="datepicker-days" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">julho 2019</th><th class="next">›</th></tr><tr><th class="dow">dom</th><th class="dow">2ª</th><th class="dow">3ª</th><th class="dow">4ª</th><th class="dow">5ª</th><th class="dow">6ª</th><th class="dow">sáb</th></tr></thead><tbody><tr><td class="day old">30</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td></tr><tr><td class="day">7</td><td class="day">8</td><td class="day active today">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td></tr><tr><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td></tr><tr><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td></tr><tr><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day">31</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">jan</span><span class="month">fev</span><span class="month">mar</span><span class="month">abr</span><span class="month">mai</span><span class="month">jun</span><span class="month active">jul</span><span class="month">ago</span><span class="month">set</span><span class="month">out</span><span class="month">nov</span><span class="month">dez</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></div><span role="status" aria-live="polite" class="select2-hidden-accessible">VALVULA DE CO2 ROTAREX - Cód. Fabricante: 68B04390030</span><span role="status" aria-live="polite" class="select2-hidden-accessible">Officer</span><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="left: 291px; width: 900px; top: 363.5px; bottom: auto; display: none;">   <div class="select2-search">       <label for="s2id_autogen1_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="" aria-activedescendant="select2-result-label-3">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1"></ul></div><div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"></div><div class="select2-drop select2-display-none select2-drop-auto-width select2-drop-active" style="left: 291px; top: 429px; bottom: auto; display: none; width: 900px;">   <div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen2_search" class="select2-offscreen">
+                                    Fornecedor
+                            </label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="" aria-activedescendant="select2-result-label-9">   </div>   <ul class="select2-results" role="listbox" id="select2-results-2"></ul></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span></body></html>

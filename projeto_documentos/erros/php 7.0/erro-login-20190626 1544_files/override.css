@@ -1,0 +1,120 @@
+.breadcrumb li.active span{
+    color: #ffffff;
+}
+
+.logo img{
+    max-width: 150px !important;
+}
+.login-logo, .register-logo{
+   font-size:12px !important;
+   margin-bottom: 0 !important;
+}
+
+img.admin-preview {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.skin-blue .main-header .navbar,.skin-blue .main-header .logo{
+    background-color: rgb(34, 45, 50) !important;
+}
+
+/*.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side{*/
+    /*background: #111111;*/
+/*}*/
+
+.login-page, .register-page{
+    background-color: #111 !important;
+}
+.login-logo img{
+    height: 60px !important;
+}
+.skin-blue .sidebar-menu>li>a:hover, .skin-blue .sidebar-menu>li.active>a{
+    border-left-color: #223F56 !important;
+}
+
+.counter_number{
+    text-align: right;
+    font-style: italic;
+}
+.text_number{
+    font-weight: bold;
+    color: #00ca6d;
+    font-size: 16px;
+}
+.text_number_finish{
+    color: #f00000;
+}
+.maximize_textarea{
+    display: none;
+}
+.with_counter > a{
+    color: #00ca6d;
+    font-size: 15px;
+}
+
+/* Cores customizadas */
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+    background: rgb(255, 140, 52) !important;
+}
+.sonata-action-element{
+    color: rgb(255, 140, 52) !important;
+}
+
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body{
+    background: rgb(255, 140, 52) !important;
+}
+.box.box-primary,.nav-tabs-custom>.nav-tabs>li.active{
+    border-top-color:rgb(255, 140, 52) !important;
+}
+.bg-light-blue, .label-primary, .modal-primary .modal-body{
+    background: rgb(255, 140, 52) !important;
+}
+
+.login-box-body .btn-primary{
+    background:rgb(255, 140, 52) !important;
+    border: #fff;
+}
+.login-box-body a{
+    color: rgb(255, 140, 52) !important;
+}
+.icheckbox_square-blue:hover{
+    border: 1px solid rgb(255, 140, 52) !important;
+}
+
+/* Cores customizadas */
+
+.login-box-body, .register-box-body{
+    border: 1px solid #eee !important;
+}
+
+/* Many to One Funcion */
+.container-row-form-custom-many-to-many{
+    margin-bottom: 15px !important;
+}
+.container-row-form-custom-many-to-many .panel-title a{
+    color: #111111 !important;
+}
+.container-row-form-custom-many-to-many input,
+.container-row-form-custom-many-to-many textarea{
+    width: 100% !important;
+}
+
+.container-row-form-custom-many-to-many .sonata-ba-action{
+    margin-top: 5px;
+}
+.required:after{
+    color: #FF0000 !important;
+}
+.help-block{
+    font-style: italic !important;
+    font-size: 12px;
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side{
+    background-color:#000 !important;
+}
+.skin-blue .main-header .navbar, .skin-blue .main-header .logo{
+    background-color:#000 !important;
+}

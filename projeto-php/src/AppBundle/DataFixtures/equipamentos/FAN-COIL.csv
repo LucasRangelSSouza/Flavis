@@ -1,0 +1,31 @@
+FAN COIL;Alinhamento das polias/acoplamento;MENSAL
+FAN COIL;Bandejas (superior e inferior), dreno e ralo;MENSAL
+FAN COIL;Componentes do quadro elétrico de força e comando;MENSAL
+FAN COIL;Conjunto de ventilação;MENSAL
+FAN COIL;Estado do isolamento termo-acústico;MENSAL
+FAN COIL;Filtro de ar de retorno e tomada de ar exterior;MENSAL
+FAN COIL;Gabinete interno e externo;MENSAL
+FAN COIL;Rolamentos, eixos e mancais dos motores e ventiladores;MENSAL
+FAN COIL;Ruídos e/ou vibrações anormais;MENSAL
+FAN COIL;Sujeira, odores e objetos inadequados e casa de máquinas;MENSAL
+FAN COIL;Pressão de entrada da água gelada;MENSAL
+FAN COIL;Pressão de saída da água gelada;MENSAL
+FAN COIL;Temperaturas de entrada da água;MENSAL
+FAN COIL;Temperaturas de saída da água;MENSAL
+FAN COIL;Temperaturas de insuflamento ;MENSAL
+FAN COIL;Temperaturas de retorno;MENSAL
+FAN COIL;Temperaturas do ambiente ;MENSAL
+FAN COIL;Temperaturas do ambiente externo;MENSAL
+FAN COIL;Tensão elétrica do motor;MENSAL
+FAN COIL;Corrente elétrica do motor;MENSAL
+FAN COIL;Tensão e estado das correias;MENSAL
+FAN COIL;Umidostato e resistência de desumificação relé / termostato;MENSAL
+FAN COIL;Vazamento de água na sepentina e tubulação hidráulica;MENSAL
+FAN COIL;Vedação das tampas do gabinete do equipamento / duto;MENSAL
+FAN COIL;Verificar o funcionamento da válvula de 02 OU 03 vias;MENSAL
+FAN COIL;Manobrar e lubrificar os registros hidráulicos;TRIMESTRAL
+FAN COIL;Focos de corrossão e estado da pintura;TRIMESTRAL
+FAN COIL;Serpentina / rotores lavar com jatos d'água alta pressão (jatear);SEMESTRAL
+FAN COIL;Vazão de água gelada e ar;ANUAL
+FAN COIL;Resistência ohmica entre fases do motor elétrico;ANUAL
+FAN COIL;Acionamento dos damper's e spliter's dos dutos / colarinhos;ANUAL

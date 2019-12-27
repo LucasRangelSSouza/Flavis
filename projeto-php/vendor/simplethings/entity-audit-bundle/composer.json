@@ -1,0 +1,24 @@
+{
+    "name": "simplethings/entity-audit-bundle",
+    "license": "New BSD",
+    "keywords": ["Persistence", "Database", "Audit"],
+    "description": "Audit for Doctrine Entities",
+    "require": {
+        "doctrine/orm": "~2.3,>=2.3.1,<2.5",
+        "doctrine/dbal": "<2.5"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "~2.3",
+        "phpunit/phpunit": "~4.0",
+        "gedmo/doctrine-extensions": "~2.2"
+    },
+    "autoload": {
+        "psr-0": {"SimpleThings\\EntityAudit": "src/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        }
+    }
+}
+

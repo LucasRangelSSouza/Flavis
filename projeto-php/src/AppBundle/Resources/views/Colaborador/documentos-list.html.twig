@@ -1,0 +1,9 @@
+{% extends 'SonataAdminBundle:CRUD:base_show_field.html.twig' %}
+
+{% block field%}
+    <ul class="list-files-show-field">
+        {% for key, val in value %}
+            <li>{{ val.tipoDocumento.titulo }} - <a target="_blank" href="/{{ val.pathFile }}">{{ val.titulo }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

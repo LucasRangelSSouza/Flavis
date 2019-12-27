@@ -1,0 +1,12 @@
+{% if cliente_model.clienteTemEquipamento(object) %}
+
+<a target="_blank" class="btn btn-sm btn-primary view_link"
+   href="{{ admin.generateObjectUrl('etiqueta', object) }}">
+    <i class="fa fa-print" aria-hidden="true"></i> Etiquetas</a>
+
+{% else %}
+
+    <a target="_blank" class="btn btn-sm btn-default view_link disabled"
+       href="#"><i class="fa fa-close" aria-hidden="true"></i> Etiquetas</a>
+
+{% endif %}

@@ -1,0 +1,11 @@
+{% extends 'SonataAdminBundle:CRUD:base_show_field.html.twig' %}
+
+{% block field%}
+
+    {% for execucao in object.execucoesProcedimentos %}
+
+        {{ execucao.procedimentoPmoc.titulo.titulo }}<br/>
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,4 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+{% block field%}
+    <span class="label label-warning"> Esta OS é derivada de outra. <a href="/app/ordemservico/{{ object.osOriginal.id }}/show">Clique aqui</a> para visualizar a OS principal</span>
+{% endblock %}

@@ -1,0 +1,70 @@
+AppBundle\Entity\Fotografo:
+    properties:
+        nome:
+            - NotNull: ~
+            - Length:
+                min: 2
+        email:
+            - NotNull: ~
+            - Email:
+                message: O email {{ value }} não é um e-mail válido.
+                checkMX: true
+        avatar:
+            - Image:
+                minWidth: 80
+                maxWidth: 3040
+                minHeight: 80
+                maxHeight: 3040
+
+AppBundle\Entity\FotoTorneio:
+    constraints:
+        - AppBundle\Validator\Constraints\TemaAvailable: ~
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [torneio, foto]
+            errorPath: foto
+            message: 'This photo is already participating from that tournament.'
+
+AppBundle\Entity\ConfiguracaoTorneio:
+    constraints:
+        - AppBundle\Validator\Constraints\ConfiguracaoTorneioActive: ~
+
+AppBundle\Entity\Voto:
+    constraints:
+        - AppBundle\Validator\Constraints\MyTorneio: ~
+        - AppBundle\Validator\Constraints\UniqueVoteByTorneio: ~
+        - AppBundle\Validator\Constraints\NonVoteInYourself: ~
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: [fotografo, fotoTorneio]
+            errorPath: fotoTorneio
+            message: 'You already voted in this photo.'
+    properties:
+        fotografo:
+            - AppBundle\Validator\Constraints\FotografoLogged: ~
+
+AppBundle\Entity\Foto:
+    properties:
+        fotografo:
+            - AppBundle\Validator\Constraints\FotografoLogged: ~
+
+AppBundle\Entity\Denuncia:
+    properties:
+        entity:
+            - NotNull: ~
+        identifier:
+            - NotNull: ~
+        mensagem:
+            - NotNull: ~
+
+AppBundle\Entity\Tema:
+    properties:
+        iconePath:
+            - Image:
+                mimeTypes: "image/png"
+                mimeTypesMessage: "Please, give me a png file."
+
+AppBundle\Entity\IOSDevice:
+    properties:
+        fotografo:
+            - AppBundle\Validator\Constraints\FotografoLogged: ~
+        deviceToken:
+            - NotNull: ~

@@ -1,0 +1,1014 @@
+[administrator@flavis ~]$ sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+Obtendo https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+aviso: /var/tmp/rpm-tmp.frmjK9: Cabeçalho V3 RSA/SHA256 Signature, ID da chave 352c64e5: NOKEY
+Preparando...                         ################################# [100%]
+        o pacote epel-release-7-11.noarch já está instalado
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+Obtendo https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+aviso: /var/tmp/rpm-tmp.DyKK3P: Cabeçalho V4 RSA/SHA1 Signature, ID da chave 62e74ca5: NOKEY
+Preparando...                         ################################# [100%]
+Updating / installing...
+   1:webtatic-release-7-3             ################################# [100%]
+[administrator@flavis ~]$
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[administrator@flavis ~]$ sudo yum install php70w php70w-fpm
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+epel/x86_64/metalink                                                         | 3.3 kB  00:00:00
+ * base: centos.xpg.com.br
+ * epel: mirror.globo.com
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+ * webtatic: us-east.repo.webtatic.com
+epel                                                                         | 5.3 kB  00:00:00
+webtatic                                                                     | 3.6 kB  00:00:00
+(1/5): epel/x86_64/group_gz                                                  |  88 kB  00:00:01
+(2/5): epel/x86_64/updateinfo                                                | 1.0 MB  00:00:00
+(3/5): webtatic/x86_64/group_gz                                              |  448 B  00:00:00
+(4/5): epel/x86_64/primary_db                                                | 6.8 MB  00:00:01
+(5/5): webtatic/x86_64/primary_db                                            | 220 kB  00:00:02
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote php70w.x86_64 0:7.0.33-1.w7 será instalado
+--> Processando dependência: php70w-common(x86-64) = 7.0.33-1.w7 para o pacote: php70w-7.0.33-1.w7.x86_64
+--> Processando dependência: php70w-cli(x86-64) = 7.0.33-1.w7 para o pacote: php70w-7.0.33-1.w7.x86_64
+--> Processando dependência: php70w-cli = 7.0.33-1.w7 para o pacote: php70w-7.0.33-1.w7.x86_64
+---> O pacote php70w-fpm.x86_64 0:7.0.33-1.w7 será instalado
+--> Executando verificação da transação
+---> O pacote php70w-cli.x86_64 0:7.0.33-1.w7 será instalado
+---> O pacote php70w-common.x86_64 0:7.0.33-1.w7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                   Arq.               Versão                     Repo                  Tam.
+====================================================================================================
+Instalando:
+ php70w                    x86_64             7.0.33-1.w7                webtatic             2.8 M
+ php70w-fpm                x86_64             7.0.33-1.w7                webtatic             1.5 M
+Instalando para as dependências:
+ php70w-cli                x86_64             7.0.33-1.w7                webtatic             2.9 M
+ php70w-common             x86_64             7.0.33-1.w7                webtatic             1.2 M
+
+Resumo da transação
+====================================================================================================
+Instalar  2 Packages (+2 Dependent packages)
+
+Tamanho total do download: 8.3 M
+Tamanho depois de instalado: 31 M
+Is this ok [y/d/N]: y
+Downloading packages:
+aviso: /var/cache/yum/x86_64/7/webtatic/packages/php70w-common-7.0.33-1.w7.x86_64.rpm: Cabeçalho V4 RSA/SHA1 Signature, ID da chave 62e74ca5: NOKEY
+A chave pública para o php70w-common-7.0.33-1.w7.x86_64.rpm não está instalada
+(1/4): php70w-common-7.0.33-1.w7.x86_64.rpm                                  | 1.2 MB  00:00:02
+(2/4): php70w-fpm-7.0.33-1.w7.x86_64.rpm                                     | 1.5 MB  00:00:02
+(3/4): php70w-7.0.33-1.w7.x86_64.rpm                                         | 2.8 MB  00:00:03
+(4/4): php70w-cli-7.0.33-1.w7.x86_64.rpm                                     | 2.9 MB  00:00:05
+----------------------------------------------------------------------------------------------------
+Total                                                               1.6 MB/s | 8.3 MB  00:00:05
+Recuperando chave de file:///etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el7
+Importing GPG key 0x62E74CA5:
+ Userid     : "Webtatic EL7 <rpms@webtatic.com>"
+ Fingerprint: 830d b159 6d9b 9b01 99dc 24a3 e87f d236 62e7 4ca5
+ Package    : webtatic-release-7-3.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-webtatic-el7
+Correto? [s/N]:s
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Aviso: o RPMDB foi alterado de fora do yum.
+  Instalando   : php70w-common-7.0.33-1.w7.x86_64                                               1/4
+  Instalando   : php70w-cli-7.0.33-1.w7.x86_64                                                  2/4
+  Instalando   : php70w-7.0.33-1.w7.x86_64                                                      3/4
+  Instalando   : php70w-fpm-7.0.33-1.w7.x86_64                                                  4/4
+  Verifying    : php70w-cli-7.0.33-1.w7.x86_64                                                  1/4
+  Verifying    : php70w-common-7.0.33-1.w7.x86_64                                               2/4
+  Verifying    : php70w-7.0.33-1.w7.x86_64                                                      3/4
+  Verifying    : php70w-fpm-7.0.33-1.w7.x86_64                                                  4/4
+
+Instalados:
+  php70w.x86_64 0:7.0.33-1.w7                    php70w-fpm.x86_64 0:7.0.33-1.w7
+
+Dependência(s) instalada(s):
+  php70w-cli.x86_64 0:7.0.33-1.w7                 php70w-common.x86_64 0:7.0.33-1.w7
+
+Concluído!
+[administrator@flavis ~]$
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[administrator@flavis ~]$ php -v
+PHP 7.0.33 (cli) (built: Dec  6 2018 22:30:44) ( NTS )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ php -m
+Last login: Mon Sep 30 21:58:35 2019 from 187.32.49.173
+[administrator@flavis ~]$ php -m
+[PHP Modules]
+bz2
+calendar
+Core
+ctype
+curl
+date
+exif
+fileinfo
+filter
+ftp
+gettext
+gmp
+hash
+iconv
+json
+libxml
+openssl
+pcntl
+pcre
+Phar
+readline
+Reflection
+session
+shmop
+SimpleXML
+sockets
+SPL
+standard
+tokenizer
+xml
+zip
+zlib
+
+[Zend Modules]
+[administrator@flavis ~]$ apachectl restart
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to manage system services or units.
+Authenticating as: Cloud User (administrator)
+Password:
+==== AUTHENTICATION COMPLETE ===
+[administrator@flavis ~]$
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+#apache
+[sti@localhost html]$sudo systemctl restart httpd
+#php-fpm
+[sti@localhost html]$sudo systemctl restart php-fpm
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+[sti@localhost html]$ 
+Last login: Wed Oct  2 10:55:29 2019
+[administrator@flavis ~]$ php -m
+[PHP Modules]
+bz2
+calendar
+Core
+ctype
+curl
+date
+exif
+fileinfo
+filter
+ftp
+gettext
+gmp
+hash
+iconv
+json
+libxml
+openssl
+pcntl
+pcre
+Phar
+readline
+Reflection
+session
+shmop
+SimpleXML
+sockets
+SPL
+standard
+tokenizer
+xml
+zip
+zlib
+
+[Zend Modules]
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ php -v
+PHP 7.0.33 (cli) (built: Dec  6 2018 22:30:44) ( NTS )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo yum search php7
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: mirror.globo.com
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+======================= N/S matched: php7 ======================
+mod_php71w.x86_64 : PHP module for the Apache HTTP Server
+mod_php72w.x86_64 : PHP module for the Apache HTTP Server
+php70w.x86_64 : PHP scripting language for creating dynamic web
+              : sites
+php70w-bcmath.x86_64 : A module for PHP applications for using t
+                     : bcmath library
+php70w-cli.x86_64 : Command-line interface for PHP
+php70w-common.x86_64 : Common files for PHP
+php70w-dba.x86_64 : A database abstraction layer module for PHP
+                  : applications
+php70w-devel.x86_64 : Files needed for building PHP extensions
+php70w-embedded.x86_64 : PHP library for embedding in applicatio
+php70w-enchant.x86_64 : Enchant spelling extension for PHP
+                      : applications
+php70w-fpm.x86_64 : PHP FastCGI Process Manager
+php70w-gd.x86_64 : A module for PHP applications for using the g
+                 : graphics library
+php70w-imap.x86_64 : A module for PHP applications that use IMAP
+php70w-interbase.x86_64 : A module for PHP applications that use
+                        : Interbase/Firebird databases
+php70w-intl.x86_64 : Internationalization extension for PHP
+                   : applications
+php70w-ldap.x86_64 : A module for PHP applications that use LDAP
+php70w-mbstring.x86_64 : A module for PHP applications which nee
+                       : multi-byte string handling
+php70w-mcrypt.x86_64 : Standard PHP module provides mcrypt libra
+                     : support
+php70w-mysql.x86_64 : A module for PHP applications that use MyS
+                    : databases
+php70w-mysqlnd.x86_64 : A module for PHP applications that use
+                      : MySQL databases
+php70w-odbc.x86_64 : A module for PHP applications that use ODBC
+                   : databases
+php70w-opcache.x86_64 : An opcode cache Zend extension
+php70w-pdo.x86_64 : A database access abstraction module for PHP
+                  : applications
+php70w-pdo_dblib.x86_64 : MSSQL database module for PHP
+php70w-pear.noarch : PHP Extension and Application Repository
+                   : framework
+php70w-pecl-apcu.x86_64 : APCu - APC User Cache
+php70w-pecl-apcu-devel.x86_64 : APCu developer files (header)
+php70w-pecl-geoip.x86_64 : Extension to map IP addresses to
+                         : geographic places
+php70w-pecl-igbinary.x86_64 : Replacement for the standard PHP
+                            : serializer
+php70w-pecl-igbinary-devel.x86_64 : Igbinary developer files
+                                  : (header)
+php70w-pecl-imagick.x86_64 : Provides a wrapper to the ImageMagi
+                           : library
+php70w-pecl-imagick-devel.x86_64 : Imagick developer files
+                                 : (header)
+php70w-pecl-memcached.x86_64 : Extension to work with the
+                             : Memcached caching daemon
+php70w-pecl-mongodb.x86_64 : PECL package MongoDB driver
+php70w-pecl-redis.x86_64 : Extension for communicating with the
+                         : Redis key-value store
+php70w-pecl-xdebug.x86_64 : PECL package for debugging PHP scrip
+php70w-pgsql.x86_64 : A PostgreSQL database module for PHP
+php70w-phpdbg.x86_64 : Interactive PHP debugger
+php70w-process.x86_64 : Modules for PHP script using system
+                      : process interfaces
+php70w-pspell.x86_64 : A module for PHP applications for using
+                     : pspell interfaces
+php70w-recode.x86_64 : A module for PHP applications for using t
+                     : recode library
+php70w-snmp.x86_64 : A module for PHP applications that query
+                   : SNMP-managed devices
+php70w-soap.x86_64 : A module for PHP applications that use the
+                   : SOAP protocol
+php70w-tidy.x86_64 : Standard PHP module provides tidy library
+                   : support
+php70w-xml.x86_64 : A module for PHP applications which use XML
+php70w-xmlrpc.x86_64 : A module for PHP applications which use t
+                     : XML-RPC protocol
+php71w-bcmath.x86_64 : A module for PHP applications for using t
+                     : bcmath library
+php71w-cli.x86_64 : Command-line interface for PHP
+php71w-common.x86_64 : Common files for PHP
+php71w-dba.x86_64 : A database abstraction layer module for PHP
+                  : applications
+php71w-devel.x86_64 : Files needed for building PHP extensions
+php71w-embedded.x86_64 : PHP library for embedding in applicatio
+php71w-enchant.x86_64 : Enchant spelling extension for PHP
+                      : applications
+php71w-fpm.x86_64 : PHP FastCGI Process Manager
+php71w-gd.x86_64 : A module for PHP applications for using the g
+                 : graphics library
+php71w-imap.x86_64 : A module for PHP applications that use IMAP
+php71w-interbase.x86_64 : A module for PHP applications that use
+                        : Interbase/Firebird databases
+php71w-intl.x86_64 : Internationalization extension for PHP
+                   : applications
+php71w-ldap.x86_64 : A module for PHP applications that use LDAP
+php71w-mbstring.x86_64 : A module for PHP applications which nee
+                       : multi-byte string handling
+php71w-mcrypt.x86_64 : Standard PHP module provides mcrypt libra
+                     : support
+php71w-mysql.x86_64 : A module for PHP applications that use MyS
+                    : databases
+php71w-mysqlnd.x86_64 : A module for PHP applications that use
+                      : MySQL databases
+php71w-odbc.x86_64 : A module for PHP applications that use ODBC
+                   : databases
+php71w-opcache.x86_64 : An opcode cache Zend extension
+php71w-pdo.x86_64 : A database access abstraction module for PHP
+                  : applications
+php71w-pdo_dblib.x86_64 : MSSQL database module for PHP
+php71w-pear.noarch : PHP Extension and Application Repository
+                   : framework
+php71w-pecl-apcu.x86_64 : APCu - APC User Cache
+php71w-pecl-apcu-devel.x86_64 : APCu developer files (header)
+php71w-pecl-geoip.x86_64 : Extension to map IP addresses to
+                         : geographic places
+php71w-pecl-igbinary.x86_64 : Replacement for the standard PHP
+                            : serializer
+php71w-pecl-igbinary-devel.x86_64 : Igbinary developer files
+                                  : (header)
+php71w-pecl-imagick.x86_64 : Provides a wrapper to the ImageMagi
+                           : library
+php71w-pecl-imagick-devel.x86_64 : Imagick developer files
+                                 : (header)
+php71w-pecl-memcached.x86_64 : Extension to work with the
+                             : Memcached caching daemon
+php71w-pecl-mongodb.x86_64 : PECL package MongoDB driver
+php71w-pecl-redis.x86_64 : Extension for communicating with the
+                         : Redis key-value store
+php71w-pecl-xdebug.x86_64 : PECL package for debugging PHP scrip
+php71w-pgsql.x86_64 : A PostgreSQL database module for PHP
+php71w-phpdbg.x86_64 : Interactive PHP debugger
+php71w-process.x86_64 : Modules for PHP script using system
+                      : process interfaces
+php71w-pspell.x86_64 : A module for PHP applications for using
+                     : pspell interfaces
+php71w-recode.x86_64 : A module for PHP applications for using t
+                     : recode library
+php71w-snmp.x86_64 : A module for PHP applications that query
+                   : SNMP-managed devices
+php71w-soap.x86_64 : A module for PHP applications that use the
+                   : SOAP protocol
+php71w-tidy.x86_64 : Standard PHP module provides tidy library
+                   : support
+php71w-xml.x86_64 : A module for PHP applications which use XML
+php71w-xmlrpc.x86_64 : A module for PHP applications which use t
+                     : XML-RPC protocol
+php72w-bcmath.x86_64 : A module for PHP applications for using t
+                     : bcmath library
+php72w-cli.x86_64 : Command-line interface for PHP
+php72w-common.x86_64 : Common files for PHP
+php72w-dba.x86_64 : A database abstraction layer module for PHP
+                  : applications
+php72w-devel.x86_64 : Files needed for building PHP extensions
+php72w-embedded.x86_64 : PHP library for embedding in applicatio
+php72w-enchant.x86_64 : Enchant spelling extension for PHP
+                      : applications
+php72w-fpm.x86_64 : PHP FastCGI Process Manager
+php72w-gd.x86_64 : A module for PHP applications for using the g
+                 : graphics library
+php72w-imap.x86_64 : A module for PHP applications that use IMAP
+php72w-interbase.x86_64 : A module for PHP applications that use
+                        : Interbase/Firebird databases
+php72w-intl.x86_64 : Internationalization extension for PHP
+                   : applications
+php72w-ldap.x86_64 : A module for PHP applications that use LDAP
+php72w-mbstring.x86_64 : A module for PHP applications which nee
+                       : multi-byte string handling
+php72w-mysql.x86_64 : A module for PHP applications that use MyS
+                    : databases
+php72w-mysqlnd.x86_64 : A module for PHP applications that use
+                      : MySQL databases
+php72w-odbc.x86_64 : A module for PHP applications that use ODBC
+                   : databases
+php72w-opcache.x86_64 : An opcode cache Zend extension
+php72w-pdo.x86_64 : A database access abstraction module for PHP
+                  : applications
+php72w-pdo_dblib.x86_64 : MSSQL database module for PHP
+php72w-pear.noarch : PHP Extension and Application Repository
+                   : framework
+php72w-pecl-apcu.x86_64 : APCu - APC User Cache
+php72w-pecl-apcu-devel.x86_64 : APCu developer files (header)
+php72w-pecl-geoip.x86_64 : Extension to map IP addresses to
+                         : geographic places
+php72w-pecl-igbinary.x86_64 : Replacement for the standard PHP
+                            : serializer
+php72w-pecl-igbinary-devel.x86_64 : Igbinary developer files
+                                  : (header)
+php72w-pecl-imagick.x86_64 : Provides a wrapper to the ImageMagi
+                           : library
+php72w-pecl-imagick-devel.x86_64 : Imagick developer files
+                                 : (header)
+php72w-pecl-libsodium.x86_64 : Wrapper for the Sodium
+                             : cryptographic library
+php72w-pecl-memcached.x86_64 : Extension to work with the
+                             : Memcached caching daemon
+php72w-pecl-mongodb.x86_64 : PECL package MongoDB driver
+php72w-pecl-redis.x86_64 : Extension for communicating with the
+                         : Redis key-value store
+php72w-pecl-xdebug.x86_64 : PECL package for debugging PHP scrip
+php72w-pgsql.x86_64 : A PostgreSQL database module for PHP
+php72w-phpdbg.x86_64 : Interactive PHP debugger
+php72w-process.x86_64 : Modules for PHP script using system
+                      : process interfaces
+php72w-pspell.x86_64 : A module for PHP applications for using
+                     : pspell interfaces
+php72w-recode.x86_64 : A module for PHP applications for using t
+                     : recode library
+php72w-snmp.x86_64 : A module for PHP applications that query
+                   : SNMP-managed devices
+php72w-soap.x86_64 : A module for PHP applications that use the
+                   : SOAP protocol
+php72w-sodium.x86_64 : Wrapper for the Sodium cryptographic
+                     : library
+php72w-tidy.x86_64 : Standard PHP module provides tidy library
+                   : support
+php72w-xml.x86_64 : A module for PHP applications which use XML
+php72w-xmlrpc.x86_64 : A module for PHP applications which use t
+                     : XML-RPC protocol
+
+  Nome e sumário correspondem only, use "search all" para tudo.
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+Last login: Wed Oct  2 11:12:26 2019 from 177.107.32.46
+[administrator@flavis ~]$ sudo yum install php70-intl php70-mbstring php70-gd php70-pecl-apcu php70-process php70-common
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+epel/x86_64/metalink                    | 3.8 kB     00:00
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+base                                    | 3.6 kB     00:00
+epel                                    | 5.3 kB     00:00
+extras                                  | 2.9 kB     00:00
+pgdg11                                  | 3.6 kB     00:00
+pgdg12                                  | 3.6 kB     00:00
+pgdg94                                  | 3.6 kB     00:00
+pgdg95                                  | 3.6 kB     00:00
+pgdg96                                  | 3.6 kB     00:00
+updates                                 | 2.9 kB     00:00
+webtatic                                | 3.6 kB     00:00
+(1/6): epel/x86_64/updateinfo             | 1.0 MB   00:02
+(2/6): epel/x86_64/primary_db             | 6.8 MB   00:02
+(3/6): pgdg96/7/x86_64/primary_db         | 384 kB   00:02
+(4/6): pgdg11/7/x86_64/primary_db         | 327 kB   00:03
+(5/6): pgdg95/7/x86_64/primary_db         | 373 kB   00:03
+(6/6): pgdg94/7/x86_64/primary_db         | 355 kB   00:03
+Nenhum pacote php70-intl disponível.
+Nenhum pacote php70-mbstring disponível.
+Nenhum pacote php70-gd disponível.
+Nenhum pacote php70-pecl-apcu disponível.
+Nenhum pacote php70-process disponível.
+Nenhum pacote php70-common disponível.
+Error: Nada a ser feito
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo yum install php70w-intl php70w-mbstring php70w-gd php70w-pecl-apcu php70w-process php70w-common
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+O pacote php70w-common-7.0.33-1.w7.x86_64 já está instalado em sua última versão
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote php70w-gd.x86_64 0:7.0.33-1.w7 será instalado
+---> O pacote php70w-intl.x86_64 0:7.0.33-1.w7 será instalado
+---> O pacote php70w-mbstring.x86_64 0:7.0.33-1.w7 será instalado
+---> O pacote php70w-pecl-apcu.x86_64 0:5.1.9-1.w7 será instalado
+--> Processando dependência: /usr/bin/pecl para o pacote: php70w-pecl-apcu-5.1.9-1.w7.x86_64
+--> Processando dependência: /usr/bin/pecl para o pacote: php70w-pecl-apcu-5.1.9-1.w7.x86_64
+---> O pacote php70w-process.x86_64 0:7.0.33-1.w7 será instalado
+--> Executando verificação da transação
+---> O pacote php70w-pear.noarch 1:1.10.4-1.w7 será instalado
+--> Processando dependência: php70w-xml para o pacote: 1:php70w-pear-1.10.4-1.w7.noarch
+--> Executando verificação da transação
+---> O pacote php70w-xml.x86_64 0:7.0.33-1.w7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+===============================================================
+ Package            Arq.     Versão           Repo        Tam.
+===============================================================
+Instalando:
+ php70w-gd          x86_64   7.0.33-1.w7      webtatic   135 k
+ php70w-intl        x86_64   7.0.33-1.w7      webtatic   182 k
+ php70w-mbstring    x86_64   7.0.33-1.w7      webtatic   544 k
+ php70w-pecl-apcu   x86_64   5.1.9-1.w7       webtatic    79 k
+ php70w-process     x86_64   7.0.33-1.w7      webtatic    43 k
+Instalando para as dependências:
+ php70w-pear        noarch   1:1.10.4-1.w7    webtatic   340 k
+ php70w-xml         x86_64   7.0.33-1.w7      webtatic   131 k
+
+Resumo da transação
+===============================================================
+Instalar  5 Packages (+2 Dependent packages)
+
+Tamanho total do download: 1.4 M
+Tamanho depois de instalado: 7.5 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/7): php70w-gd-7.0.33-1.w7.x86_64.rpm   | 135 kB   00:01
+(2/7): php70w-pecl-apcu-5.1.9-1.w7.x86_64 |  79 kB   00:00
+(3/7): php70w-mbstring-7.0.33-1.w7.x86_64 | 544 kB   00:01
+(4/7): php70w-process-7.0.33-1.w7.x86_64. |  43 kB   00:00
+(5/7): php70w-intl-7.0.33-1.w7.x86_64.rpm | 182 kB   00:01
+(6/7): php70w-xml-7.0.33-1.w7.x86_64.rpm  | 131 kB   00:00
+(7/7): php70w-pear-1.10.4-1.w7.noarch.rpm | 340 kB   00:02
+---------------------------------------------------------------
+Total                             640 kB/s | 1.4 MB  00:02
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : php70w-process-7.0.33-1.w7.x86_64         1/7
+  Instalando   : php70w-xml-7.0.33-1.w7.x86_64             2/7
+  Instalando   : 1:php70w-pear-1.10.4-1.w7.noarch          3/7
+  Instalando   : php70w-pecl-apcu-5.1.9-1.w7.x86_64        4/7
+  Instalando   : php70w-mbstring-7.0.33-1.w7.x86_64        5/7
+  Instalando   : php70w-intl-7.0.33-1.w7.x86_64            6/7
+  Instalando   : php70w-gd-7.0.33-1.w7.x86_64              7/7
+  Verifying    : php70w-xml-7.0.33-1.w7.x86_64             1/7
+  Verifying    : php70w-process-7.0.33-1.w7.x86_64         2/7
+  Verifying    : php70w-gd-7.0.33-1.w7.x86_64              3/7
+  Verifying    : php70w-intl-7.0.33-1.w7.x86_64            4/7
+  Verifying    : 1:php70w-pear-1.10.4-1.w7.noarch          5/7
+  Verifying    : php70w-mbstring-7.0.33-1.w7.x86_64        6/7
+  Verifying    : php70w-pecl-apcu-5.1.9-1.w7.x86_64        7/7
+
+Instalados:
+  php70w-gd.x86_64 0:7.0.33-1.w7
+  php70w-intl.x86_64 0:7.0.33-1.w7
+  php70w-mbstring.x86_64 0:7.0.33-1.w7
+  php70w-pecl-apcu.x86_64 0:5.1.9-1.w7
+  php70w-process.x86_64 0:7.0.33-1.w7
+
+Dependência(s) instalada(s):
+  php70w-pear.noarch 1:1.10.4-1.w7
+  php70w-xml.x86_64 0:7.0.33-1.w7
+
+Concluído!
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo yum install php70w-pdo
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote php70w-pdo.x86_64 0:7.0.33-1.w7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                 Arq.                Versão                     Repo                   Tam.
+====================================================================================================
+Instalando:
+ php70w-pdo              x86_64              7.0.33-1.w7                webtatic               93 k
+
+Resumo da transação
+====================================================================================================
+Instalar  1 Package
+
+Tamanho total do download: 93 k
+Tamanho depois de instalado: 382 k
+Is this ok [y/d/N]: y
+Downloading packages:
+php70w-pdo-7.0.33-1.w7.x86_64.rpm                                            |  93 kB  00:00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : php70w-pdo-7.0.33-1.w7.x86_64                                                  1/1
+  Verifying    : php70w-pdo-7.0.33-1.w7.x86_64                                                  1/1
+
+Instalados:
+  php70w-pdo.x86_64 0:7.0.33-1.w7
+
+Concluído!
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ php -m
+[PHP Modules]
+apcu = php70w-pecl-apcu
+bz2
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+fileinfo
+filter
+ftp
+gd = php70w-gd
+gettext
+gmp
+hash
+iconv
+intl = php70w-intl
+json
+libxml
+mbstring = php70w-mbstring
+openssl = php70w-common
+ = php71w-pdo_dblib
+pcntl
+pcre
+PDO = php70w-pdo
+Phar
+posix = php70w-process
+readline
+Reflection
+session
+shmop
+SimpleXML
+sockets
+SPL
+standard
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+wddx
+xml
+xmlreader
+xmlwriter
+xsl
+zip
+zlib
+
+[Zend Modules]
+
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ curl -sS https://getcomposer.org/installer | php
+All settings correct for using Composer
+Downloading...
+
+Composer (version 1.9.0) successfully installed to: /home/administrator/composer.phar
+Use it: php composer.phar
+
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo mv composer.phar /usr/bin/composer
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo chmod +x /usr/bin/composer
+[administrator@flavis ~]$
+[administrator@flavis ~]$ cd /var/www
+[administrator@flavis www]$ sudo git clone https://github.com/laravel/laravel.git
+Cloning into 'laravel'...
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 30759 (delta 0), reused 0 (delta 0), pack-reused 30758
+Receiving objects: 100% (30759/30759), 9.62 MiB | 5.45 MiB/s, done.
+Resolving deltas: 100% (18202/18202), done.
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$sudo systemctl restart php-fpm
+[administrator@flavis www]$sudo systemctl restart httpd
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis www]$
+[administrator@flavis ~]$ cd /var/www/laravel
+[administrator@flavis laravel]$ sudo composer install
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - This package requires php ^7.2 but your PHP version (7.0.33) does not satisfy that requirement.
+  Problem 2
+    - laravel/framework v6.1.0 requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - laravel/framework v6.0.4 requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - laravel/framework v6.0.3 requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - laravel/framework v6.0.2 requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - laravel/framework v6.0.1 requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - laravel/framework v6.0.0 requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - laravel/framework 6.x-dev requires php ^7.2 -> your PHP version (7.0.33) does not satisfy that requirement.
+    - Installation request for laravel/framework ^6.0 -> satisfiable by laravel/framework[6.x-dev, v6.0.0, v6.0.1, v6.0.2, v6.0.3, v6.0.4, v6.1.0].
+
+[administrator@flavis laravel]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo chown -R apache.apache /var/www/laravel
+[administrator@flavis ~]$ sudo chmod -R 755 /var/www/laravel
+[administrator@flavis ~]$ sudo chmod -R 755 /var/www/laravel/storage
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo chcon -R -t httpd_sys_rw_content_t /var/www/laravel/storage
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo cp .env.example .env
+cp: impossível obter estado de “.env.example”: Arquivo ou diretório não encontrado
+[administrator@flavis ~]$
+
+
+
+
+
+Last login: Wed Oct  2 13:07:53 2019 from 177.107.32.46
+[administrator@flavis ~]$ sudo yum -y install gcc make autoconf libc-dev pkg-config
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+O pacote 1:make-3.82-24.el7.x86_64 já está instalado em sua última versão
+Nenhum pacote libc-dev disponível.
+Nenhum pacote pkg-config disponível.
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote autoconf.noarch 0:2.69-11.el7 será instalado
+--> Processando dependência: m4 >= 1.4.14 para o pacote: autoconf-2.69-11.el7.noarch
+--> Processando dependência: perl(Data::Dumper) para o pacote: autoconf-2.69-11.el7.noarch
+---> O pacote gcc.x86_64 0:4.8.5-39.el7 será instalado
+--> Processando dependência: cpp = 4.8.5-39.el7 para o pacote: gcc-4.8.5-39.el7.x86_64
+--> Processando dependência: glibc-devel >= 2.2.90-12 para o pacote: gcc-4.8.5-39.el7.x86_64
+--> Executando verificação da transação
+---> O pacote cpp.x86_64 0:4.8.5-39.el7 será instalado
+---> O pacote glibc-devel.x86_64 0:2.17-292.el7 será instalado
+--> Processando dependência: glibc-headers = 2.17-292.el7 para o pacote: glibc-devel-2.17-292.el7.x
+6_64
+--> Processando dependência: glibc-headers para o pacote: glibc-devel-2.17-292.el7.x86_64
+---> O pacote m4.x86_64 0:1.4.16-10.el7 será instalado
+---> O pacote perl-Data-Dumper.x86_64 0:2.145-3.el7 será instalado
+--> Executando verificação da transação
+---> O pacote glibc-headers.x86_64 0:2.17-292.el7 será instalado
+--> Processando dependência: kernel-headers >= 2.2.1 para o pacote: glibc-headers-2.17-292.el7.x86_
+4
+--> Processando dependência: kernel-headers para o pacote: glibc-headers-2.17-292.el7.x86_64
+--> Executando verificação da transação
+---> O pacote kernel-headers.x86_64 0:3.10.0-1062.1.1.el7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+===================================================================================================
+ Package                    Arq.             Versão                         Repo               Tam.
+===================================================================================================
+Instalando:
+ autoconf                   noarch           2.69-11.el7                    base              701 k
+ gcc                        x86_64           4.8.5-39.el7                   base               16 M
+Instalando para as dependências:
+ cpp                        x86_64           4.8.5-39.el7                   base              5.9 M
+ glibc-devel                x86_64           2.17-292.el7                   base              1.1 M
+ glibc-headers              x86_64           2.17-292.el7                   base              687 k
+ kernel-headers             x86_64           3.10.0-1062.1.1.el7            updates           8.7 M
+ m4                         x86_64           1.4.16-10.el7                  base              256 k
+ perl-Data-Dumper           x86_64           2.145-3.el7                    base               47 k
+
+Resumo da transação
+===================================================================================================
+Instalar  2 Packages (+6 Dependent packages)
+
+Tamanho total do download: 34 M
+Tamanho depois de instalado: 62 M
+Downloading packages:
+(1/8): glibc-headers-2.17-292.el7.x86_64.rpm                                 | 687 kB  00:00:00
+(2/8): autoconf-2.69-11.el7.noarch.rpm                                       | 701 kB  00:00:00
+(3/8): m4-1.4.16-10.el7.x86_64.rpm                                           | 256 kB  00:00:00
+(4/8): perl-Data-Dumper-2.145-3.el7.x86_64.rpm                               |  47 kB  00:00:00
+(5/8): cpp-4.8.5-39.el7.x86_64.rpm                                           | 5.9 MB  00:00:01
+(6/8): glibc-devel-2.17-292.el7.x86_64.rpm                                   | 1.1 MB  00:00:01
+(7/8): kernel-headers-3.10.0-1062.1.1.el7.x86_64.rpm                         | 8.7 MB  00:00:02
+(8/8): gcc-4.8.5-39.el7.x86_64.rpm                                           |  16 MB  00:00:19
+---------------------------------------------------------------------------------------------------
+Total                                                               1.7 MB/s |  34 MB  00:00:19
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : m4-1.4.16-10.el7.x86_64                                                        1/8
+  Instalando   : cpp-4.8.5-39.el7.x86_64                                                        2/8
+  Instalando   : kernel-headers-3.10.0-1062.1.1.el7.x86_64                                      3/8
+  Instalando   : glibc-headers-2.17-292.el7.x86_64                                              4/8
+  Instalando   : glibc-devel-2.17-292.el7.x86_64                                                5/8
+  Instalando   : perl-Data-Dumper-2.145-3.el7.x86_64                                            6/8
+  Instalando   : autoconf-2.69-11.el7.noarch                                                    7/8
+  Instalando   : gcc-4.8.5-39.el7.x86_64                                                        8/8
+  Verifying    : glibc-devel-2.17-292.el7.x86_64                                                1/8
+  Verifying    : autoconf-2.69-11.el7.noarch                                                    2/8
+  Verifying    : perl-Data-Dumper-2.145-3.el7.x86_64                                            3/8
+  Verifying    : kernel-headers-3.10.0-1062.1.1.el7.x86_64                                      4/8
+  Verifying    : cpp-4.8.5-39.el7.x86_64                                                        5/8
+  Verifying    : gcc-4.8.5-39.el7.x86_64                                                        6/8
+  Verifying    : m4-1.4.16-10.el7.x86_64                                                        7/8
+  Verifying    : glibc-headers-2.17-292.el7.x86_64                                              8/8
+
+Instalados:
+  autoconf.noarch 0:2.69-11.el7                      gcc.x86_64 0:4.8.5-39.el7
+
+Dependência(s) instalada(s):
+  cpp.x86_64 0:4.8.5-39.el7                    glibc-devel.x86_64 0:2.17-292.el7
+  glibc-headers.x86_64 0:2.17-292.el7          kernel-headers.x86_64 0:3.10.0-1062.1.1.el7
+  m4.x86_64 0:1.4.16-10.el7                    perl-Data-Dumper.x86_64 0:2.145-3.el7
+
+Concluído!
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo bash -c "echo extension=apcu.so > /etc/php.d/apcu.ini"
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo yum install php70w-opcache
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: ftp.unicamp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote php70w-opcache.x86_64 0:7.0.33-1.w7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                    Arq.               Versão                    Repo                  Tam.
+====================================================================================================
+Instalando:
+ php70w-opcache             x86_64             7.0.33-1.w7               webtatic             131 k
+
+Resumo da transação
+====================================================================================================
+Instalar  1 Package
+
+Tamanho total do download: 131 k
+Tamanho depois de instalado: 404 k
+Is this ok [y/d/N]: y
+Downloading packages:
+php70w-opcache-7.0.33-1.w7.x86_64.rpm                                        | 131 kB  00:00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : php70w-opcache-7.0.33-1.w7.x86_64                                              1/1
+  Verifying    : php70w-opcache-7.0.33-1.w7.x86_64                                              1/1
+
+Instalados:
+  php70w-opcache.x86_64 0:7.0.33-1.w7
+
+Concluído!
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo yum install php70w-pgsql
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote php70w-pgsql.x86_64 0:7.0.33-1.w7 será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                   Arq.                Versão                   Repo                   Tam.
+====================================================================================================
+Instalando:
+ php70w-pgsql              x86_64              7.0.33-1.w7              webtatic               90 k
+
+Resumo da transação
+====================================================================================================
+Instalar  1 Package
+
+Tamanho total do download: 90 k
+Tamanho depois de instalado: 363 k
+Is this ok [y/d/N]: y
+Downloading packages:
+php70w-pgsql-7.0.33-1.w7.x86_64.rpm                                          |  90 kB  00:00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : php70w-pgsql-7.0.33-1.w7.x86_64                                                1/1
+  Verifying    : php70w-pgsql-7.0.33-1.w7.x86_64                                                1/1
+
+Instalados:
+  php70w-pgsql.x86_64 0:7.0.33-1.w7
+
+Concluído!
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ su
+Senha: root
+[root@flavis administrator]
+[root@flavis administrator]
+[root@flavis administrator]
+[root@flavis administrator]
+[root@flavis administrator]
+[root@flavis administrator]# cd /etc
+[root@flavis etc]# vim php.ini
+date.timezone = America/Sao_Paulo
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]# systemctl restart php-fpm
+[root@flavis etc]# systemctl restart httpd
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]#
+[root@flavis etc]# systemctl -l status httpd.service
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Qui 2019-10-03 13:08:18 UTC; 23min ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+ Main PID: 1542 (httpd)
+   Status: "Total requests: 28; Current requests/sec: 0; Current traffic:   0 B/sec"
+    Tasks: 9
+   CGroup: /system.slice/httpd.service
+           ├─1542 /usr/sbin/httpd -DFOREGROUND
+           ├─1850 /usr/sbin/httpd -DFOREGROUND
+           ├─1852 /usr/sbin/httpd -DFOREGROUND
+           ├─1854 /usr/sbin/httpd -DFOREGROUND
+           ├─1856 /usr/sbin/httpd -DFOREGROUND
+           ├─1858 /usr/sbin/httpd -DFOREGROUND
+           ├─3893 /usr/sbin/httpd -DFOREGROUND
+           ├─3909 /usr/sbin/httpd -DFOREGROUND
+           └─3910 /usr/sbin/httpd -DFOREGROUND
+
+Out 03 13:08:15 flavis systemd[1]: Starting The Apache HTTP Server...
+Out 03 13:08:16 flavis httpd[1542]: AH00557: httpd: apr_sockaddr_info_get() failed for flavis
+Out 03 13:08:16 flavis httpd[1542]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+Out 03 13:08:18 flavis systemd[1]: Started The Apache HTTP Server.

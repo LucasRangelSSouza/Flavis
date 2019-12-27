@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Application\Sonata\UserBundle\Entity\User" table="fos_user_user">
+        <lifecycle-callbacks>
+            <lifecycle-callback type="prePersist" method="prePersist" />
+        </lifecycle-callbacks>
+
+        <id name="id" column="id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="userToken"                  type="string" length="255" column="user_token" nullable="true" />
+        <field name="deviceType"                 type="string" length="255" column="device_type" nullable="true" />
+        <field name="apiToken"                   type="string" length="255" column="api_token" nullable="true" />
+
+        <one-to-one field="cliente" target-entity="\AppBundle\Entity\UsuarioCliente" mapped-by="user" />
+        <one-to-one field="colaborador" target-entity="\AppBundle\Entity\Colaborador" mapped-by="user" />
+
+    </entity>
+
+</doctrine-mapping>

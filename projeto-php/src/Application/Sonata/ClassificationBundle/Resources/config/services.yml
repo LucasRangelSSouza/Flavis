@@ -1,0 +1,33 @@
+services:
+    sonata.classification.admin.category:
+        class: %sonata.classification.admin.category.class%
+        tags:
+            - { name: sonata.admin, manager_type: orm, show_in_dashboard: false, group: sonata_classification, label: label_categories, label_catalogue: '%sonata.classification.admin.category.translation_domain%', label_translator_strategy: sonata.admin.label.strategy.underscore }
+        arguments: ['', '%sonata.classification.admin.category.entity%', '%sonata.classification.admin.category.controller%', '@sonata.classification.manager.context']
+        calls:
+            - [setTranslationDomain, ['%sonata.classification.admin.category.translation_domain%']]
+            - [setTemplates, [{ list: 'SonataClassificationBundle:CategoryAdmin:list.html.twig' }]]
+
+    sonata.classification.admin.tag:
+        class: %sonata.classification.admin.tag.class%
+        tags:
+            - { name: sonata.admin, manager_type: orm, show_in_dashboard: false, group: sonata_classification, label: label_tags, label_catalogue: '%sonata.classification.admin.tag.translation_domain%', label_translator_strategy: sonata.admin.label.strategy.underscore }
+        arguments: ['', '%sonata.classification.admin.tag.entity%', '%sonata.classification.admin.tag.controller%']
+        calls:
+            - [setTranslationDomain, ['%sonata.classification.admin.tag.translation_domain%']]
+
+    sonata.classification.admin.collection:
+        class: %sonata.classification.admin.collection.class%
+        tags:
+            - { name: sonata.admin, manager_type: orm, show_in_dashboard: false, group: sonata_classification, label: label_collections, label_catalogue: '%sonata.classification.admin.collection.translation_domain%', label_translator_strategy: sonata.admin.label.strategy.underscore }
+        arguments: ['', '%sonata.classification.admin.collection.entity%', '%sonata.classification.admin.collection.controller%']
+        calls:
+            - [setTranslationDomain, ['%sonata.classification.admin.collection.translation_domain%']]
+
+    sonata.classification.admin.context:
+        class: %sonata.classification.admin.context.class%
+        tags:
+            - { name: sonata.admin, manager_type: orm, show_in_dashboard: false, group: sonata_classification, label: label_contexts, label_catalogue: '%sonata.classification.admin.context.translation_domain%', label_translator_strategy: sonata.admin.label.strategy.underscore }
+        arguments: ['', '%sonata.classification.admin.context.entity%', '%sonata.classification.admin.context.controller%']
+        calls:
+            - [setTranslationDomain, ['%sonata.classification.admin.context.translation_domain%']]

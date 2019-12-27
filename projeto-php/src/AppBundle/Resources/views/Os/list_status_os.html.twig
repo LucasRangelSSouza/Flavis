@@ -1,0 +1,12 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+{% block field%}
+    {% if object.isEncerrada %}
+        <p style="text-align: center">
+            <i class="fa fa-check-circle" aria-hidden="true" style="color: #32CD32;"></i>
+        </p>
+    {% else %}
+        <p style="text-align: center">
+            <i class="fa fa-circle" aria-hidden="true" style="color: #B22222;"></i>
+        </p>
+    {% endif %}
+{% endblock %}

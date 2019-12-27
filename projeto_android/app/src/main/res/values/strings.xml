@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Flavis</string>
+    <string name="welcome">Seja bem vindo!\nEfetue o login para iniciar.</string>
+    <string name="hint_email">email</string>
+    <string name="hint_password">senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="ordinary_field">Campo obrigatório</string>
+    <string name="user_not_found">Usuário não encontrado.</string>
+    <string name="invalid_email">Email inválido</string>
+    <string name="something_wrong">Algum erro ocorreu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toque_para_iniciar_os">Toque em alguma OS para iniciar.</string>
+    <string name="ordens_de_servico">Ordens de Serviço</string>
+    <string name="nome_cliente">Nome cliente</string>
+    <string name="search">Busca</string>
+    <string name="existe_os_aberta">Já existe uma Ordem de Serviço em execução. Finalize-a para atender outra.</string>
+    <string name="titulo_os">OS nº %s</string>
+    <string name="message_dialog_open_os">Deseja abrir a OS do cliente %s?</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="os_data_format">Para %1$s às %2$s</string>
+    <string name="pmoc">pmoc</string>
+    <string name="format_nome_cliente">Cliente: %s</string>
+    <string name="format_ocorrencia">Ocorrência: %s</string>
+    <string name="format_endereco">%1$s, %2$s \n%3$s - %4$s - %5$s\nCEP:  %6$s</string>
+    <string name="selecione_acao">Selecione uma opção</string>
+    <string name="cortar">Cortar</string>
+    <string name="fotos_os">Fotos da OS</string>
+    <string name="relatorio_avaliacao">Relatório da avaliação</string>
+    <string name="encerrado">Encerrado</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="endereco">Endereço</string>
+    <string name="ocorrencia">Ocorrência</string>
+    <string name="titulo_foto">Insira o título da foto</string>
+    <string name="escolha_o_titulo">Insira um título</string>
+    <string name="titulo_obrigatorio">Título obrigatório</string>
+    <string name="justificativa">Justificativa</string>
+    <string name="nome_receptor">Nome do receptor</string>
+    <string name="rg_receptor">RG do receptor</string>
+    <string name="campo_obrigatorio">Campo obrigatório</string>
+    <string name="justificativa_necessaria">É necessário justificar um atendimento que esteja marcado com "Encerrado"</string>
+    <string name="os_finalizada_sucesso">OS finalizada com sucesso!</string>
+    <string name="OK">OK</string>
+    <string name="os_ja_finalizada">Esta OS já foi finalizada</string>
+    <string name="sincronizar">Sincronizar Ordens de Serviço</string>
+    <string name="toque_para_assinatura">Toque para recolher assinatura</string>
+    <string name="assinatura_obrigatoria">A assinatura do responsável é obrigatória</string>
+    <string name="execucao_procedimento_format">%1$s / %2$s</string>
+    <string name="execucoes_procedimentos">Procedimentos</string>
+    <string name="fotos_procedimento">Fotos do procedimento</string>
+    <string name="formato_propriedade">Propriedade: %s</string>
+    <string name="insira_valor">Insira o valor</string>
+    <string name="salvar">salvar</string>
+    <string name="finalize_procedimentos">Finalize os procedimentos</string>
+    <string name="aguarde">Aguarde</string>
+    <string name="efetuando_login">Efetuando login</string>
+    <string name="carregando_ordens">Carregando ordens de serviço</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="app_nao_conseguiu_criar_diretorio">O aplicativo não conseguiu criar um diretória para a imagem. Verifique as permissões do App</string>
+    <string name="erro_criacao_arquivo">Um erro ocorreu ao criar o arquivo da foto. Se o problema persistir contate o administrador do sistema.</string>
+    <string name="criar_atividade_ociosa">Criar atividade ociosa</string>
+    <string name="label_atividade">Atividade</string>
+    <string name="tempo_em_minuto">Tempo gasto em minuto *</string>
+    <string name="observacoes">Observações *</string>
+    <string name="apos_confirmar_message">Após confirmar não será possível editar a sua atividade</string>
+    <string name="escolha_uma_atividade">Escolha uma atividade</string>
+    <string name="atividade_criada_com_sucesso">Atividade criada com sucesso!</string>
+    <string name="antes">Antes</string>
+    <string name="depois">Depois</string>
+    <string name="enviando">Enviando</string>
+    <string name="registrando_localizacao">Registrando localização</string>
+    <array name="foto_options">
+        <item>Usar a câmera</item>
+        <item>Carregar da galeria</item>
+    </array>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <array name="atividades">
+        <item>Escolha uma atividade</item>
+        <item>Teste 1</item>
+        <item>Teste 2</item>
+        <item>Teste 3</item>
+        <item>Teste 4</item>
+    </array>
+</resources>

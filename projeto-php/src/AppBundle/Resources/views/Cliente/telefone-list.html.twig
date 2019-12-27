@@ -1,0 +1,13 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+
+{% block field%}
+
+    <span>
+    {% if object.telefones is empty %}
+        Nenhum Telefone cadastrado
+    {% else %}
+        {{ object.telefones[0].numero }}
+    {% endif %}
+    </span>
+
+{% endblock %}

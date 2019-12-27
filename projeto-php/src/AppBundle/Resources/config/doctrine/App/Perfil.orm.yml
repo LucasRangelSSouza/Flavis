@@ -1,0 +1,68 @@
+---
+AppBundle\Entity\Perfil:
+  type: entity
+  table: perfil
+  repositoryClass: AppBundle\Entity\PerfilRepository
+
+  id:
+    id:
+      type: integer
+
+  fields:
+    data_inicio:
+      type: datetime
+      nullable: true
+      length: 255
+    data_termino:
+      type: datetime
+      nullable: true
+      length: 255
+    nome_perfil:
+      type: string
+      nullable: true
+      length: 155
+    trial:
+      type: boolean
+      nullable: false
+      length: 255
+    driver:
+      type: string
+      nullable: false
+      length: 255
+    server:
+      type: string
+      nullable: false
+      length: 255
+    porta:
+      type: integer
+      nullable: false
+      length: 255
+    dbname:
+      type: string
+      nullable: false
+      length: 255
+      name: db
+    username:
+      type: string
+      nullable: false
+      length: 255
+    password:
+      type: string
+      nullable: false
+      length: 255
+    empresa_id:
+      type: integer
+      nullable: false
+      length: 255
+    createdAt:
+      type: datetime
+      nullable: true
+      length: 255
+    updated_at:
+      type: datetime
+      nullable: false
+      length: 255
+    deleted_at:
+      type: datetime
+      nullable: false
+      length: 255

@@ -1,0 +1,40 @@
+{% if object.isCancelada %}
+<button
+        class="btn btn-sm btn-warning view_link disabled" style="width: 120px;">
+   <i class="fa fa-times" aria-hidden="true"></i>
+    Cancelada
+</button>
+{% else %}
+    <button
+            onclick="if(confirm('Deseja confirmar o cancelamento desta OS?')){ var motivo = prompt('Informa o motivo do cancelamento'); if (motivo == null || motivo=='' ) { alert('Informe o motivo para cancelamento desta OS') } else { document.location.href='{{ admin.generateObjectUrl('cancela', object) }}?motivo='+motivo; }}"
+            class="btn btn-sm btn-warning cancelaOs" style="float: left;width: 302px"
+       data-os="{{ object.id }}">
+        <i class="fa fa-times" aria-hidden="true"></i>
+        Cancelar
+    </button>
+{% endif %}
+
+<style>
+
+    #validate {
+        display: none;
+        color: #ff0000;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+</style>
+
+<script>
+
+    $(document).ready(function(){
+
+        $('.cancelaOs').click(function(){
+
+
+
+        });
+
+    });
+
+</script>

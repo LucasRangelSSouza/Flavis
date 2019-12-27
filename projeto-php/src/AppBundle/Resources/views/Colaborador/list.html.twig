@@ -1,0 +1,17 @@
+{% extends 'SonataAdminBundle:CRUD:base_list.html.twig' %}
+
+{% block table_body %}
+    <tbody>
+        {% for object in admin.datagrid.results %}
+            {% if object.status != 'AT' %}
+                <tr style="background: #7f223d;color:#fff;">
+                    {% include admin.getTemplate('inner_list_row') %}
+                </tr>
+            {% else %}
+                <tr>
+                    {% include admin.getTemplate('inner_list_row') %}
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+{% endblock %}

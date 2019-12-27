@@ -1,0 +1,12 @@
+* Criar scripts de verificações tabelas comuns
+* Criar scripts de dados a mais das tabelas comuns
+
+  - Verificar a inclusão da tabela perfil e empresa
+  - Verificar a inclusão dos campos perfil_id nas tabelas principais
+  - Verificar a inclusão do campo user_id e email da tabela cliente
+
+  - Criar campos de status nas tabelas, para exclusão lógica
+  - Criação das tabelas de log
+
+
+  - Tratamento dos dados da tabelas comuns e principais 

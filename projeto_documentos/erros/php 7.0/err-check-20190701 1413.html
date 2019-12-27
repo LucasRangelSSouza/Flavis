@@ -1,0 +1,68 @@
+ 
+<!-- saved from url=(0054)http://localhost:8080/flavis/projeto-php/app/check.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Symfony2 Requirements Checker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+&gt; PHP is using the following php.ini file:
+  C:\php\php.ini
+
+&gt; Checking Symfony requirements:
+  ......E........EW..............W........
+
+                                                   
+ [ERROR]                                           
+ Your system is not ready to run Symfony2 projects 
+                                                   
+
+Fix the following mandatory requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * Configured default timezone "America/Sao_Paulo" must be supported
+   by your installation of PHP
+   &gt; Your default timezone is not supported by PHP. Check for typos in
+   &gt; your php.ini file and have a look at the list of deprecated
+   &gt; timezones at http://php.net/manual/en/timezones.others.php.
+
+ * string functions should not be overloaded
+   &gt; Set "mbstring.func_overload" to 0 in php.ini* to disable function
+   &gt; overloading by the mbstring extension.
+
+
+Optional recommendations to improve your setup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * Requirements file should be up-to-date
+   &gt; Your requirements file is outdated. Run composer install and
+   &gt; re-check your configuration.
+
+ * intl.error_level should be 0 in php.ini
+   &gt; Set "intl.error_level" to "0" in php.ini* to inhibit the messages
+   &gt; when an error occurs in ICU functions.
+
+
+Note  The command console could use a different php.ini file
+~~~~  than the one used with your web server. To be on the
+      safe side, please check the requirements from your web
+      server using the web/config.php script.
+
+<br>
+<br>Verificador de Requisitos do Symfony2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~> O PHP está usando o seguinte arquivo php.ini: 
+<br>C: \ php \ php. ini> Verificando os requisitos do Symfony: ...... E ........ EW .............. W ........ 
+<br>[ERRO] Seu sistema não está pronto para executar projetos Symfony2 Corrigir os seguintes requisitos obrigatórios
+<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ 
+<br>* O fuso horário padrão configurado "America / Sao_Paulo" deve ser suportado pela sua instalação do PHP> 
+<br>Seu fuso horário padrão não é suportado pelo PHP. Verifique se há erros de digitação em seu arquivo php.ini 
+<br>e dê uma olhada na lista de fusos horários obsoletos em http://php.net/manual/en/timezones.others.php.
+<br>=> Na linha 965 Descomentar e alterar para date.timezone = America/Sao_Paulo
+<br>* As funções de string não devem ser sobrecarregadas> Defina "mbstring.func_overload" como 0 em php.ini 
+<br>* para desativar a função> overloading pela extensão mbstring. 
+<br>=> Na linha 1716 Descomentar e alterar para mbstring.func_overload = On
+<br>Recomendações opcionais para melhorar sua configuração ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~ 
+<br>* O arquivo de requisitos deve estar atualizado> Seu arquivo de requisitos está desatualizado. 
+<br>Execute a instalação do compositor e> verifique novamente sua configuração. 
+<br>* intl.error_level deve ser 0 em php.ini> Defina "intl.error_level" como "0" em php.ini 
+<br>* para inibir as mensagens> quando ocorrer um erro nas funções da UTI. 
+<br>=> Na linha 1016 Descomentar e alterar para intl.error_level = On
+<br>Nota O console de comando pode usar um arquivo php.ini diferente do usado com o servidor da web. 
+<br>Para estar no lado seguro, por favor, verifique os requisitos do seu servidor web usando o script web / config.php.
+</body></html>

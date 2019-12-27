@@ -1,0 +1,12 @@
+
+=> Erro na trigger
+[2019-09-04 15:53:01] request.ERROR: Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: 
+"No route found for "POST /app//produtoalmoxarifado/1/edit" 
+(from "http://localhost:8080/flavis/projeto-php/web/app.php/app/flavis/produtoalmoxarifado/1/edit?uniqid=s5d7007acc76b7")" 
+at C:\Apache2.4\htdocs\flavis\projeto-php\app\cache\prod\classes.php line 2492 
+{"exception":"[object] (Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException(code: 0): 
+No route found for \"POST /app//produtoalmoxarifado/1/edit\" 
+(from \"http://localhost:8080/flavis/projeto-php/web/app.php/app/flavis/produtoalmoxarifado/1/edit?uniqid=s5d7007acc76b7\") 
+at C:\\Apache2.4\\htdocs\\flavis\\projeto-php\\app\\cache\\prod\\classes.php:2492, 
+Symfony\\Component\\Routing\\Exception\\ResourceNotFoundException(code: 0):  
+at C:\\Apache2.4\\htdocs\\flavis\\projeto-php\\app\\cache\\prod\\appProdUrlMatcher.php:3530)"} []

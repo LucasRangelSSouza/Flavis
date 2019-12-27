@@ -1,0 +1,74 @@
+[root@localhost ~]# netstat -antp | grep ':5432'
+tcp        0      0 0.0.0.0:5432            0.0.0.0:*               OUÇA       1769/postmaster     
+tcp6       0      0 :::5432                 :::*                    OUÇA       1769/postmaster    
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# setsebool -P httpd_can_network_connect_db 1  
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# firewall-cmd --permanent --zone=trusted --add-source=0.0.0.0/32
+success
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# firewall-cmd --permanent --zone=trusted --add-port=5432/tcp
+success
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# firewall-cmd --reload
+success
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# systemctl restart php-fpm
+[root@localhost ~]# systemctl restart httpd.service
+[root@localhost ~]# systemctl restart postgresql-9.6.service
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# systemctl status postgresql-9.6.service
+● postgresql-9.6.service - PostgreSQL 9.6 database server
+   Loaded: loaded (/usr/lib/systemd/system/postgresql-9.6.service; enabled; vendor preset: disabled)
+   Active: active (running) since Qua 2019-10-09 09:40:02 -03; 26s ago
+     Docs: https://www.postgresql.org/docs/9.6/static/
+  Process: 11489 ExecStartPre=/usr/pgsql-9.6/bin/postgresql96-check-db-dir ${PGDATA} (code=exited, status=0/SUCCESS)
+ Main PID: 11495 (postmaster)
+    Tasks: 7
+   CGroup: /system.slice/postgresql-9.6.service
+           ├─11495 /usr/pgsql-9.6/bin/postmaster -D /var/lib/pgsql/9.6/data/
+           ├─11497 postgres: logger process   
+           ├─11499 postgres: checkpointer process   
+           ├─11500 postgres: writer process   
+           ├─11501 postgres: wal writer process   
+           ├─11502 postgres: autovacuum launcher process   
+           └─11503 postgres: stats collector process   
+
+Out 09 09:40:02 localhost.localdomain systemd[1]: Starting PostgreSQL 9.6 dat...
+Out 09 09:40:02 localhost.localdomain postmaster[11495]: < 2019-10-09 08:40:0…og
+Out 09 09:40:02 localhost.localdomain postmaster[11495]: < 2019-10-09 08:40:0…".
+Out 09 09:40:02 localhost.localdomain systemd[1]: Started PostgreSQL 9.6 data...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# systemctl status httpd.service
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Qua 2019-10-09 09:37:40 -03; 3min 15s ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+  Process: 11283 ExecStop=/bin/kill -WINCH ${MAINPID} (code=exited, status=0/SUCCESS)
+ Main PID: 11289 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+    Tasks: 9
+   CGroup: /system.slice/httpd.service
+           ├─11289 /usr/sbin/httpd -DFOREGROUND
+           ├─11290 /usr/libexec/nss_pcache 1900555 off
+           ├─11292 /usr/sbin/httpd -DFOREGROUND
+           ├─11294 /usr/sbin/httpd -DFOREGROUND
+           ├─11297 /usr/sbin/httpd -DFOREGROUND
+           ├─11299 /usr/sbin/httpd -DFOREGROUND
+           ├─11300 /usr/sbin/httpd -DFOREGROUND
+           └─11304 /usr/sbin/httpd -DFOREGROUND
+
+Out 09 09:37:40 localhost.localdomain systemd[1]: Starting The Apache HTTP Se...
+Out 09 09:37:40 localhost.localdomain systemd[1]: Started The Apache HTTP Ser...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost ~]# 
+

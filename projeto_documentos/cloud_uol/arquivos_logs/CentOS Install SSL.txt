@@ -1,0 +1,50 @@
+[root@flavis ~]# yum install mod_ssl lynx
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: mirror.globo.com
+ * extras: linorg.usp.br
+ * updates: ftp.unicamp.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote lynx.x86_64 0:2.8.8-0.3.dev15.el7 será instalado
+---> O pacote mod_ssl.x86_64 1:2.4.6-90.el7.centos será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+================================================================================
+ Package        Arq.          Versão                          Repo         Tam.
+================================================================================
+Instalando:
+ lynx           x86_64        2.8.8-0.3.dev15.el7             base        1.4 M
+ mod_ssl        x86_64        1:2.4.6-90.el7.centos           base        112 k
+
+Resumo da transação
+================================================================================
+Instalar  2 Packages
+
+Tamanho total do download: 1.5 M
+Tamanho depois de instalado: 5.6 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/2): mod_ssl-2.4.6-90.el7.centos.x86_64.rpm              | 112 kB   00:00     
+(2/2): lynx-2.8.8-0.3.dev15.el7.x86_64.rpm                 | 1.4 MB   00:00     
+--------------------------------------------------------------------------------
+Total                                              3.2 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando   : 1:mod_ssl-2.4.6-90.el7.centos.x86_64                       1/2 
+  Instalando   : lynx-2.8.8-0.3.dev15.el7.x86_64                            2/2 
+  Verifying    : lynx-2.8.8-0.3.dev15.el7.x86_64                            1/2 
+  Verifying    : 1:mod_ssl-2.4.6-90.el7.centos.x86_64                       2/2 
+
+Instalados:
+  lynx.x86_64 0:2.8.8-0.3.dev15.el7     mod_ssl.x86_64 1:2.4.6-90.el7.centos    
+
+Concluído!
+[root@flavis ~]# 
+

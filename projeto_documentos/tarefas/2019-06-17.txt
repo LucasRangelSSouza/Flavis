@@ -1,0 +1,7 @@
+* Fazer engenharia reversa e criar o diagrama do banco de dados postgres. 4h
+* Análise das alterações do diagrama do banco de dados postgres: 2h
+  - Verificar a inclusão da tabela perfil e empresa
+  - Verificar a inclusão dos campos perfil_id nas tabelas principais
+  - Verificar quais tabelas seram comuns a todos os perfis
+  - Verificar a inclusão do campo user_id e email da tabela cliente
+

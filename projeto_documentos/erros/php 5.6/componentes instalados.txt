@@ -1,0 +1,76 @@
+Microsoft Windows [versão 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\moisesvidal.senai>php -v
+PHP 5.6.40 (cli) (built: Jan  9 2019 15:12:01)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+    with Zend Guard Loader v3.3, Copyright (c) 1998-2014, by Zend Technologies
+    with Zend OPcache v7.0.4-dev, Copyright (c) 1999-2015, by Zend Technologies
+
+C:\Users\moisesvidal.senai>php -m
+[PHP Modules]
+apc
+apcu
+bcmath
+bz2
+calendar
+Core
+ctype
+curl
+date
+dom
+ereg
+exif
+filter
+ftp
+gd
+hash
+iconv
+imap
+intl
+json
+ldap
+libxml
+mbstring
+mcrypt
+mhash
+mysql
+mysqli
+mysqlnd
+odbc
+openssl
+pcre
+PDO
+pdo_mysql
+PDO_ODBC
+pdo_pgsql
+pdo_sqlite
+pgsql
+Phar
+Reflection
+session
+shmop
+SimpleXML
+SourceGuardian
+SPL
+sqlite3
+standard
+tokenizer
+wddx
+xml
+xmlreader
+xmlrpc
+xmlwriter
+xsl
+Zend Guard Loader
+Zend OPcache
+zip
+zlib
+
+[Zend Modules]
+Zend Guard Loader
+Zend OPcache
+
+
+C:\Users\moisesvidal.senai>

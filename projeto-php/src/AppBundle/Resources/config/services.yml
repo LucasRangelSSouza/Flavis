@@ -1,0 +1,392 @@
+services:
+    jms_serializer.naming_strategy:
+        class: 'JMS\Serializer\Naming\IdenticalPropertyNamingStrategy'
+
+####| Services |####
+#    kernel.listener.api_exception:
+#        class: AppBundle\Listener\APIExceptionListener
+#        tags:
+#            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+####| Admins |####
+
+
+####| Hides |####
+    app.admin.endereco:
+        class: AppBundle\Admin\EnderecoAdmin
+        arguments: [~, AppBundle\Entity\Endereco, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Endereco, show_in_dashboard: false}
+
+    app.admin.telefone:
+        class: AppBundle\Admin\TelefoneAdmin
+        arguments: [~, AppBundle\Entity\Telefone, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Telefone, show_in_dashboard: false}
+
+    app.admin.documento:
+        class: AppBundle\Admin\DocumentoAdmin
+        arguments: [~, AppBundle\Entity\Documento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Documento, show_in_dashboard: false}
+
+    app.admin.produto_saida:
+        class: AppBundle\Admin\ProdutoSaidaAdmin
+        arguments: [~, AppBundle\Entity\ProdutoSaida, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: ProdutoSaida, show_in_dashboard: false}
+
+####| Auxiliares |####
+
+
+    app.admin.funcao:
+        class: AppBundle\Admin\FuncaoAdmin
+        arguments: [~, AppBundle\Entity\Funcao, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Função, icon: '<i class="fa fa-database"></i>'}
+
+    app.admin.tipo_negocio:
+        class: AppBundle\Admin\TipoNegocioAdmin
+        arguments: [~, AppBundle\Entity\TipoNegocio, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Tipos de Negócio}
+
+    app.admin.cidade:
+        class: AppBundle\Admin\CidadeAdmin
+        arguments: [~, AppBundle\Entity\Cidade, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Cidade}
+
+    app.admin.bairro:
+        class: AppBundle\Admin\BairroAdmin
+        arguments: [~, AppBundle\Entity\Bairro, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Bairro}
+
+    app.admin.tipo_endereco:
+        class: AppBundle\Admin\TipoEnderecoAdmin
+        arguments: [~, AppBundle\Entity\TipoEndereco, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Tipo de Endereço}
+
+    app.admin.tipo_telefone:
+        class: AppBundle\Admin\TipoTelefoneAdmin
+        arguments: [~, AppBundle\Entity\TipoTelefone, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Tipo de Telefone}
+
+    app.admin.tipo_documento:
+        class: AppBundle\Admin\TipoDocumentoAdmin
+        arguments: [~, AppBundle\Entity\TipoDocumento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Tipos de Documento}
+
+    app.admin.unidade_federativa:
+        class: AppBundle\Admin\UnidadeFederativaAdmin
+        arguments: [~, AppBundle\Entity\UnidadeFederativa, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cadastro Auxiliar, label: Unidades Federativas}
+
+#    app.admin.contato:
+#        class: AppBundle\Admin\ContatoAdmin
+#        arguments: [~, AppBundle\Entity\Contato, SonataAdminBundle:CRUD]
+#        tags:
+#            - {name: sonata.admin, manager_type: orm, group: Institucional, label: Contatos, icon: '<i class="fa fa-institution"></i>'}
+
+
+####| Financeiro |#####
+
+    app.admin.homologacao_os:
+        class: AppBundle\Admin\HomologacaoOsAdmin
+        arguments: [~, AppBundle\Entity\HomologacaoOs, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Financeiro, label: OS' Homologadas, icon: '<i class="fa fa-usd" aria-hidden="true"></i>'}
+
+####| Colaborador |####
+
+    app.admin.filial_empresa:
+        class: AppBundle\Admin\FilialEmpresaAdmin
+        arguments: [~, AppBundle\Entity\FilialEmpresa, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Institucional, label: Filiais, icon: '<i class="fa fa-institution"></i>'}
+
+    app.admin.colaborador:
+        class: AppBundle\Admin\ColaboradorAdmin
+        arguments: [~, AppBundle\Entity\Colaborador, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Institucional, label: Colaborador}
+        calls:
+            - [ setTranslationDomain, [AppBundle]]
+#            - [ setTemplate, [list, AppBundle:Colaborador:list.html.twig]]
+
+    app.admin.fornecedor:
+        class: AppBundle\Admin\FornecedorAdmin
+        arguments: [~, AppBundle\Entity\Fornecedor, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Institucional, label: Fornecedor}
+
+    app.admin.empresa:
+        class: AppBundle\Admin\EmpresaAdmin
+        arguments: [~, AppBundle\Entity\Empresa, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Institucional, label: Empresa}
+
+    app.admin.perfil:
+        class: AppBundle\Admin\PerfilAdmin
+        arguments: [~, AppBundle\Entity\Perfil, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Institucional, label: Perfil}
+
+#### Cliente ####
+
+    app.admin.cliente:
+        class: AppBundle\Admin\ClienteAdmin
+        arguments: [~, AppBundle\Entity\Cliente, AppBundle:ClienteCRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cliente, label: Cliente, icon: '<i class="fa fa-users" aria-hidden="true"></i>'}
+
+    app.admin.equipamento_cliente:
+        class: AppBundle\Admin\EquipamentoClienteAdmin
+        arguments: [~, AppBundle\Entity\EquipamentoCliente, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cliente, label: Catálogo de Equipamentos}
+
+    app.admin.cliente_equipamento:
+        class: AppBundle\Admin\ClienteEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\ClienteEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cliente, label: Equipamentos de Clientes, show_in_dashboard: true}
+
+    app.admin.responsavel_cliente:
+        class: AppBundle\Admin\ResponsavelClienteAdmin
+        arguments: [~, AppBundle\Entity\ResponsavelCliente, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cliente, label: Responsáveis de Clientes, show_in_dashboard: true}
+
+    app.admin.usuario_cliente:
+        class: AppBundle\Admin\UsuarioClienteAdmin
+        arguments: [~, AppBundle\Entity\UsuarioCliente, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Cliente, label: Usuários de Clientes}
+
+
+#### Almoxarifado ####
+
+    app.admin.produto_estoque:
+        class: AppBundle\Admin\ProdutoEstoqueAdmin
+        arguments: [~, AppBundle\Entity\ProdutoEstoque, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: Estoque, icon: '<i class="fa fa-retweet" aria-hidden="true"></i>'}
+
+    app.admin.produto_almoxarifado:
+        class: AppBundle\Admin\ProdutoAlmoxarifadoAdmin
+        arguments: [~, AppBundle\Entity\ProdutoAlmoxarifado, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: Produtos}
+
+    app.admin.ferramenta_almoxarifado:
+        class: AppBundle\Admin\FerramentaAlmoxarifadoAdmin
+        arguments: [~, AppBundle\Entity\FerramentaAlmoxarifado, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: Ferramentas}
+
+    app.admin.entrada_produto_sem_nota:
+        class: AppBundle\Admin\EntradaProdutoSemNotaAdmin
+        arguments: [~, AppBundle\Entity\EntradaProduto, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: Entrada de Produtos Sem Nota}
+
+    app.admin.entrada_produto:
+        class: AppBundle\Admin\EntradaProdutoAdmin
+        arguments: [~, AppBundle\Entity\EntradaProduto, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: Entrada de Produtos}
+
+    app.admin.produto_solicitacao:
+        class: AppBundle\Admin\ProdutoSolicitacaoAdmin
+        arguments: [~, AppBundle\Entity\ProdutoSolicitacao, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: ProdutoSolicitacao, show_in_dashboard: false}
+
+    app.admin.requisicao_produto:
+        class: AppBundle\Admin\RequisicaoProdutoAdmin
+        arguments: [~, AppBundle\Entity\RequisicaoProduto, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Almoxarifado, label: Requisição de Produto}
+
+### Compras ###
+
+    app.admin.orcamento_produto:
+        class: AppBundle\Admin\OrcamentoProdutoAdmin
+        arguments: [~, AppBundle\Entity\OrcamentoProduto, AppBundle:PdfCRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Compras, label: Orçamento, icon: '<i class="fa fa-shopping-cart" aria-hidden="true"></i>'}
+
+    app.admin.ordem_compra_produto:
+        class: AppBundle\Admin\OrdemCompraProdutoAdmin
+        arguments: [~, AppBundle\Entity\OrdemCompraProduto, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Compras, label: Ordem de Compra}
+
+### OS ###
+
+    app.admin.ordem_servico:
+        class: AppBundle\Admin\OrdemServicoAdmin
+        arguments: [~, AppBundle\Entity\OrdemServico, AppBundle:OsCRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Ordem de Serviço, label: Ordem de Serviço, icon: '<i class="fa fa-truck" aria-hidden="true"></i>'}
+
+    app.admin.ordem_servico_homologadas:
+        class: AppBundle\Admin\OrdemServicoHomologadasAdmin
+        arguments: [~, AppBundle\Entity\OrdemServico, AppBundle:OsCRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Ordem de Serviço, label: OS's Homologadas}
+
+#    app.admin.ordem_servico_canceladas:
+#        class: AppBundle\Admin\OrdemServicoCanceladasAdmin
+#        arguments: [~, AppBundle\Entity\OrdemServico, AppBundle:OsCRUD]
+#        tags:
+#            - {name: sonata.admin, manager_type: orm, group: Ordem de Serviço, label: OS's Canceladas}
+
+    app.admin.agendamento_ordem_servico:
+        class: AppBundle\Admin\AgendamentoOrdemServicoAdmin
+        arguments: [~, AppBundle\Entity\AgendamentoOrdemServico, AppBundle:OsCRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Ordem de Serviço, label: Retorno de OS}
+
+    app.admin.relatorio_ordem_servico:
+        class: AppBundle\Admin\RelatorioOrdemServicoAdmin
+        arguments: [~, AppBundle\Entity\RelatorioOrdemServico, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Ordem de Serviço, label: Relatórios de OS, show_in_dashboard: false}
+
+    app.admin.fotoos:
+        class: AppBundle\Admin\FotoOsAdmin
+        arguments: [~, AppBundle\Entity\FotoOs, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Ordem de Serviço, label: Fotos, show_in_dashboard: true}
+
+### PMOC ###
+
+    app.admin.modelo_equipamento:
+        class: AppBundle\Admin\ModeloEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\ModeloEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Modelos de Equipamentos, show_in_dashboard: false}
+
+    app.admin.marca_equipamento:
+        class: AppBundle\Admin\MarcaEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\MarcaEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Marcas de Equipamentos, show_in_dashboard: false}
+
+    app.admin.titulo_valor_propriedade_equipamento:
+        class: AppBundle\Admin\TituloValorPropriedadeEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\TituloValorPropriedadeEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Titulo de Valores de Propriedades de Equipamentos, show_in_dashboard: false}
+
+    app.admin.valor_propriedade_equipamento:
+        class: AppBundle\Admin\ValorPropriedadeEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\ValorPropriedadeEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Valores de Propriedades de Equipamentos, show_in_dashboard: false}
+
+    app.admin.titulo_propriedade_equipamento:
+        class: AppBundle\Admin\TituloPropriedadeEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\TituloPropriedadeEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Titulos de Propriedades de Equipamentos, show_in_dashboard: false}
+
+    app.admin.propriedade_equipamento:
+        class: AppBundle\Admin\PropriedadeEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\PropriedadeEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Propriedades de Equipamentos, show_in_dashboard: false}
+
+    app.admin.titulo_agendamento_manutencao_equipamento:
+        class: AppBundle\Admin\TituloAgendamentoManutencaoEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\TituloAgendamentoManutencaoEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Titulos de Agendamentos de Manutenção de Equipamentos, show_in_dashboard: false}
+
+    app.admin.agendamento_manutencao_equipamento:
+        class: AppBundle\Admin\AgendamentoManutencaoEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\AgendamentoManutencaoEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Procedimentos de Manutenção, show_in_dashboard: false}
+
+    app.admin.execucao_de_procedimento_equipamento:
+        class: AppBundle\Admin\ExecucaoDeProcedimentoEquipamentoAdmin
+        arguments: [~, AppBundle\Entity\ExecucaoDeProcedimentoEquipamento, AppBundle:ExecucaoDeProcedimentosEquipamentoCRUD]
+#        arguments: [~, AppBundle\Entity\ExecucaoDeProcedimentoEquipamento, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Relatório de Procedimentos, icon: '<i class="fa fa-clock-o" aria-hidden="true"></i>'}
+
+    app.admin.norma:
+        class: AppBundle\Admin\NormaAdmin
+        arguments: [~, AppBundle\Entity\Norma, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Normas Técnicas}
+
+    app.admin.ficha_tecnica_produto:
+        class: AppBundle\Admin\FichaTecnicaProdutoAdmin
+        arguments: [~, AppBundle\Entity\FichaTecnicaProduto, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: PMOC, label: Ficha Técnica Produto}
+
+
+####| MODELS |####
+
+    colaborador_model:
+        class: AppBundle\Model\Colaborador
+        arguments:
+            - @doctrine.orm.entity_manager
+
+    almoxarifado_model:
+        class: AppBundle\Model\AlmoxarifadoModel
+        arguments:
+            - @doctrine.orm.entity_manager
+
+    os_model:
+        class: AppBundle\Model\OsModel
+        arguments:
+            - @doctrine.orm.entity_manager
+            - @service_container
+
+    relatorio_pmoc_model:
+        class: AppBundle\Model\RelatorioPmocModel
+        arguments:
+            - @doctrine.orm.entity_manager
+            - @service_container
+
+#    dashboad_service:
+#        class: AppBundle\Model\Dashboad
+#        arguments:
+#            - @doctrine.orm.entity_manager
+#            - @service_container
+
+    pmoc_model:
+        class: AppBundle\Model\Pmoc
+        arguments:
+            - @doctrine.orm.entity_manager
+
+    cliente_model:
+        class: AppBundle\Model\Cliente
+        arguments:
+            - @doctrine.orm.entity_manager
+
+    mapeamento_string_model:
+        class: AppBundle\Model\MapeamentoStringModel
+        arguments:
+            - @doctrine.orm.entity_manager
+
+
+####| LISTENERS AND SUBSCRIBERS |####
+
+
+####| VALIDATORS |####
+
+
+parameters:
+    security.acl.permission.map.class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap

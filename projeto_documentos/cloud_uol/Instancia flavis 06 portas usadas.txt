@@ -1,0 +1,61 @@
+[administrator@flavis ~]$ netstat -antup
+(Nem todos os processos puderam ser identificados, informações sobre processos
+ de outrem não serão mostrados, você deve ser root para vê-los todos.)
+Conexões Internet Ativas (servidores e estabelecidas)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      PID/Program name
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               OUÇA       -
+tcp        0      0 127.0.0.1:5432          0.0.0.0:*               OUÇA       -
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               OUÇA       -
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               OUÇA       -
+tcp        0      0 192.168.122.1:53        0.0.0.0:*               OUÇA       -
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               OUÇA       -
+tcp        0     36 192.168.255.4:22        187.32.49.173:19686     ESTABELECIDA -
+tcp6       0      0 ::1:631                 :::*                    OUÇA       -
+tcp6       0      0 ::1:5432                :::*                    OUÇA       -
+tcp6       0      0 ::1:25                  :::*                    OUÇA       -
+tcp6       0      0 :::111                  :::*                    OUÇA       -
+tcp6       0      0 :::80                   :::*                    OUÇA       -
+tcp6       0      0 :::22                   :::*                    OUÇA       -
+udp        0      0 192.168.122.1:53        0.0.0.0:*                           -
+udp        0      0 0.0.0.0:67              0.0.0.0:*                           -
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -
+udp        0      0 0.0.0.0:111             0.0.0.0:*                           -
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           -
+udp        0      0 0.0.0.0:37385           0.0.0.0:*                           -
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -
+udp6       0      0 :::111                  :::*                                -
+udp6       0      0 ::1:323                 :::*                                -
+udp6       0      0 ::1:35344               ::1:35344               ESTABELECIDA -
+[administrator@flavis ~]$
+
+Last login: Thu Oct  3 15:46:32 2019 from 177.107.32.46
+[administrator@flavis ~]$ netstat -antup
+(Não foi possível ler informações para "-p": geteuid()=1000 mas você deve ser root.)
+Conexões Internet Ativas (servidores e estabelecidas)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      PID/Program name
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               OUÇA       -
+tcp        0      0 0.0.0.0:5432            0.0.0.0:*               OUÇA       -
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               OUÇA       -
+tcp        0      0 127.0.0.1:9000          0.0.0.0:*               OUÇA       -
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               OUÇA       -
+tcp        0      0 192.168.122.1:53        0.0.0.0:*               OUÇA       -
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               OUÇA       -
+tcp        0      0 192.168.255.4:50666     216.58.202.170:443      ESTABELECIDA -
+tcp        0     36 192.168.255.4:22        177.107.32.46:62620     ESTABELECIDA -
+tcp6       0      0 ::1:631                 :::*                    OUÇA       -
+tcp6       0      0 :::5432                 :::*                    OUÇA       -
+tcp6       0      0 ::1:25                  :::*                    OUÇA       -
+tcp6       0      0 :::111                  :::*                    OUÇA       -
+tcp6       0      0 :::80                   :::*                    OUÇA       -
+tcp6       0      0 :::22                   :::*                    OUÇA       -
+udp        0      0 192.168.122.1:53        0.0.0.0:*                           -
+udp        0      0 0.0.0.0:67              0.0.0.0:*                           -
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -
+udp        0      0 0.0.0.0:111             0.0.0.0:*                           -
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           -
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -
+udp        0      0 0.0.0.0:42765           0.0.0.0:*                           -
+udp6       0      0 :::111                  :::*                                -
+udp6       0      0 ::1:323                 :::*                                -
+udp6       0      0 ::1:58913               ::1:58913               ESTABELECIDA -
+[administrator@flavis ~]$

@@ -1,0 +1,317 @@
+{# Type para controle de lista de procedimentos dependendo do equipamento selecionado em um combo acima #}
+{% block app_procedimentos_cliente_equipamento_widget %}
+    {% spaceless %}
+
+        <label class="control-label required">
+            Selecione o equipamento<br/>
+            <small>* Selecione um equipamento para aparecer as opções ou editar</small>
+        </label>
+
+        {{ pmoc_model.getEquipamentosCatalogoPMOC(form.parent.vars.id,form.parent.vars.value)|raw }}
+
+        <div style="padding-top: 10px;">
+            <label class="control-label required">
+                Procedimentos vinculados
+            </label>
+            <div id="procedimentos_herdados">
+
+                {% if form.parent.vars.value.procedimentosPreventivos|length <= 0 %}
+                    <p><small>Selecione um equipamento acima</small></p>
+                {% else %}
+                    {% for procedimento in form.parent.vars.value.procedimentosPreventivos %}
+                    <p style="margin-bottom:0;padding-left:12px;">
+                        <input type="checkbox" name="procedimentos[]" value="{{ procedimento.id }}" checked/>
+                        <label style="margin-left:5px;" for="r1">{{ procedimento.titulo.titulo }}</label></p>
+                    {% endfor %}
+                {% endif %}
+
+            </div>
+        </div>
+        <hr/>
+
+        <script>
+            $(document).ready(function(){
+                $('#equipamento_cliente').change(function(e){
+                    // Pegar todos os procedimentos do equipamento selecionado acima
+                    var idEquipamento = $(this).val();
+                    if(idEquipamento==''){
+                        return;
+                    }
+                    $.ajax({
+                        type: 'get',
+                        url: '{{ path('get_procedimentos_equipamento') }}',
+                        data: 'id_equipamento='+idEquipamento,
+                        beforeSend:function(xhr){
+                            $('#procedimentos_herdados').html('<p><small>Carregando procedimentos do equipamento selecionado</small></p>');
+                        },
+                        success:function(data){
+                            $('#procedimentos_herdados').html(data);
+//                            $('input').iCheck();
+                        },
+                        statusCode: {
+                            404: function(){
+                                alert("Rota não encontrada!");
+                            },
+                            401: function(){
+                                alert("Existe algum parâmetro obrigatório não atendido neste processo");
+                            },
+                            403: function() {
+                                alert("Permissão negada!");
+                            },
+                            204: function(){
+                                alert("Requisito não encontrado!");
+                            },
+                            500: function() {
+                                alert("Houve um erro crítico, contate o suporte." );
+                            }
+                        }
+                    });
+
+                })
+            });
+        </script>
+    {% endspaceless %}
+{% endblock %}
+
+
+{% block app_cnpj_widget %}
+    {% spaceless %}
+        <input type="text" class="form-control mask_cnpj" value="{{ form.parent.vars.value.cnpj }}">
+    {% endspaceless %}
+{% endblock %}
+
+
+{#Textarea with counter#}
+{% block app_textarea_with_count_widget %}
+    {% spaceless %}
+        <div class="with_counter">
+            <textarea name="{{ form.vars.full_name }}" class="form-control textarea_with_count_widget">{{ value }}</textarea>
+            <div class="counter_number">*Você só tem <span class="text_number">{{ 500 - value|length }}</span> caracteres restantes</div>
+        </div>
+    {% endspaceless %}
+{% endblock %}
+
+{#Textarea Maximize with counter#}
+{% block app_textarea_maximize_with_count_widget %}
+    {% spaceless %}
+        <div class="with_counter">
+            <a href="#"><i class="fa fa-plus"></i></a>
+            <div class="maximize_textarea">
+                <textarea name="{{ form.vars.full_name }}" class="form-control textarea_with_count_widget">{{ value }}</textarea>
+                <div class="counter_number">*Você só tem <span class="text_number">{{ 500 - value|length }}</span> caracteres restantes</div>
+            </div>
+        </div>
+    {% endspaceless %}
+{% endblock %}
+
+{#File With Icon#}
+{% block app_file_with_icon_widget %}
+    {% spaceless %}
+        {{ value|raw }}
+    {% endspaceless %}
+{% endblock %}
+
+{#Button create orcamento#}
+{% block app_button_gerar_orcamento_widget %}
+    {% spaceless %}
+        <p>Como existem produtos que não constam no estoque você pode solicitar a criação de um orçamento.</p>
+        <button type="button" class="btn btn-warning"><i class="fa fa-share" aria-hidden="true"></i> Criar orçamento para produtos faltantes</button>
+        <hr/>
+    {% endspaceless %}
+{% endblock %}
+
+{#File XML Nota fiscal#}
+{% block app_file_xml_nota_widget %}
+    {% spaceless %}
+        <label class="btn btn-warning btn-file" id="buttonUploadNota">
+            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+            Buscar arquivo da nota fiscal<input type="file" style="display: none;" id="inputnota">
+        </label>
+
+        <div id="infoNota" style="display: none;">
+
+            <input type="hidden" name="contentNota" id="contentNota">
+            <input type="hidden" name="idNota" id="idNota">
+            <input type="hidden" name="fornecedor_razao_social" id="fornecedor_razao_social">
+            <input type="hidden" name="fornecedor_cnpj" id="fornecedor_cnpj">
+
+            <div id="listprodutosnota" class="panel panel-default" style="margin-top: 10px;">
+                <div class="panel-heading"><h3 class="panel-title" id="titleDetalheNota">Detalhes da Nota</h3></div>
+                <div class="panel-body">
+                    <h4>Informações do fornecedor</h4>
+                    <ul id="infoEmpresaList">
+                    </ul>
+                    <h3 class="panel-title" style="padding-top: 20px;">Lista dos Itens</h3>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                    <th>Codigo</th>
+                    <th>Qtd</th>
+                    <th>Título Produto</th>
+                    <th>Valor</th>
+                    </thead>
+                    <tbody id="bodyListaItensNota">
+                    <tr>
+                        <td>0001
+                        <td>Teste de Produto
+                    </tbody>
+                </table>
+                <div id="inputsItensNota"></div>
+            </div>
+
+        </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#inputnota').change(function(){
+                $('#infoNota').fadeOut(200);
+                uploadNota();
+            });
+        });
+
+        function uploadNota(){
+
+            $('#buttonUploadNota').addClass('disabled');
+            var inputFile = $('#inputnota');
+
+            if(inputFile.val()==''){
+                alert('Informe um arquivo para upload');
+                return;
+            }
+
+            var file = document.getElementById('inputnota').files[0]; //Files[0] = 1st file
+            var reader = new FileReader();
+            reader.readAsText(file, 'UTF-8');
+            reader.onprogress = function(data) {
+                if (data.lengthComputable) {
+                    var progress = parseInt( ((data.loaded / data.total) * 100), 10 );
+                }
+            }
+            reader.onload = function(event){
+
+                var result = event.target.result;
+
+                $('#buttonUploadNota').removeClass('disabled');
+
+//                var fileName = document.getElementById('inputnota').files[0].name;
+
+                $('#contentNota').val(result);
+
+                var xmlDoc = $.parseXML( result );
+
+                var $xml = $(xmlDoc);
+
+                $('#idNota').val($xml.find('infNFe').attr('Id'));
+
+                var numeroNota = $xml.find("nNF");
+                $('#titleDetalheNota').html('Detalhes da Nota: <strong>nº.'+numeroNota.text()+'</strong>');
+
+                var razaoSocial = $xml.find('emit').find("xNome");
+                var cnpj = $xml.find("emit");
+                cnpj = cnpj.find('CNPJ');
+
+                $('#fornecedor_razao_social').val(razaoSocial.text());
+                $('#fornecedor_cnpj').val(cnpj.text());
+
+                var strInfoEmpresa = '<li><strong>Razão Social: </strong>'+razaoSocial.text()+'</li>'+
+                                     '<li><strong>CNPJ: </strong>'+cnpj.text()+'</li>';
+
+                $('#infoEmpresaList').empty();
+                $('#infoEmpresaList').html(strInfoEmpresa);
+
+
+                var itens = $xml.find('prod');
+                $("#bodyListaItensNota").empty();
+                $('#inputsItensNota').empty();
+                var contItens = 0;
+                itens.each(function(){
+                    contItens++;
+                    var codigo = $(this).find('cProd').text(),
+                        qtd    = $(this).find('qCom').text(),
+                        titulo = $(this).find('xProd').text(),
+                        valor  = $(this).find('vProd').text();
+
+                    var input = '<input type="hidden" name=\'produtoNota['+contItens+'][codigo]\' value="'+codigo+'"/>' +
+                                '<input type="hidden" name=\'produtoNota['+contItens+'][qtd]\' value="'+qtd+'"/>' +
+                                '<input type="hidden" name=\'produtoNota['+contItens+'][titulo]\' value="'+titulo+'"/>' +
+                                '<input type="hidden" name=\'produtoNota['+contItens+'][valor]\' value="'+valor+'"/>';
+
+                    $('#inputsItensNota').append(input);
+
+                    $("#bodyListaItensNota" ).append('<tr><td>' +codigo+ '<td>' +qtd+ '<td>' +titulo+ '<td>' +accounting.formatMoney(valor, "R$", 2, ".", ","));
+
+                });
+
+                $('#infoNota').fadeIn(200);
+
+            }
+
+        }
+    </script>
+
+    {% endspaceless %}
+{% endblock %}
+
+{% block app_map_widget %}
+    {% spaceless %}
+        <p>Arraste o marcador para o estabelecimento para gravar a localização</p>
+        <div id="map" style="width: 100%;height: 450px;"></div>
+        <div class="row" style="padding-bottom: 5px;">
+            <div class="col-md-12">
+                <span id="latitude-txt">&nbsp;</span>&nbsp;&nbsp;<span id="longitude-txt">&nbsp;</span>
+                <input type="hidden" id="latitude" name="latitude_mapa" value="{{ form.parent.vars["data"].latitude }}">
+                <input type="hidden" id="longitude" name="longitude_mapa" value="{{ form.parent.vars["data"].longitude }}">
+                <input type="hidden" id="zoom_map" name="zoom_map" value="{{ form.parent.vars["data"].zoomMapa }}">
+            </div>
+
+        </div>
+        <script>
+            var marker;
+            function initMap() {
+
+                {% if form.parent.vars["data"].latitude is empty %}
+                var myLatlng = new google.maps.LatLng(-16.251969, -50.364335);
+                {% else %}
+                var myLatlng = new google.maps.LatLng({{ form.parent.vars["data"].latitude }}, {{ form.parent.vars["data"].longitude }});
+                {% endif %}
+
+                {% if form.parent.vars["data"].zoomMapa is empty %}
+                var zoomMapa = 5;
+                {% else %}
+                var zoomMapa = {{ form.parent.vars["data"].zoomMapa }}
+                {% endif %}
+
+                // Create a map object and specify the DOM element for display.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatlng,
+                    scrollwheel: false,
+                    zoom: zoomMapa
+                });
+
+                map.addListener('zoom_changed', function() {
+                    google.maps.event.trigger(map, "resize");
+                    $('#zoom_map').val(map.getZoom());
+                });
+
+                marker = new google.maps.Marker({
+                    map: map,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    position: myLatlng
+                });
+                marker.addListener('dragend', handleEvent);
+            }
+
+            function handleEvent(event) {
+                $('#latitude-txt').html(event.latLng.lat());
+                $('#longitude-txt').html(event.latLng.lng());
+                $('#latitude').val(event.latLng.lat());
+                $('#longitude').val(event.latLng.lng());
+            }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBakjXapuMHSBkLOrbAowlksYZ_ydPfTi4&callback=initMap"
+                async defer></script>
+    {% endspaceless %}
+{% endblock %}

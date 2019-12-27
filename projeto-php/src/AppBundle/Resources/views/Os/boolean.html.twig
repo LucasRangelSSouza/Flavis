@@ -1,0 +1,15 @@
+{% extends 'SonataAdminBundle:CRUD:base_show_field.html.twig' %}
+
+{% block field%}
+
+    <span class="label label-warning">
+
+        {% if value %}
+             OS Fechada
+        {% else %}
+            OS Aberta
+        {% endif %}
+
+    </span>
+
+{% endblock %}

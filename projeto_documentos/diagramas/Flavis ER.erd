@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Flavis ER.erd" time="201906241520">
+	<entities>
+		<data-source id="postgres-jdbc-16b6b0023fc-24cfbaf8df4dfd57">
+			<entity id="1" name="acl_classes" fq-name="public.acl_classes" order="0" x="321" y="443">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="acl_entries" fq-name="public.acl_entries" order="1" x="20" y="471">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="acl_object_identities" fq-name="public.acl_object_identities" order="2" x="321" y="774">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="acl_object_identity_ancestors" fq-name="public.acl_object_identity_ancestors" order="3" x="20" y="802">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="5" name="acl_security_identities" fq-name="public.acl_security_identities" order="4" x="321" y="547">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="6" name="agendamento_manutencao_equipamento" fq-name="public.agendamento_manutencao_equipamento" order="5" x="1133" y="404">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="7" name="agendamento_ordem_servico" fq-name="public.agendamento_ordem_servico" order="6" x="734" y="4206">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="8" name="bairro" fq-name="public.bairro" order="7" x="1924" y="4541">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="9" name="cidade" fq-name="public.cidade" order="8" x="2214" y="4476">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="10" name="classification__category" fq-name="public.classification__category" order="9" x="1924" y="1173">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="11" name="classification__collection" fq-name="public.classification__collection" order="10" x="1924" y="657">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="12" name="classification__context" fq-name="public.classification__context" order="11" x="2214" y="695">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="13" name="classification__tag" fq-name="public.classification__tag" order="12" x="1924" y="439">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="14" name="cliente" fq-name="public.cliente" order="13" x="1924" y="3197">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="15" name="cliente_documento" fq-name="public.cliente_documento" order="14" x="1550" y="2391">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="16" name="cliente_endereco" fq-name="public.cliente_endereco" order="15" x="1133" y="3490">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="17" name="cliente_equipamento" fq-name="public.cliente_equipamento" order="16" x="1550" y="593">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="18" name="cliente_equipamento_agendamento_manutencao_equipamento" fq-name="public.cliente_equipamento_agendamento_manutencao_equipamento" order="17" x="734" y="678">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="19" name="cliente_equipamento_propriedade_equipamento" fq-name="public.cliente_equipamento_propriedade_equipamento" order="18" x="1133" y="603">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="20" name="cliente_responsavel_cliente" fq-name="public.cliente_responsavel_cliente" order="19" x="1133" y="3261">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="21" name="cliente_telefone" fq-name="public.cliente_telefone" order="20" x="1550" y="2826">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="22" name="colaborador" fq-name="public.colaborador" order="21" x="1924" y="3886">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="23" name="colaborador_documento" fq-name="public.colaborador_documento" order="22" x="1550" y="2701">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="24" name="colaborador_endereco" fq-name="public.colaborador_endereco" order="23" x="1133" y="4589">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="25" name="colaborador_filial_empresa" fq-name="public.colaborador_filial_empresa" order="24" x="1550" y="4991">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="26" name="colaborador_telefone" fq-name="public.colaborador_telefone" order="25" x="1550" y="3311">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="27" name="contato" fq-name="public.contato" order="26" x="1924" y="2516">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="28" name="contato_telefone" fq-name="public.contato_telefone" order="27" x="1550" y="2555">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="29" name="documento" fq-name="public.documento" order="28" x="1924" y="1628">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="30" name="empresa" fq-name="public.empresa" order="29" x="2789" y="2649">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="31" name="endereco" fq-name="public.endereco" order="30" x="1550" y="4173">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="32" name="entrada_produto" fq-name="public.entrada_produto" order="31" x="1550" y="1661">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="33" name="entrada_produto_produto_saida" fq-name="public.entrada_produto_produto_saida" order="32" x="734" y="1737">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="34" name="equipamento_cliente" fq-name="public.equipamento_cliente" order="33" x="1924" y="181">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="35" name="equipamento_cliente_agendamento_manutencao_equipamento" fq-name="public.equipamento_cliente_agendamento_manutencao_equipamento" order="34" x="734" y="184">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="36" name="execucao_de_procedimento_equipamento" fq-name="public.execucao_de_procedimento_equipamento" order="35" x="734" y="782">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="37" name="execucao_de_procedimento_equipamento_foto_execucao_os" fq-name="public.execucao_de_procedimento_equipamento_foto_execucao_os" order="36" x="321" y="670">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="38" name="ferramenta_almoxarifado" fq-name="public.ferramenta_almoxarifado" order="37" x="1924" y="934">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="39" name="ferramenta_almoxarifado_documento" fq-name="public.ferramenta_almoxarifado_documento" order="38" x="1550" y="868">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="40" name="ficha_tecnica_produto" fq-name="public.ficha_tecnica_produto" order="39" x="734" y="2536">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="41" name="filial_empresa" fq-name="public.filial_empresa" order="40" x="2214" y="4675">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="42" name="filial_empresa_unidade_federativa" fq-name="public.filial_empresa_unidade_federativa" order="41" x="1924" y="4781">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="43" name="fornecedor" fq-name="public.fornecedor" order="42" x="1924" y="1945">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="44" name="fornecedor_documento" fq-name="public.fornecedor_documento" order="43" x="1550" y="1557">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="45" name="fornecedor_endereco" fq-name="public.fornecedor_endereco" order="44" x="1133" y="3386">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="46" name="fos_user_group" fq-name="public.fos_user_group" order="45" x="2214" y="4152">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="47" name="fos_user_user" fq-name="public.fos_user_user" order="46" x="2214" y="3706">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="48" name="fos_user_user_group" fq-name="public.fos_user_user_group" order="47" x="1924" y="3782">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="49" name="foto_execucao_os" fq-name="public.foto_execucao_os" order="48" x="734" y="498">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="50" name="foto_os" fq-name="public.foto_os" order="49" x="1133" y="2747">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="51" name="funcao" fq-name="public.funcao" order="50" x="2214" y="4296">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="52" name="homologacao_os" fq-name="public.homologacao_os" order="51" x="734" y="3950">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="53" name="marca_equipamento" fq-name="public.marca_equipamento" order="52" x="2214" y="37">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="54" name="media__gallery" fq-name="public.media__gallery" order="53" x="2214" y="2287">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="55" name="media__gallery_media" fq-name="public.media__gallery_media" order="54" x="1924" y="2277">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="56" name="media__media" fq-name="public.media__media" order="55" x="2214" y="1173">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="57" name="migration_versions" fq-name="public.migration_versions" order="56" x="20" y="954">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="58" name="modelo_equipamento" fq-name="public.modelo_equipamento" order="57" x="2214" y="217">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="59" name="norma" fq-name="public.norma" order="58" x="1550" y="3850">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="60" name="orcamento_produto" fq-name="public.orcamento_produto" order="59" x="1550" y="3499">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="61" name="orcamento_produto_produto_solicitacao" fq-name="public.orcamento_produto_produto_solicitacao" order="60" x="734" y="3318">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="62" name="ordem_compra_produto" fq-name="public.ordem_compra_produto" order="61" x="1133" y="2946">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="63" name="ordem_compra_produto_produto_saida" fq-name="public.ordem_compra_produto_produto_saida" order="62" x="734" y="2432">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="64" name="ordem_servico" fq-name="public.ordem_servico" order="63" x="1133" y="3738">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="65" name="ordem_servico_colaborador" fq-name="public.ordem_servico_colaborador" order="64" x="734" y="4500">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="66" name="ordem_servico_ficha_tecnica_produto" fq-name="public.ordem_servico_ficha_tecnica_produto" order="65" x="321" y="3147">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="67" name="ordem_servico_foto_os" fq-name="public.ordem_servico_foto_os" order="66" x="734" y="3422">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="68" name="perfil" fq-name="public.perfil" order="67" x="2519" y="2611">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="69" name="posicao_tecnico" fq-name="public.posicao_tecnico" order="68" x="1550" y="4610">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="70" name="produto_almoxarifado" fq-name="public.produto_almoxarifado" order="69" x="1550" y="1917">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="71" name="produto_almoxarifado_documento" fq-name="public.produto_almoxarifado_documento" order="70" x="1133" y="1805">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="72" name="produto_estoque" fq-name="public.produto_estoque" order="71" x="1133" y="2460">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="73" name="produto_saida" fq-name="public.produto_saida" order="72" x="1133" y="2136">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="74" name="produto_solicitacao" fq-name="public.produto_solicitacao" order="73" x="1133" y="2299">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="75" name="propriedade_equipamento" fq-name="public.propriedade_equipamento" order="74" x="1550" y="413">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="76" name="propriedade_equipamento_valor_propriedade_equipamento" fq-name="public.propriedade_equipamento_valor_propriedade_equipamento" order="75" x="1133" y="795">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="77" name="relatorio_execucao_de_procedimento_equipamento" fq-name="public.relatorio_execucao_de_procedimento_equipamento" order="76" x="321" y="1058">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="78" name="relatorio_ordem_servico" fq-name="public.relatorio_ordem_servico" order="77" x="321" y="4178">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="79" name="relatorio_ordem_servico_foto_os" fq-name="public.relatorio_ordem_servico_foto_os" order="78" x="20" y="2794">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="80" name="requisicao_produto" fq-name="public.requisicao_produto" order="79" x="734" y="4604">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="81" name="requisicao_produto_produto_saida" fq-name="public.requisicao_produto_produto_saida" order="80" x="321" y="3251">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="82" name="responsavel_cliente" fq-name="public.responsavel_cliente" order="81" x="1550" y="2951">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="83" name="revisions" fq-name="public.revisions" order="82" x="321" y="935">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="84" name="telefone" fq-name="public.telefone" order="83" x="1924" y="2795">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="85" name="tempo_ocioso_tecnico" fq-name="public.tempo_ocioso_tecnico" order="84" x="1550" y="4790">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="86" name="tipo_documento" fq-name="public.tipo_documento" order="85" x="2214" y="1723">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="87" name="tipo_endereco" fq-name="public.tipo_endereco" order="86" x="1924" y="4885">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="88" name="tipo_negocio" fq-name="public.tipo_negocio" order="87" x="2214" y="3330">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="89" name="tipo_telefone" fq-name="public.tipo_telefone" order="88" x="2214" y="2833">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="90" name="titulo_agendamento_manutencao_equipamento" fq-name="public.titulo_agendamento_manutencao_equipamento" order="89" x="1550" y="252">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="91" name="titulo_propriedade_equipamento" fq-name="public.titulo_propriedade_equipamento" order="90" x="1924" y="20">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="92" name="titulo_valor_propriedade_equipamento" fq-name="public.titulo_valor_propriedade_equipamento" order="91" x="1924" y="1467">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="93" name="unidade_federativa" fq-name="public.unidade_federativa" order="92" x="2214" y="4855">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="94" name="usuario_cliente" fq-name="public.usuario_cliente" order="93" x="1924" y="3017">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="95" name="usuario_cliente_cliente" fq-name="public.usuario_cliente_cliente" order="94" x="1550" y="3207">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="96" name="valor_propriedade_equipamento" fq-name="public.valor_propriedade_equipamento" order="95" x="1550" y="972">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes/>
+	<relations>
+		<relation name="fk_46c8b806ea000b10" fq-name="public.acl_entries.fk_46c8b806ea000b10" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="fk_46c8b8063d9ab4a6" fq-name="public.acl_entries.fk_46c8b8063d9ab4a6" type="fk" pk-ref="3" fk-ref="2"/>
+		<relation name="fk_9407e54977fa751a" fq-name="public.acl_object_identities.fk_9407e54977fa751a" type="fk" pk-ref="3" fk-ref="3">
+			<bend type="rel" x="661" y="904"/>
+			<bend type="rel" x="457" y="937"/>
+		</relation>
+		<relation name="fk_825de2993d9ab4a6" fq-name="public.acl_object_identity_ancestors.fk_825de2993d9ab4a6" type="fk" pk-ref="3" fk-ref="4"/>
+		<relation name="fk_825de299c671cea1" fq-name="public.acl_object_identity_ancestors.fk_825de299c671cea1" type="fk" pk-ref="3" fk-ref="4"/>
+		<relation name="fk_46c8b806df9183c9" fq-name="public.acl_entries.fk_46c8b806df9183c9" type="fk" pk-ref="5" fk-ref="2"/>
+		<relation name="fk_40a8c1763a7a70a1" fq-name="public.cliente_equipamento_agendamento_manutencao_equipamento.fk_40a8c1763a7a70a1" type="fk" pk-ref="6" fk-ref="18"/>
+		<relation name="fk_175f78a33a7a70a1" fq-name="public.equipamento_cliente_agendamento_manutencao_equipamento.fk_175f78a33a7a70a1" type="fk" pk-ref="6" fk-ref="35"/>
+		<relation name="fk_7c0a3021ac76f9bf" fq-name="public.execucao_de_procedimento_equipamento.fk_7c0a3021ac76f9bf" type="fk" pk-ref="6" fk-ref="36"/>
+		<relation name="fk_b6c47983c427592f" fq-name="public.relatorio_ordem_servico.fk_b6c47983c427592f" type="fk" pk-ref="7" fk-ref="78"/>
+		<relation name="fk_f8e0d60ea94ef08d" fq-name="public.endereco.fk_f8e0d60ea94ef08d" type="fk" pk-ref="8" fk-ref="31"/>
+		<relation name="fk_81f332059586cc8" fq-name="public.bairro.fk_81f332059586cc8" type="fk" pk-ref="9" fk-ref="8"/>
+		<relation name="fk_43629b36727aca70" fq-name="public.classification__category.fk_43629b36727aca70" type="fk" pk-ref="10" fk-ref="10">
+			<bend type="rel" x="2179" y="1437"/>
+			<bend type="rel" x="2026" y="1503"/>
+		</relation>
+		<relation name="fk_5c6dd74e12469de2" fq-name="public.media__media.fk_5c6dd74e12469de2" type="fk" pk-ref="10" fk-ref="56"/>
+		<relation name="fk_43629b36e25d857e" fq-name="public.classification__category.fk_43629b36e25d857e" type="fk" pk-ref="12" fk-ref="10"/>
+		<relation name="fk_a406b56ae25d857e" fq-name="public.classification__collection.fk_a406b56ae25d857e" type="fk" pk-ref="12" fk-ref="11"/>
+		<relation name="fk_ca57a1c7e25d857e" fq-name="public.classification__tag.fk_ca57a1c7e25d857e" type="fk" pk-ref="12" fk-ref="13"/>
+		<relation name="fk_f41c9b255263402" fq-name="public.cliente.fk_f41c9b255263402" type="fk" pk-ref="14" fk-ref="14">
+			<bend type="rel" x="2229" y="3613"/>
+			<bend type="rel" x="2046" y="3717"/>
+		</relation>
+		<relation name="fk_a1bca103de734e51" fq-name="public.cliente_documento.fk_a1bca103de734e51" type="fk" pk-ref="14" fk-ref="15"/>
+		<relation name="fk_42d15190de734e51" fq-name="public.cliente_endereco.fk_42d15190de734e51" type="fk" pk-ref="14" fk-ref="16"/>
+		<relation name="fk_62035dc4de734e51" fq-name="public.cliente_equipamento.fk_62035dc4de734e51" type="fk" pk-ref="14" fk-ref="17"/>
+		<relation name="fk_578edbdade734e51" fq-name="public.cliente_responsavel_cliente.fk_578edbdade734e51" type="fk" pk-ref="14" fk-ref="20"/>
+		<relation name="fk_9b0364ffde734e51" fq-name="public.cliente_telefone.fk_9b0364ffde734e51" type="fk" pk-ref="14" fk-ref="21"/>
+		<relation name="fk_f8e0d60ede734e51" fq-name="public.endereco.fk_f8e0d60ede734e51" type="fk" pk-ref="14" fk-ref="31"/>
+		<relation name="fk_844b5727de734e51" fq-name="public.ordem_servico.fk_844b5727de734e51" type="fk" pk-ref="14" fk-ref="64"/>
+		<relation name="fk_a64a0d0ede734e51" fq-name="public.responsavel_cliente.fk_a64a0d0ede734e51" type="fk" pk-ref="14" fk-ref="82"/>
+		<relation name="fk_f0192390de734e51" fq-name="public.usuario_cliente_cliente.fk_f0192390de734e51" type="fk" pk-ref="14" fk-ref="95"/>
+		<relation name="fk_40a8c17666fb896d" fq-name="public.cliente_equipamento_agendamento_manutencao_equipamento.fk_40a8c17666fb896d" type="fk" pk-ref="17" fk-ref="18"/>
+		<relation name="fk_8875d3d966fb896d" fq-name="public.cliente_equipamento_propriedade_equipamento.fk_8875d3d966fb896d" type="fk" pk-ref="17" fk-ref="19"/>
+		<relation name="fk_7c0a30218a0a8e0d" fq-name="public.execucao_de_procedimento_equipamento.fk_7c0a30218a0a8e0d" type="fk" pk-ref="17" fk-ref="36"/>
+		<relation name="fk_a9357bccd3b12c7" fq-name="public.agendamento_ordem_servico.fk_a9357bccd3b12c7" type="fk" pk-ref="22" fk-ref="7">
+			<bend type="abs" x="1133" y="4495"/>
+			<bend type="abs" x="1550" y="4495"/>
+		</relation>
+		<relation name="fk_a9357bcf1cb264e" fq-name="public.agendamento_ordem_servico.fk_a9357bcf1cb264e" type="fk" pk-ref="22" fk-ref="7">
+			<bend type="abs" x="1133" y="4516"/>
+			<bend type="abs" x="1550" y="4516"/>
+		</relation>
+		<relation name="fk_c6b3caef1cb264e" fq-name="public.colaborador_documento.fk_c6b3caef1cb264e" type="fk" pk-ref="22" fk-ref="23"/>
+		<relation name="fk_f2c4bafaf1cb264e" fq-name="public.colaborador_endereco.fk_f2c4bafaf1cb264e" type="fk" pk-ref="22" fk-ref="24"/>
+		<relation name="fk_f7cae19cf1cb264e" fq-name="public.colaborador_filial_empresa.fk_f7cae19cf1cb264e" type="fk" pk-ref="22" fk-ref="25"/>
+		<relation name="fk_2b168f95f1cb264e" fq-name="public.colaborador_telefone.fk_2b168f95f1cb264e" type="fk" pk-ref="22" fk-ref="26"/>
+		<relation name="fk_f8e0d60ef1cb264e" fq-name="public.endereco.fk_f8e0d60ef1cb264e" type="fk" pk-ref="22" fk-ref="31"/>
+		<relation name="fk_1c982489f1cb264e" fq-name="public.entrada_produto.fk_1c982489f1cb264e" type="fk" pk-ref="22" fk-ref="32"/>
+		<relation name="fk_aced428b8c2aa04c" fq-name="public.orcamento_produto.fk_aced428b8c2aa04c" type="fk" pk-ref="22" fk-ref="60"/>
+		<relation name="fk_aced428bf1cb264e" fq-name="public.orcamento_produto.fk_aced428bf1cb264e" type="fk" pk-ref="22" fk-ref="60"/>
+		<relation name="fk_aced428bf40b147f" fq-name="public.orcamento_produto.fk_aced428bf40b147f" type="fk" pk-ref="22" fk-ref="60"/>
+		<relation name="fk_b484ddde8c2aa04c" fq-name="public.ordem_compra_produto.fk_b484ddde8c2aa04c" type="fk" pk-ref="22" fk-ref="62"/>
+		<relation name="fk_b484dddef1cb264e" fq-name="public.ordem_compra_produto.fk_b484dddef1cb264e" type="fk" pk-ref="22" fk-ref="62"/>
+		<relation name="fk_844b57278b674866" fq-name="public.ordem_servico.fk_844b57278b674866" type="fk" pk-ref="22" fk-ref="64"/>
+		<relation name="fk_844b5727cd3b12c7" fq-name="public.ordem_servico.fk_844b5727cd3b12c7" type="fk" pk-ref="22" fk-ref="64"/>
+		<relation name="fk_844b5727f008ab6" fq-name="public.ordem_servico.fk_844b5727f008ab6" type="fk" pk-ref="22" fk-ref="64"/>
+		<relation name="fk_844b5727fc6e767b" fq-name="public.ordem_servico.fk_844b5727fc6e767b" type="fk" pk-ref="22" fk-ref="64"/>
+		<relation name="fk_ec8aee89f1cb264e" fq-name="public.ordem_servico_colaborador.fk_ec8aee89f1cb264e" type="fk" pk-ref="22" fk-ref="65">
+			<bend type="abs" x="1133" y="4537"/>
+			<bend type="abs" x="1550" y="4537"/>
+		</relation>
+		<relation name="fk_d062c751841db1e7" fq-name="public.posicao_tecnico.fk_d062c751841db1e7" type="fk" pk-ref="22" fk-ref="69"/>
+		<relation name="fk_b6c47983f1cb264e" fq-name="public.relatorio_ordem_servico.fk_b6c47983f1cb264e" type="fk" pk-ref="22" fk-ref="78">
+			<bend type="abs" x="734" y="4960"/>
+			<bend type="abs" x="1133" y="4960"/>
+			<bend type="abs" x="1550" y="4960"/>
+		</relation>
+		<relation name="fk_c1785dd0f1cb264e" fq-name="public.requisicao_produto.fk_c1785dd0f1cb264e" type="fk" pk-ref="22" fk-ref="80">
+			<bend type="abs" x="1133" y="4558"/>
+			<bend type="abs" x="1550" y="4558"/>
+		</relation>
+		<relation name="fk_5a394362841db1e7" fq-name="public.tempo_ocioso_tecnico.fk_5a394362841db1e7" type="fk" pk-ref="22" fk-ref="85"/>
+		<relation name="fk_e394d4a1b279be46" fq-name="public.contato_telefone.fk_e394d4a1b279be46" type="fk" pk-ref="27" fk-ref="28"/>
+		<relation name="fk_a1bca10345c0cf75" fq-name="public.cliente_documento.fk_a1bca10345c0cf75" type="fk" pk-ref="29" fk-ref="15"/>
+		<relation name="fk_c6b3cae45c0cf75" fq-name="public.colaborador_documento.fk_c6b3cae45c0cf75" type="fk" pk-ref="29" fk-ref="23"/>
+		<relation name="fk_303edadd45c0cf75" fq-name="public.ferramenta_almoxarifado_documento.fk_303edadd45c0cf75" type="fk" pk-ref="29" fk-ref="39"/>
+		<relation name="fk_40dc7b8445c0cf75" fq-name="public.fornecedor_documento.fk_40dc7b8445c0cf75" type="fk" pk-ref="29" fk-ref="44"/>
+		<relation name="fk_28188a9745c0cf75" fq-name="public.produto_almoxarifado_documento.fk_28188a9745c0cf75" type="fk" pk-ref="29" fk-ref="71"/>
+		<relation name="fk_perfil_empresa" fq-name="public.perfil.fk_perfil_empresa" type="fk" pk-ref="30" fk-ref="68"/>
+		<relation name="fk_42d151901bb76823" fq-name="public.cliente_endereco.fk_42d151901bb76823" type="fk" pk-ref="31" fk-ref="16"/>
+		<relation name="fk_f2c4bafa1bb76823" fq-name="public.colaborador_endereco.fk_f2c4bafa1bb76823" type="fk" pk-ref="31" fk-ref="24"/>
+		<relation name="fk_2c93cedb1bb76823" fq-name="public.fornecedor_endereco.fk_2c93cedb1bb76823" type="fk" pk-ref="31" fk-ref="45"/>
+		<relation name="fk_844b57271bb76823" fq-name="public.ordem_servico.fk_844b57271bb76823" type="fk" pk-ref="31" fk-ref="64"/>
+		<relation name="fk_a9eaafd87991ff3" fq-name="public.entrada_produto_produto_saida.fk_a9eaafd87991ff3" type="fk" pk-ref="32" fk-ref="33"/>
+		<relation name="fk_62035dc4c20f76de" fq-name="public.cliente_equipamento.fk_62035dc4c20f76de" type="fk" pk-ref="34" fk-ref="17"/>
+		<relation name="fk_175f78a38a0a8e0d" fq-name="public.equipamento_cliente_agendamento_manutencao_equipamento.fk_175f78a38a0a8e0d" type="fk" pk-ref="34" fk-ref="35">
+			<bend type="abs" x="1133" y="221"/>
+			<bend type="abs" x="1550" y="221"/>
+		</relation>
+		<relation name="fk_6518d086605d3676" fq-name="public.execucao_de_procedimento_equipamento_foto_execucao_os.fk_6518d086605d3676" type="fk" pk-ref="36" fk-ref="37"/>
+		<relation name="fk_7858de2637818941" fq-name="public.relatorio_execucao_de_procedimento_equipamento.fk_7858de2637818941" type="fk" pk-ref="36" fk-ref="77"/>
+		<relation name="fk_303edadd962f69cd" fq-name="public.ferramenta_almoxarifado_documento.fk_303edadd962f69cd" type="fk" pk-ref="38" fk-ref="39"/>
+		<relation name="fk_71d2c007fd4d113a" fq-name="public.ordem_servico_ficha_tecnica_produto.fk_71d2c007fd4d113a" type="fk" pk-ref="40" fk-ref="66"/>
+		<relation name="fk_f41c9b25299b2577" fq-name="public.cliente.fk_f41c9b25299b2577" type="fk" pk-ref="41" fk-ref="14"/>
+		<relation name="fk_f7cae19c78ab74db" fq-name="public.colaborador_filial_empresa.fk_f7cae19c78ab74db" type="fk" pk-ref="41" fk-ref="25"/>
+		<relation name="fk_a20c8b4478ab74db" fq-name="public.filial_empresa_unidade_federativa.fk_a20c8b4478ab74db" type="fk" pk-ref="41" fk-ref="42"/>
+		<relation name="fk_1c982489d3ebb69d" fq-name="public.entrada_produto.fk_1c982489d3ebb69d" type="fk" pk-ref="43" fk-ref="32"/>
+		<relation name="fk_688b5eb0c0a0fdfa" fq-name="public.ficha_tecnica_produto.fk_688b5eb0c0a0fdfa" type="fk" pk-ref="43" fk-ref="40">
+			<bend type="abs" x="1133" y="2268"/>
+			<bend type="abs" x="1550" y="2296"/>
+		</relation>
+		<relation name="fk_40dc7b84d3ebb69d" fq-name="public.fornecedor_documento.fk_40dc7b84d3ebb69d" type="fk" pk-ref="43" fk-ref="44"/>
+		<relation name="fk_2c93cedbd3ebb69d" fq-name="public.fornecedor_endereco.fk_2c93cedbd3ebb69d" type="fk" pk-ref="43" fk-ref="45"/>
+		<relation name="fk_b484ddded3ebb69d" fq-name="public.ordem_compra_produto.fk_b484ddded3ebb69d" type="fk" pk-ref="43" fk-ref="62"/>
+		<relation name="fk_451a39ddd3ebb69d" fq-name="public.produto_almoxarifado.fk_451a39ddd3ebb69d" type="fk" pk-ref="43" fk-ref="70"/>
+		<relation name="fk_54d18fdcd3ebb69d" fq-name="public.produto_solicitacao.fk_54d18fdcd3ebb69d" type="fk" pk-ref="43" fk-ref="74"/>
+		<relation name="fk_cliente_fos_user_group" fq-name="public.cliente.fk_cliente_fos_user_group" type="fk" pk-ref="46" fk-ref="14"/>
+		<relation name="fk_d2f80bb3dbd30545" fq-name="public.colaborador.fk_d2f80bb3dbd30545" type="fk" pk-ref="46" fk-ref="22"/>
+		<relation name="fk_b3c77447fe54d947" fq-name="public.fos_user_user_group.fk_b3c77447fe54d947" type="fk" pk-ref="46" fk-ref="48"/>
+		<relation name="fk_cliente_fos_user_user" fq-name="public.cliente.fk_cliente_fos_user_user" type="fk" pk-ref="47" fk-ref="14"/>
+		<relation name="fk_d2f80bb3a76ed395" fq-name="public.colaborador.fk_d2f80bb3a76ed395" type="fk" pk-ref="47" fk-ref="22"/>
+		<relation name="fk_b3c77447a76ed395" fq-name="public.fos_user_user_group.fk_b3c77447a76ed395" type="fk" pk-ref="47" fk-ref="48"/>
+		<relation name="fk_8d3a3162a76ed395" fq-name="public.usuario_cliente.fk_8d3a3162a76ed395" type="fk" pk-ref="47" fk-ref="94"/>
+		<relation name="fk_6518d086c4a59320" fq-name="public.execucao_de_procedimento_equipamento_foto_execucao_os.fk_6518d086c4a59320" type="fk" pk-ref="49" fk-ref="37"/>
+		<relation name="fk_ef4635e1ef7db8bc" fq-name="public.ordem_servico_foto_os.fk_ef4635e1ef7db8bc" type="fk" pk-ref="50" fk-ref="67"/>
+		<relation name="fk_6ac4d3bdef7db8bc" fq-name="public.relatorio_ordem_servico_foto_os.fk_6ac4d3bdef7db8bc" type="fk" pk-ref="50" fk-ref="79">
+			<bend type="abs" x="321" y="2831"/>
+			<bend type="abs" x="734" y="2831"/>
+		</relation>
+		<relation name="fk_d2f80bb3263e9cb2" fq-name="public.colaborador.fk_d2f80bb3263e9cb2" type="fk" pk-ref="51" fk-ref="22"/>
+		<relation name="fk_a8183bb598a1b0b8" fq-name="public.equipamento_cliente.fk_a8183bb598a1b0b8" type="fk" pk-ref="53" fk-ref="34"/>
+		<relation name="fk_80d4c5414e7af8f" fq-name="public.media__gallery_media.fk_80d4c5414e7af8f" type="fk" pk-ref="54" fk-ref="55"/>
+		<relation name="fk_43629b36ea9fdd75" fq-name="public.classification__category.fk_43629b36ea9fdd75" type="fk" pk-ref="56" fk-ref="10"/>
+		<relation name="fk_a406b56aea9fdd75" fq-name="public.classification__collection.fk_a406b56aea9fdd75" type="fk" pk-ref="56" fk-ref="11"/>
+		<relation name="fk_62035dc47abfa656" fq-name="public.cliente_equipamento.fk_62035dc47abfa656" type="fk" pk-ref="56" fk-ref="17"/>
+		<relation name="fk_a8183bb57abfa656" fq-name="public.equipamento_cliente.fk_a8183bb57abfa656" type="fk" pk-ref="56" fk-ref="34"/>
+		<relation name="fk_80d4c541ea9fdd75" fq-name="public.media__gallery_media.fk_80d4c541ea9fdd75" type="fk" pk-ref="56" fk-ref="55"/>
+		<relation name="fk_a8183bb5c04160f0" fq-name="public.equipamento_cliente.fk_a8183bb5c04160f0" type="fk" pk-ref="58" fk-ref="34"/>
+		<relation name="fk_844b5727e06fc29e" fq-name="public.ordem_servico.fk_844b5727e06fc29e" type="fk" pk-ref="59" fk-ref="64"/>
+		<relation name="fk_f3aee7d897d582bf" fq-name="public.orcamento_produto_produto_solicitacao.fk_f3aee7d897d582bf" type="fk" pk-ref="60" fk-ref="61"/>
+		<relation name="fk_b484dddea01cf1ca" fq-name="public.ordem_compra_produto.fk_b484dddea01cf1ca" type="fk" pk-ref="60" fk-ref="62"/>
+		<relation name="fk_97ff63ab3f1521d5" fq-name="public.ordem_compra_produto_produto_saida.fk_97ff63ab3f1521d5" type="fk" pk-ref="62" fk-ref="63"/>
+		<relation name="fk_a9357bc3dca04d1" fq-name="public.agendamento_ordem_servico.fk_a9357bc3dca04d1" type="fk" pk-ref="64" fk-ref="7"/>
+		<relation name="fk_7c0a30213dca04d1" fq-name="public.execucao_de_procedimento_equipamento.fk_7c0a30213dca04d1" type="fk" pk-ref="64" fk-ref="36"/>
+		<relation name="fk_688b5eb03dca04d1" fq-name="public.ficha_tecnica_produto.fk_688b5eb03dca04d1" type="fk" pk-ref="64" fk-ref="40"/>
+		<relation name="fk_887d56ec3dca04d1" fq-name="public.homologacao_os.fk_887d56ec3dca04d1" type="fk" pk-ref="64" fk-ref="52"/>
+		<relation name="fk_844b5727392f5351" fq-name="public.ordem_servico.fk_844b5727392f5351" type="fk" pk-ref="64" fk-ref="64">
+			<bend type="rel" x="1460" y="4420"/>
+			<bend type="rel" x="1264" y="4590"/>
+		</relation>
+		<relation name="fk_ec8aee894fb7c65a" fq-name="public.ordem_servico_colaborador.fk_ec8aee894fb7c65a" type="fk" pk-ref="64" fk-ref="65"/>
+		<relation name="fk_71d2c0074fb7c65a" fq-name="public.ordem_servico_ficha_tecnica_produto.fk_71d2c0074fb7c65a" type="fk" pk-ref="64" fk-ref="66"/>
+		<relation name="fk_ef4635e14fb7c65a" fq-name="public.ordem_servico_foto_os.fk_ef4635e14fb7c65a" type="fk" pk-ref="64" fk-ref="67"/>
+		<relation name="fk_7858de263dca04d1" fq-name="public.relatorio_execucao_de_procedimento_equipamento.fk_7858de263dca04d1" type="fk" pk-ref="64" fk-ref="77"/>
+		<relation name="fk_c1785dd03dca04d1" fq-name="public.requisicao_produto.fk_c1785dd03dca04d1" type="fk" pk-ref="64" fk-ref="80"/>
+		<relation name="fk_cliente_perfil" fq-name="public.cliente.fk_cliente_perfil" type="fk" pk-ref="68" fk-ref="14"/>
+		<relation name="fk_cliente_equipamento_perfil" fq-name="public.cliente_equipamento.fk_cliente_equipamento_perfil" type="fk" pk-ref="68" fk-ref="17">
+			<bend type="abs" x="1924" y="408"/>
+			<bend type="abs" x="2214" y="408"/>
+		</relation>
+		<relation name="fk_colaborador_perfil" fq-name="public.colaborador.fk_colaborador_perfil" type="fk" pk-ref="68" fk-ref="22"/>
+		<relation name="fk_contato_perfil" fq-name="public.contato.fk_contato_perfil" type="fk" pk-ref="68" fk-ref="27"/>
+		<relation name="fk_documento_perfil" fq-name="public.documento.fk_documento_perfil" type="fk" pk-ref="68" fk-ref="29"/>
+		<relation name="fk_entrada_produto_perfil" fq-name="public.entrada_produto.fk_entrada_produto_perfil" type="fk" pk-ref="68" fk-ref="32">
+			<bend type="abs" x="1924" y="1893"/>
+			<bend type="abs" x="2214" y="1893"/>
+		</relation>
+		<relation name="fk_equipamento_cliente_perfil" fq-name="public.equipamento_cliente.fk_equipamento_cliente_perfil" type="fk" pk-ref="68" fk-ref="34"/>
+		<relation name="fk_ferramenta_almoxarifado_perfil" fq-name="public.ferramenta_almoxarifado.fk_ferramenta_almoxarifado_perfil" type="fk" pk-ref="68" fk-ref="38"/>
+		<relation name="fk_ficha_tecnica_produto_perfil" fq-name="public.ficha_tecnica_produto.fk_ficha_tecnica_produto_perfil" type="fk" pk-ref="68" fk-ref="40">
+			<bend type="abs" x="1133" y="2649"/>
+			<bend type="abs" x="1550" y="2649"/>
+			<bend type="abs" x="1924" y="2743"/>
+			<bend type="abs" x="2214" y="2743"/>
+		</relation>
+		<relation name="fk_filial_empresa_perfil" fq-name="public.filial_empresa.fk_filial_empresa_perfil" type="fk" pk-ref="68" fk-ref="41"/>
+		<relation name="fk_fornecedor_perfil" fq-name="public.fornecedor.fk_fornecedor_perfil" type="fk" pk-ref="68" fk-ref="43"/>
+		<relation name="fk_foto_os_perfil" fq-name="public.foto_os.fk_foto_os_perfil" type="fk" pk-ref="68" fk-ref="50">
+			<bend type="abs" x="1550" y="2670"/>
+			<bend type="abs" x="1924" y="2764"/>
+			<bend type="abs" x="2214" y="2764"/>
+		</relation>
+		<relation name="fk_marca_equipamento_perfil" fq-name="public.marca_equipamento.fk_marca_equipamento_perfil" type="fk" pk-ref="68" fk-ref="53"/>
+		<relation name="fk_modelo_equipamento_perfil" fq-name="public.modelo_equipamento.fk_modelo_equipamento_perfil" type="fk" pk-ref="68" fk-ref="58"/>
+		<relation name="fk_norma_perfil" fq-name="public.norma.fk_norma_perfil" type="fk" pk-ref="68" fk-ref="59">
+			<bend type="abs" x="1924" y="3654"/>
+			<bend type="abs" x="2214" y="3654"/>
+		</relation>
+		<relation name="fk_orcamento_produto_perfil" fq-name="public.orcamento_produto.fk_orcamento_produto_perfil" type="fk" pk-ref="68" fk-ref="60">
+			<bend type="abs" x="1924" y="3633"/>
+			<bend type="abs" x="2214" y="3633"/>
+		</relation>
+		<relation name="fk_ordem_compra_produto_perfil" fq-name="public.ordem_compra_produto.fk_ordem_compra_produto_perfil" type="fk" pk-ref="68" fk-ref="62">
+			<bend type="abs" x="1550" y="2920"/>
+			<bend type="abs" x="1924" y="2965"/>
+			<bend type="abs" x="2214" y="2965"/>
+		</relation>
+		<relation name="fk_ordem_servico_perfil" fq-name="public.ordem_servico.fk_ordem_servico_perfil" type="fk" pk-ref="68" fk-ref="64">
+			<bend type="abs" x="1550" y="4058"/>
+			<bend type="abs" x="1924" y="3751"/>
+			<bend type="abs" x="2214" y="3675"/>
+		</relation>
+		<relation name="fk_produto_almoxarifado_perfil" fq-name="public.produto_almoxarifado.fk_produto_almoxarifado_perfil" type="fk" pk-ref="68" fk-ref="70">
+			<bend type="abs" x="1924" y="1914"/>
+			<bend type="abs" x="2214" y="1914"/>
+		</relation>
+		<relation name="fk_produto_estoque_perfil" fq-name="public.produto_estoque.fk_produto_estoque_perfil" type="fk" pk-ref="68" fk-ref="72">
+			<bend type="abs" x="1550" y="2485"/>
+			<bend type="abs" x="1924" y="2485"/>
+			<bend type="abs" x="2214" y="2485"/>
+		</relation>
+		<relation name="fk_relatorio_execucao_de_procedimento_equipamento_perfil" fq-name="public.relatorio_execucao_de_procedimento_equipamento.fk_relatorio_execucao_de_procedimento_equipamento_perfil" type="fk" pk-ref="68" fk-ref="77">
+			<bend type="abs" x="734" y="1142"/>
+			<bend type="abs" x="1133" y="1142"/>
+			<bend type="abs" x="1550" y="1142"/>
+			<bend type="abs" x="1924" y="1142"/>
+			<bend type="abs" x="2214" y="1142"/>
+		</relation>
+		<relation name="fk_requisicao_produto_perfil" fq-name="public.requisicao_produto.fk_requisicao_produto_perfil" type="fk" pk-ref="68" fk-ref="80">
+			<bend type="abs" x="1133" y="4939"/>
+			<bend type="abs" x="1550" y="5085"/>
+			<bend type="abs" x="1924" y="5085"/>
+			<bend type="abs" x="2214" y="5085"/>
+		</relation>
+		<relation name="fk_responsavel_cliente_perfil" fq-name="public.responsavel_cliente.fk_responsavel_cliente_perfil" type="fk" pk-ref="68" fk-ref="82">
+			<bend type="abs" x="1924" y="2986"/>
+			<bend type="abs" x="2214" y="2986"/>
+		</relation>
+		<relation name="fk_usuario_cliente_perfil" fq-name="public.usuario_cliente.fk_usuario_cliente_perfil" type="fk" pk-ref="68" fk-ref="94"/>
+		<relation name="fk_28188a9710f617d6" fq-name="public.produto_almoxarifado_documento.fk_28188a9710f617d6" type="fk" pk-ref="70" fk-ref="71"/>
+		<relation name="fk_a6de2587105cfd56" fq-name="public.produto_estoque.fk_a6de2587105cfd56" type="fk" pk-ref="70" fk-ref="72"/>
+		<relation name="fk_351379fc105cfd56" fq-name="public.produto_saida.fk_351379fc105cfd56" type="fk" pk-ref="70" fk-ref="73"/>
+		<relation name="fk_54d18fdc105cfd56" fq-name="public.produto_solicitacao.fk_54d18fdc105cfd56" type="fk" pk-ref="70" fk-ref="74"/>
+		<relation name="fk_a9eaafda0dcccd0" fq-name="public.entrada_produto_produto_saida.fk_a9eaafda0dcccd0" type="fk" pk-ref="73" fk-ref="33"/>
+		<relation name="fk_97ff63aba0dcccd0" fq-name="public.ordem_compra_produto_produto_saida.fk_97ff63aba0dcccd0" type="fk" pk-ref="73" fk-ref="63"/>
+		<relation name="fk_32fc4e18a0dcccd0" fq-name="public.requisicao_produto_produto_saida.fk_32fc4e18a0dcccd0" type="fk" pk-ref="73" fk-ref="81"/>
+		<relation name="fk_f3aee7d8af1d6ff6" fq-name="public.orcamento_produto_produto_solicitacao.fk_f3aee7d8af1d6ff6" type="fk" pk-ref="74" fk-ref="61"/>
+		<relation name="fk_c28f36e1c06e7175" fq-name="public.agendamento_manutencao_equipamento.fk_c28f36e1c06e7175" type="fk" pk-ref="75" fk-ref="6"/>
+		<relation name="fk_8875d3d9a8556ba3" fq-name="public.cliente_equipamento_propriedade_equipamento.fk_8875d3d9a8556ba3" type="fk" pk-ref="75" fk-ref="19"/>
+		<relation name="fk_d64cb9c6a8556ba3" fq-name="public.propriedade_equipamento_valor_propriedade_equipamento.fk_d64cb9c6a8556ba3" type="fk" pk-ref="75" fk-ref="76"/>
+		<relation name="fk_6ac4d3bde7c6a449" fq-name="public.relatorio_ordem_servico_foto_os.fk_6ac4d3bde7c6a449" type="fk" pk-ref="78" fk-ref="79"/>
+		<relation name="fk_32fc4e18ba032ad6" fq-name="public.requisicao_produto_produto_saida.fk_32fc4e18ba032ad6" type="fk" pk-ref="80" fk-ref="81"/>
+		<relation name="fk_a9357bcc680a87" fq-name="public.agendamento_ordem_servico.fk_a9357bcc680a87" type="fk" pk-ref="82" fk-ref="7"/>
+		<relation name="fk_578edbda4f783e5f" fq-name="public.cliente_responsavel_cliente.fk_578edbda4f783e5f" type="fk" pk-ref="82" fk-ref="20"/>
+		<relation name="fk_9b0364ff92d095a9" fq-name="public.cliente_telefone.fk_9b0364ff92d095a9" type="fk" pk-ref="84" fk-ref="21"/>
+		<relation name="fk_2b168f9592d095a9" fq-name="public.colaborador_telefone.fk_2b168f9592d095a9" type="fk" pk-ref="84" fk-ref="26"/>
+		<relation name="fk_e394d4a192d095a9" fq-name="public.contato_telefone.fk_e394d4a192d095a9" type="fk" pk-ref="84" fk-ref="28"/>
+		<relation name="fk_b6b12ec7f6939175" fq-name="public.documento.fk_b6b12ec7f6939175" type="fk" pk-ref="86" fk-ref="29"/>
+		<relation name="fk_f8e0d60ea9276e6c" fq-name="public.endereco.fk_f8e0d60ea9276e6c" type="fk" pk-ref="87" fk-ref="31"/>
+		<relation name="fk_f41c9b25ec019c67" fq-name="public.cliente.fk_f41c9b25ec019c67" type="fk" pk-ref="88" fk-ref="14"/>
+		<relation name="fk_2132e361a9276e6c" fq-name="public.telefone.fk_2132e361a9276e6c" type="fk" pk-ref="89" fk-ref="84"/>
+		<relation name="fk_c28f36e18cdc7a94" fq-name="public.agendamento_manutencao_equipamento.fk_c28f36e18cdc7a94" type="fk" pk-ref="90" fk-ref="6"/>
+		<relation name="fk_c06e7175e592c6ed" fq-name="public.propriedade_equipamento.fk_c06e7175e592c6ed" type="fk" pk-ref="91" fk-ref="75"/>
+		<relation name="fk_56ab6dc54e4f0650" fq-name="public.valor_propriedade_equipamento.fk_56ab6dc54e4f0650" type="fk" pk-ref="92" fk-ref="96"/>
+		<relation name="fk_a20c8b44c24b0e0a" fq-name="public.filial_empresa_unidade_federativa.fk_a20c8b44c24b0e0a" type="fk" pk-ref="93" fk-ref="42"/>
+		<relation name="fk_f01923902d4304f3" fq-name="public.usuario_cliente_cliente.fk_f01923902d4304f3" type="fk" pk-ref="94" fk-ref="95"/>
+		<relation name="fk_d64cb9c66072fe47" fq-name="public.propriedade_equipamento_valor_propriedade_equipamento.fk_d64cb9c66072fe47" type="fk" pk-ref="96" fk-ref="76"/>
+	</relations>
+</diagram>

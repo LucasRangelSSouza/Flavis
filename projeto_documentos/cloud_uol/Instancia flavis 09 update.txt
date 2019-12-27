@@ -1,0 +1,45 @@
+[administrator@flavis ~]$ sudo yum update
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+ * webtatic: us-east.repo.webtatic.com
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote python-jinja2.noarch 0:2.7.2-4.el7 será atualizado
+---> O pacote python-jinja2.noarch 0:2.8-7.rhel7 será uma atualização
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+====================================================================================================
+ Package                    Arq.                Versão                    Repo                 Tam.
+====================================================================================================
+Atualizando:
+ python-jinja2              noarch              2.8-7.rhel7               pgdg94              444 k
+
+Resumo da transação
+====================================================================================================
+Upgrade  1 Package
+
+Tamanho total do download: 444 k
+Is this ok [y/d/N]: y
+Downloading packages:
+No Presto metadata available for pgdg94
+python-jinja2-2.8-7.rhel7.noarch.rpm                                         | 444 kB  00:00:02
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Atualizando  : python-jinja2-2.8-7.rhel7.noarch                                               1/2
+  Limpeza      : python-jinja2-2.7.2-4.el7.noarch                                               2/2
+  Verifying    : python-jinja2-2.8-7.rhel7.noarch                                               1/2
+  Verifying    : python-jinja2-2.7.2-4.el7.noarch                                               2/2
+
+Atualizados:
+  python-jinja2.noarch 0:2.8-7.rhel7
+
+Concluído!
+[administrator@flavis ~]$

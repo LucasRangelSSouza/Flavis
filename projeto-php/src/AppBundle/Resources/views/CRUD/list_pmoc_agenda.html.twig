@@ -1,0 +1,194 @@
+{#
+
+This file is part of the Sonata package.
+
+(c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+
+{% extends 'SonataAdminBundle:CRUD:list.html.twig' %}
+{% block list_table %}
+
+    {#{{ 'Data: ' ~ data_calendario }}<br/>#}
+    {#{{ dump(dataToCalendario) }}#}
+
+    <style>
+        .hover-end{
+            display: none;
+            position: fixed;
+            z-index: 999999;
+            padding: 10px;
+            background: rgb(129, 32, 59);
+            top: 0;
+            left:0;
+            color: #fff;
+        }
+        .fc-content td:hover{background: #adf4fa;}
+    </style>
+
+    <div class="hover-end"></div>
+
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-primary">
+            <div class="box-body">
+                <h4 style="text-align: center;">Procedimentos Agendados por cliente</h4>
+                <hr/>
+                <div id='calendar'></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalDetalheProcedimento" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detalhe de Procedimento</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="dealhe-procedimento"></p>
+                    <hr/>
+                    <p>
+                        <label>Técnico que vai executar o serviço</label>
+                        <select id="colaboradores">
+                            <option value="">Selecione o Técnico</option>
+
+                            {% set colaboradores = colaborador_model.getColaborares() %}
+
+                            {% for colaborador in colaboradores %}
+                                <option value="{{ colaborador.id }}">{{ colaborador.nome }}</option>
+                            {% endfor %}
+
+                        </select>
+                    </p>
+                    <p>
+                        <label>Endereço de execução do serviço</label>
+                        <select id="enderecos"><option value="">Selecione um Endereço</option></select>
+                    </p>
+                    <input type="hidden" id="idProcedimento">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="btnCloseModalOs" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="btnCreateOs">Criar OS</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script>
+
+        var __eventCliked = '';
+
+        jQuery(document).ready(function() {
+
+            jQuery('#calendar').fullCalendar({
+//                customButtons: {
+//                    myCustomButton: {
+//                        text: 'Botão Customizado',
+//                        click: function() {
+//                            alert('Executar alguma ação customizada!');
+//                        }
+//                    }
+//                },
+                header: {
+                    left: 'prev,next today myCustomButton',
+                    center: 'title',
+                    //right: 'month,basicWeek,basicDay,listDay'
+                },
+                views: {
+                    listDay: { buttonText: 'Listar dia' },
+                    listWeek: { buttonText: 'Lista de Hoje' }
+                },
+                locale: 'pt-br',
+                defaultDate: '{{ data_calendario }}',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    {% for evento in dataToCalendario %}
+                        {
+                            'id' : {{ evento.id }},
+                            'id_evento': {{ evento.id }},
+                            'id_cliente' : '{{ evento.clienteEquipamento.cliente.id }}',
+                            'cliente' : '{{ evento.clienteEquipamento.cliente.nome }}',
+                            'cnpj' : '{{ evento.clienteEquipamento.cliente.cpfCnpj }}',
+                            'equipamento' : '{{ evento.clienteEquipamento.equipamento.marca.titulo }} - {{ evento.clienteEquipamento.equipamento.modelo.titulo }}',
+                            'procedimento' : '',
+
+                            'title': '{{ evento.clienteEquipamento.cliente.nome }}',
+                            'start' : '{{ evento.dataAgendadaExecucao|date('Y-m-d') }}',
+                            'allDay' : false,
+                            'color' : 'rgb(129, 32, 59)'
+                        },
+                    {% endfor %}
+                ],
+
+                eventDrop:function(event, delta, revertFunc){
+
+                    reagendaProcedimentosDoCliente(event);
+
+                },
+
+                eventMouseover: function(event, jsEvent, view) {
+
+                    var html =  '<h4>Detalhe do Cliente com foco</h4>' +
+                                '<b>Cliente:</b> ' + event.title + ' CNPJ: ' + event.cnpj
+
+                    $('.hover-end').html(html);
+                    $('.hover-end').show();
+                },
+                eventMouseout: function(event, jsEvent, view) {
+                    $('.hover-end').hide();
+                    $('.hover-end').html('');
+                },
+                eventClick: function(calEvent, jsEvent, view){
+
+                    __eventCliked = calEvent;
+                    var moment = $('#calendar').fullCalendar('getDate');
+
+                    document.location = "{{ app.request.getBaseURL() ~ '/app/execucaodeprocedimentoequipamento/listprocedimentos?date='}}" +
+                        moment.format() + "&cliente=" + calEvent.id_cliente;
+
+                }
+            });
+
+            // Detect paginate
+            $('.fc-next-button, .fc-prev-button, .fc-today-button').click(function(){
+
+                $('.fc-view-container').hide();
+                $('.fc-header-toolbar').html('Carregando...');
+
+                var moment = $('#calendar').fullCalendar('getDate');
+                var urlRedirect = "{{ app.request.getBaseURL() ~ '/app/execucaodeprocedimentoequipamento/list?date='}}" + moment.format();
+                document.location.href = urlRedirect;
+
+            });
+
+
+        });
+
+
+        function reagendaProcedimentosDoCliente(event){
+
+            var moment = $('#calendar').fullCalendar('getDate');
+            var id_cliente = event.id_cliente;
+            var data_atual = moment.format();
+
+            $.ajax({
+                method: "POST",
+                url: "{{ path('reagenda_execucoes_procedimentos_cliente') }}",
+                data: { id_cliente: id_cliente,nova_data:event.start.format(), 'data_atual':data_atual},
+                success: function (data) {
+                    alert(data);
+                },
+                error: function (request, status, error) {
+                    alert('Houve um erro inesperado! Favor entrar em contato com o suporte');
+                    console.log(error);
+                }
+            });
+        }
+
+    </script>
+{% endblock %}

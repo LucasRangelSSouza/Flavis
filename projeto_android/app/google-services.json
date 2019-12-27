@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "133079610890",
+    "firebase_url": "https://maalt-3d3de.firebaseio.com",
+    "project_id": "maalt-3d3de",
+    "storage_bucket": "maalt-3d3de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133079610890:android:7bd8d4c8cfac8e70",
+        "android_client_info": {
+          "package_name": "br.com.logics.flavis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133079610890-8o1pm04sjti0pvjl00us4mevv34aba3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALbBbIrrlOjdKehYMs1x_zmsLwMy3mzSs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

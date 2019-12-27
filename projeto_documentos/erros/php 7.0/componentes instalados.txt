@@ -1,0 +1,67 @@
+Microsoft Windows [versão 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\viniciusam.SISTEMAFIEG>php -v
+PHP 7.3.6 (cli) (built: May 29 2019 12:28:15) ( ZTS MSVC15 (Visual C++ 2017) x86
+ )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.6, Copyright (c) 1998-2018 Zend Technologies
+
+C:\Users\viniciusam.SISTEMAFIEG>php -m
+[PHP Modules]
+apc
+apcu
+bcmath
+bz2
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+filter
+ftp
+gd
+hash
+iconv
+imap
+intl
+json
+ldap
+libxml
+mbstring
+mysqli
+mysqlnd
+odbc
+openssl
+pcre
+PDO
+pdo_mysql
+PDO_ODBC
+pdo_pgsql
+pdo_sqlite
+pgsql
+Phar
+readline
+Reflection
+session
+shmop
+SimpleXML
+SPL
+sqlite3
+standard
+tokenizer
+wddx
+xml
+xmlreader
+xmlrpc
+xmlwriter
+xsl
+zip
+zlib
+
+[Zend Modules]
+
+
+C:\Users\viniciusam.SISTEMAFIEG>

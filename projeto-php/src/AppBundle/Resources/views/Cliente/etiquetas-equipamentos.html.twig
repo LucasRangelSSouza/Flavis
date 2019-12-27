@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font: 12pt "Tahoma";
+        }
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            border: 1px #fff solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .subpage {
+            padding: 1cm;
+            border: 1px #eee solid;
+            height: 257mm;
+            outline: 2cm #fff solid;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+            }
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
+
+        .etiqueta{
+           padding-top: 30px;
+           height: 120px;
+           text-align: center;
+        }
+
+        .etiqueta small{
+            display: block;
+            text-align: center;
+            font-size: 9px;
+        }
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
+
+</head>
+<body>
+
+<div class="book">
+
+    <div class="page">
+
+        <div class="subpage">
+
+            <p style="text-align: center;"><strong>{{ cliente.nome }}</strong><br/><small>Etiquetas de equipamentos</small></p>
+
+            <div class="row">
+
+                {% for equipamento in equipamentos %}
+
+                    <div class="col-md-4 etiqueta">
+                        {{ relatorio_pmoc_model.loadLogo('logo_email','height:20px;')|raw }}
+                        <svg id="barcode-{{ equipamento.id }}"></svg><br/>
+                        <small>{{ equipamento.equipamento.modelo.titulo }}.{{ equipamento.id }}.{{ cliente_model.propriedadeParaEtiqueta(equipamento) }}</small><br/>
+                    </div>
+
+                    <script>
+                        JsBarcode("#barcode-{{ equipamento.id }}", "{{ equipamento.id }}",{
+                            height: 40,
+                            displayValue: false
+                        });
+                    </script>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+

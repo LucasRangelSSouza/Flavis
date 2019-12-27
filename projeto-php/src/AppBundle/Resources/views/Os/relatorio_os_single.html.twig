@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de OS</title>
+    <style>
+        body {
+            margin: 0.5cm;
+            padding: 0.5cm;
+            background-color: #fff;
+            font: 12pt "Tahoma";
+        }
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        h1,h2,h3,h4{
+            padding: 0;
+            margin: 0;
+        }
+        .page {
+            width: 21cm;
+            min-height: 29.7cm;
+            margin: 1cm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .subpage {
+            height: 295mm;
+            outline: 2cm #fff solid;
+            position:relative;
+        }
+
+        @page {
+            size: A4;
+            margin: 0.5cm;
+        }
+        @media print {
+            .page {
+                margin: 0.5cm;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+            .box_vinho_procedimento{
+                background: #7F223D;
+            }
+            .subtitle-detalhe{
+                background: #eee;
+            }
+            .subtitle-detalhe{padding: 0 !important;}
+        }
+
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+         * For IE 6/7 only
+         * Include this rule to trigger hasLayout and contain floats.
+         */
+        .cf {
+            *zoom: 1;
+        }
+
+        #content {
+            display: table;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        #pageFooter {
+            display: table-footer-group;
+
+        }
+
+        #pageFooter:after {
+            counter-increment: page;
+            content:"Page " counter(page);
+            left: 0;
+            top: 100%;
+            white-space: nowrap;
+            z-index: 20px;
+            -moz-border-radius: 5px;
+            -moz-box-shadow: 0px 0px 4px #222;
+            background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+            background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+        }
+
+        .box_vinho_procedimento{
+            border: 1px solid #111;
+            width: 1000px;
+            background: #7F223D;
+            padding: 10px;
+            margin-bottom: 40px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .box_vinho_procedimento h4{
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .box-detalhe-procedimento{
+            border: 1px dashed #111;
+            padding: 20px;
+            background: #fff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .property-item{
+            float: left;
+            margin-right: 8px;
+        }
+        .foto-item{margin-left: 0px;display: inline-block;}
+        .foto-item .foto-bg{
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: 100% 100%;
+            padding: 3px;
+            color: #000 !important;
+            text-align: center;
+            font-weight: bold;
+            border:1px solid #7F223D;
+            line-height: 12px;
+        }
+        .foto-item .foto-bg:hover{
+            border:1px solid #0000ff;
+        }
+        .foto-item p{
+            margin-top: 5px;
+        }
+        a{color: #111 !important; text-decoration: none;}
+
+        .subtitle-detalhe{
+            background: #eee;
+            padding:10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .assinatura{
+            width: 400px;
+            border-top: 1px solid #111;
+            margin: auto;
+            text-align: center;
+        }
+
+        .assinatura_img{
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .texto-ocorrencia{
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+        <table style="width:800px;margin:auto;">
+            <tr>
+                <td>
+
+                    {# Cabeçalho #}
+                    <table style="width: 100%;">
+                        <tr style="text-align: center;">
+                            <td>
+                                <div style="padding-bottom:20px;text-align: center;">
+                                    <div style="width:300px;margin: auto;">
+                                        <img style="width:100%;" src="{{ base_url }}/bundles/app/img/logo_app.png" alt="">
+                                    </div>
+                                    <div style="font-size: .7em;padding-top: 6px;">
+
+                                        FLAVIS CONDICIONAMENTO CONTROLE AMBIENTAL<br style="line-height: 16px;"/>
+                                        Rua 1046, nº 155, Lt 31 - Setor Pedro Ludovico, 75825-130 - Goiânia-GO
+
+                                    </div>
+                                </div>
+                                <hr/>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 33%"><h3>PEDIDO DE MANUTENÇÃO</h3></td>
+                            <td style="width: 33%;text-align: center;"><strong>Data:</strong> {{ data }}</td>
+                            <td style="width: 33%;text-align: right;"><strong>Ordem de serviço nº:</strong> {{ num_os }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="width: 50%"><strong>Nome:</strong> {{ object.cliente.nome }}</td>
+                            <td style="width: 50%;text-align: right;"><strong>CNPJ:</strong> {{ cpnj_cliente }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;"><strong>Unidade:</strong> {{ object.cliente.razaoSocial }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="width: 50%">
+                                <strong>Avalista:</strong> {{ object.receptorNome }}
+                            </td>
+                            <td style="width: 50%;text-align: right;"><strong>RG: </strong>{{ object.receptorRg }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="padding-top: 20px;">
+                                <strong>Endereço de execução:</strong>
+                                <p>{{ endereco }}</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr/>
+
+{% if  object.isPmoc %}
+
+    <table style="width: 100%;">
+        <tr>
+            <strong style="padding-bottom: 10px;display: block;text-align: center;">OS DE PMOC</strong>
+            <p style="text-align: center;">Confira abaixo a lista de procedimentos executados</p>
+        </tr>
+    </table>
+
+    {#Loop de Procedimentos#}
+    {% for relatorio in object.relatoriosExecucoesProcedimentos %}
+
+        <div class="box_vinho_procedimento cf">
+            <h4>#{{ relatorio.execucaoDeProcedimentoEquipamento.id }} Procedimento executado: {{ relatorio.execucaoDeProcedimentoEquipamento.procedimentoPmoc.titulo.titulo }}</h4>
+
+            <div class="box-detalhe-procedimento cf">
+                <p class="subtitle-detalhe"><strong>Relatório da execução</strong></p>
+
+                {% if relatorio.relatorioDeExecucao is not empty %}
+
+                    {{ relatorio.relatorioDeExecucao }}
+
+                {% else %}
+                    <div class="property-box row cf">
+                        {%  set valores = pmoc_model.printPropriedadesRelatorioPmoc(relatorio.propriedadeEquipamentoComValoresColetado) %}
+                        {% for valor in valores %}
+                            <div class="property-item col-md-2 cf">
+                                <strong>{{ valor.label }}</strong>: {{ valor.valor }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                <div class="fotos"><p class="subtitle-detalhe"><strong>Fotos da execução</strong></p></div>
+                <div class="foto-box row cf">
+                    {% set fotos = relatorio.execucaoDeProcedimentoEquipamento.fotos %}
+                    {% for foto in fotos %}
+                        <a href="/{{ foto.pathFile }}" target="_blank" class="foto-item cf" style="display: inline-block;margin-right: 10px;">
+                            <img src="/{{ foto.pathFile }}" style="display: inline-block;height: 150px;">
+                            <p>{{ foto.titulo }}</p>
+                        </a>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+{% else %}
+
+
+    <table style="width: 100%;">
+        <tr>
+            <strong style="padding-bottom: 10px;display: block;">OS DE ROTINA</strong>
+            <p>Confira abaixo o relatório de resolução da ocorrência</p>
+        </tr>
+    </table>
+
+    <div class="box_vinho_procedimento cf">
+
+        <div class="texto-ocorrencia">
+            <h4 style="text-align: center;">OCORRÊNCIA</h4>
+            <p>{{ object.ocorrencia }}</p>
+        </div>
+
+        <div class="box-detalhe-procedimento cf">
+            <p class="subtitle-detalhe" style="text-align: center;"><strong>Relatório da execução</strong></p>
+                <p>
+                    {{ object.relatorioAvaliacao }}
+                </p>
+            <div class="fotos"><p class="subtitle-detalhe"><strong>Fotos da execução</strong></p></div>
+            <div class="foto-box row cf">
+                {% set fotos = object.fotos %}
+                {% for foto in fotos %}
+                    <a href="/{{ foto.pathFile }}" target="_blank" class="foto-item cf" style="display: inline-block;margin-right: 10px;">
+                        <img src="/{{ foto.pathFile }}" style="display: inline-block;height: 150px;">
+                        <p>{{ foto.titulo }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+
+            <div class="justificativa">
+                <strong>Justificativa de encerramento:</strong><br/>
+                {{ object.justificativaEncerramento }}
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endif %}
+
+    <div class="assinatura_img">
+        {% if object.receptorAssinatura is not empty %}
+        <img src="/{{ object.receptorAssinatura }}" style="max-height: 80px;">
+        {% endif %}        
+    </div>
+    <div class="assinatura">Assinatura de conferência<br/>{{ object.receptorNome }} - RG: {{ object.receptorRg }}</div>
+
+
+
+                    {####### OS #######}
+
+
+                    {#<table style="width: 100%;padding-top: 100px;">#}
+                        {#<tr>#}
+                            {#<td style="text-align: center;">#}
+                                {#<div style="border-top: 1px solid #000;width: 500px;margin: auto;">Aprovação</div>#}
+                            {#</td>#}
+                        {#</tr>#}
+                    {#</table>#}
+
+                    {#&#123;&#35; FOTOS &#35;&#125;#}
+                    {#<table style="width: 100%;padding-top: 100px;">#}
+                        {#<tr>#}
+                            {#<td style="text-align: center;">#}
+                                {#{% for foto in fotos %}#}
+                                    {#<div style="width:200px;float: left;margin-left: 3px;margin-bottom: 3px;">#}
+                                        {#<img src="/{{ foto.pathFile }}" style="max-height: 200px;width: 100%;"><br/>#}
+                                        {#<strong>{{ foto.titulo }}</strong>#}
+                                    {#</div>#}
+                                {#{% endfor %}#}
+                            {#</td>#}
+                        {#</tr>#}
+                    {#</table>#}
+
+                </td>
+            </tr>
+        </table>
+
+        {#<div id="content">#}
+            {#<div id="pageFooter"></div>#}
+        {#</div>#}
+</body>
+</html>

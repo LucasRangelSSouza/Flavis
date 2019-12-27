@@ -1,0 +1,4 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+{% block field%}
+    {{ object.dataAgendada|date('d/m/Y') }} às {{ object.horaAgendada|date('H:i') }}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'SonataAdminBundle:CRUD:base_show_field.html.twig' %}
+
+{% block field%}
+    <ul class="list-files-show-field" style="list-style: none;padding-left: 0;">
+        {% for key, val in value %}
+            <li style="background: #f9f9f9;padding: 5px;">
+                <ul>
+                    <li><strong>Produto:</strong> {{ val.produto.titulo }}</li>
+                    <li><strong>Quantidade:</strong> {{ val.quantidade }}</li>
+                    <li><strong>Valor:</strong> {{ val.valor }}</li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

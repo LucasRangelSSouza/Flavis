@@ -1,0 +1,9 @@
+Last login: Mon Sep 30 19:02:21 2019
+[administrator@flavis ~]$ sudo yum update
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+No packages marked for update
+[administrator@flavis ~]$

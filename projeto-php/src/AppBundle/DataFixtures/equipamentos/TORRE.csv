@@ -1,0 +1,28 @@
+TORRE;Bóia elétrica de nível e bóia de reposição de água;MENSAL
+TORRE;Componentes do quadro elétrico de força e comando;MENSAL
+TORRE;Tensão elétrica de motor;MENSAL
+TORRE;Corrente elétrica de motor;MENSAL
+TORRE;Conexões elétricas nos bornes dos motores;MENSAL
+TORRE;Correias, polias, acoplamento, braçadeiras e mangotes;MENSAL
+TORRE;Dispositivo elétrico de proteção e controle;MENSAL
+TORRE;Filtro de sucção, bandeja, dreno e gabinete;MENSAL
+TORRE;Gaxetas ou selo mecânico;MENSAL
+TORRE;Leituras de tensões e correntes dos motores elétricos;MENSAL
+TORRE;Rolamentos, eixos e mancais do motor e ventilador;MENSAL
+TORRE;Ruídos e/ou vibrações anormais;MENSAL
+TORRE;Set-point de temperatura de água de condensação;MENSAL
+TORRE;Sujeira, odores e objetos inadequados / casa de máquinas;MENSAL
+TORRE;Temperatura de entrada do ar;MENSAL
+TORRE;Temperatura de saída do ar;MENSAL
+TORRE;Temperatura de entrada da água;MENSAL
+TORRE;Temperatura de saída da água;MENSAL
+TORRE;Vazamento de água nos equipamentos e tubulações;MENSAL
+TORRE;Vedação da tampa de visita da torres;MENSAL
+TORRE;Verificar nível de óleo;MENSAL
+TORRE;Conjunto de ventilação / focos de corrosão;TRIMESTRAL
+TORRE;Manobrar e lubrificar os registros hidráulicos;TRIMESTRAL
+TORRE;Canaletas de distribuição / eliminadores de gotas e pulverizador de água;SEMESTRAL
+TORRE;Alinhamento / balanceamento do conjunto motor-bomba / ventilador;SEMESTRAL
+TORRE;Verificar e anotar diferencial de pressão de trabalho;SEMESTRAL
+TORRE;Pressão de sucção e recalque das bombas;SEMESTRAL
+TORRE;Trocar e analisar óleo do redutor de velocidade da torre e bombas;SEMESTRAL

@@ -1,0 +1,201 @@
+Bruna Thais Morelatti <bmorelatti@uolinc.com>
+Ter, 08/10/2019 12:06
+
+Bom dia,
+
+Como a 1ª recarga ainda não tinha ocorrido, o valor em si não estava configurado, 
+os R$ 100,00 foi um exemplo porque foi o que ativamos do voucher.
+
+Gerei uma recarga manual agora que ficou configurado nos R$ 100,00. 
+A medida que o projeto for definido e o valor mensal tb, alteramos o valor da recarga mensal.
+
+
+Bruna Thais Morelatti <bmorelatti@uolinc.com>
+Ter, 01/10/2019 09:23
+Bom dia, Vinicius.
+
+O voucher é para vcs conhecerem melhor o produto e se atender os requisitos do projeto, 
+pode dar continuidade na contratação e fazer o pagamento. 
+O Que já foi feito e configurado não se perde quando o saldo ficar negativo, 
+vcs só param de acessar o ambiente.  
+Basta inserir mais créditos que o ambiente volta a funcionar.
+
+O sistema é programado para fazer uma recarga, quando na conta ficar 10% do seu investimento inicial, 
+ou seja, quando chegar em R$ 10,00, o sistema vai gerar uma nova recarga. 
+Depois que fecharmos e o valor ficar dentro da proposta que enviei para o Marconi, 
+alteramos o valor da recarga mensal.
+
+Se desligar a instancia, para de pagar vcpus e memoria, mas permanece 
+a cobrança do disco que é um recurso reservado.
+
+********************************************************************************
+
+=> Painel do cliente UOL HOST
+https://painel.uol.com.br/myProducts.html
+Usuario: marconi@flavis.com.br
+Senha: #1981$st024
+
+=> Painel do OpenStack
+https://openstack.uolcloud.com.br/dashboard/auth/login/?next=/dashboard/project/instances/
+Usuario: marconi@flavis.com.br
+Senha: 0587707789
+
+=> IP cloud privado
+192.168.255.4
+
+=> IP cloud público
+200.98.5.32
+
+********************************************************************************
+
+=>Redirecionar domínio no registro.br para um IP
+https://www.clubehost.com.br/site/index.php/knowledgebase/64/Redirecionar-dominio-no-registrobr-para-um-IP.html
+
+********************************************************************************
+
+http://200.98.5.32/app.php
+
+https://prod.flavis.com.br
+
+http://localhost/flavis/web/app.php
+
+usuário: administrador (marconi@flavis.com.br)
+senha: 123456
+
+usuário: suporte (viniciusam.senai@sistemafieg.org.br)
+senha: sti@123
+
+================================================================================
+=> Usuários da instância
+
+User: root
+Senha: root
+
+User: user (administrator)
+Senha: sti@123
+
+================================================================================
+=> Para iniciar o pgadmin3
+  1. Executar o terminal
+  2. difitar pgamin3 + enter
+
+User: postgres
+Senha: postgres
+
+================================================================================
+
+=> Acesso do projeto web original:
+'database_driver' => 'pdo_pgsql',
+'database_host' => 'postgres.logics.com.br',
+'database_port' => 5432,
+'database_name' => 'flavis_prod',
+'database_user' => 'flavis_usr',
+'database_password' => 'Tp83$mh4',
+'mailer_transport' => 'smtp',
+'mailer_host' => 'smtp.zoho.com',
+'mailer_user' => 'agendamento@flavis.com.br',
+'mailer_password' => 'agflavis2017',
+'locale' => 'pt_BR',
+'secret' => 'l7RG9P$hDNACUMbEz29%@u9LPupr3nj4',
+'api_app_token' => 'iFH46!^K7LD0lwTu%Wn6#uD6Ow!WeqRHObE8qw!5eJtOo3KWq^jT',
+
+================================================================================
+
+=> Arquivo de log de erros do apache
+/var/log/httpd/erro_log
+
+=> Arquivo de configuração do apache
+/etc/httpd/conf/httpd.conf
+
+=> Arquivo de configuração do servidor
+/etc/hosts
+
+=> Arquivo de configuração Virtual Host no apache
+https://www.hostinger.com.br/tutoriais/como-criar-um-virtual-host-apache-centos7/
+/etc/httpd/site-enbaled/cloud.flavis.com.br
+
+================================================================================
+
+=> Arquivo de configuração do php
+/etc/php.ini
+
+=> Arquivo de componentes/pacotes do php (*.so)
+/usr/lib64/php/modules/
+
+================================================================================
+
+=> Arquivo de configuração do postgres
+/var/lib/pgsql/9.5/data/postgres.conf
+
+=> Arquivo de configuração dos IP habitados
+/var/lib/pgsql/9.5/data/pg_hba.conf
+
+================================================================================
+
+=> Arquivo de log de erros do projeto web
+/var/www/html/flavis/app/logs/prod.log
+
+=> Arquivo de configuração de banco do projeto web
+/var/www/html/flavis/app/config/parameters.yml
+/var/www/html/flavis/app/cache/prod/appProdProjectContainer.php
+
+================================================================================
+
+
+* app/cache/ or var/cache/ directory must be writable > Change the permissions of either "app/cache/" or "var/cache/" > directory so that the web server can write into it. 
+=> * o diretório app / cache / ou var / cache / deve ser gravável> Altere as permissões do diretório "app / cache /" ou "var / cache /"> para que o servidor da Web possa gravar nele.
+
+* app/logs/ or var/logs/ directory must be writable > Change the permissions of either "app/logs/" or "var/logs/" > directory so that the web server can write into it. 
+=> * O diretório app / logs / ou var / logs / deve ser gravável> Altere as permissões do diretório "app / logs /" ou "var / logs /"> para que o servidor da Web possa gravar nele.
+
+Altere as permissões do diretório para o apache
+app/cache/ 
+or 
+var/cache/
+
+Altere as permissões do diretório para o apache
+app/logs/ 
+or 
+var/logs/
+
+================================================================================
+
+=> Configuração inicial
+/usr/pgsql-9./bin/postgresql96-setup initdb
+systemctl enable postgresql-9.5
+systemctl start postgresql-9.5
+
+systemctl enable httpd
+systemctl start httpd
+
+=> Validação do apache
+systemctl status httpd
+
+=> Validação do postgres
+systemctl status postgresql-9.5.service
+
+journalctl -xe
+
+=> Funções após a instalação
+systemctl restart postgresql-9.5
+systemctl restart postgresql-9.5.service
+systemctl restart php-fpm
+systemctl restart httpd
+
+=> Desabilita a polica de segurança do linux
+/etc/selinux/config
+SELINUX=enforcing => SELINUX=permisse
+reboot
+
+=> Verifica os pacotes/componente instlados no php, paara verficar se o driver do postgres aparece
+rpm -qa | grep php
+
+=> Verificar as portas que estão em execução
+netstat -nlt
+
+
+================================================================================
+
+https://serverfault.com/questions/904924/upgrade-php-7-0-to-7-2-on-centos
+
+https://tecadmin.net/install-laravel-framework-on-centos/

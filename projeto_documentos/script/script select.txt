@@ -1,0 +1,107 @@
+---------------------------------------------------FUNÇÃO-----------------------------------------------------------------------------
+
+select colaborador.id, colaborador.nome, colaborador.funcao_id, funcao.id, funcao.nome
+from colaborador
+inner join funcao
+on colaborador.funcao_id = funcao.id
+order by colaborador.id;
+
+select f.id, f.nome
+from funcao f
+where f.id not in (select funcao_id from colaborador)
+order by f.nome;
+
+select c.id, c.nome, c.funcao_id, count(f.id) qtde
+from colaborador c
+inner join funcao f
+on c.funcao_id = f.id
+group by c.id, c.nome, c.funcao_id
+having count(f.id) > 1
+order by c.nome;
+=> 0 registro
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------TELEFONE--------------------------------------------------------------------------
+
+select t.id, t.tipo_id, t.numero
+from telefone t
+where t.id not in (select telefone_id from cliente_telefone)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-------------------------------------------------------NEGOCIO---------------------------------------------------------------------------
+
+select cliente.tipo_negocio_id, cliente.nome, tipo_negocio.id, tipo_negocio.nome, tipo_negocio.descricao
+from cliente
+inner join tipo_negocio
+on cliente.tipo_negocio_id = tipo_negocio.id;
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------UF--------------------------------------------------------------------------------
+
+select uf.id, uf.sigla
+from unidade_federativa uf
+where uf.id not in (select unidade_federativa_id from filial_empresa_unidade_federativa)
+order by uf.sigla;
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+-------------------------------------------------------BAIRRO--------------------------------------------------------------------------
+
+select b.id, b.nome
+from bairro b
+where b.id not in (select bairro_id from endereco)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------ENDEREÇO--------------------------------------------------------------------------
+
+select e.id, e.logradouro
+from endereco e
+where e.id not in (select endereco_id from colaborador_endereco)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------CIDADE--------------------------------------------------------------------------
+
+select c.id, c.nome
+from cidade c
+where c.id not in (select cidade_id from bairro)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------DOCUMENTO-------------------------------------------------------------------------
+
+
+select d.id, d.titulo
+from documento d
+where d.id not in (select documento_id from colaborador_documento)
+
+
+select d.id, d.titulo
+from documento d
+where d.id not in (select documento_id from fornecedor_documento)
+
+------------------------------------------------------------------------------------------------------------------------------------------

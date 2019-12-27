@@ -1,0 +1,1 @@
+<?php return unserialize('a:2:{i:0;O:33:"JMS\\Serializer\\Annotation\\Exclude":0:{}i:1;O:30:"Doctrine\\ORM\\Mapping\\OneToMany":6:{s:8:"mappedBy";s:2:"os";s:12:"targetEntity";s:59:"AppBundle\\Entity\\RelatorioExecucaoDeProcedimentoEquipamento";s:7:"cascade";a:1:{i:0;s:7:"persist";}s:5:"fetch";s:5:"EAGER";s:13:"orphanRemoval";b:1;s:7:"indexBy";N;}}');

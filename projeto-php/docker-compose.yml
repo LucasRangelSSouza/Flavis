@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+    web:
+        image: nginx:alpine
+        ports:
+            - "80:80"
+        links:
+            - php6
+    php6:
+        image: php:5.6-fpm-alpine
+        build: docker/php/.
+        expose:
+            - "9000"
+        environment:
+            PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
+            TZ: America/Sao_Paulo
+        links:
+            - db
+        tty: true
+    db:
+        image: postgres:alpine
+        ports:
+            - "5433:5432"
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=123456
+            - POSTGRES_DB=flavis

@@ -1,0 +1,23 @@
+Last login: Tue Oct  1 13:34:37 2019 from 187.32.49.173
+[administrator@flavis ~]$ sudo yum repolist
+Plugins carregados: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.xpg.com.br
+ * epel: espejito.fder.edu.uy
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+ * webtatic: us-east.repo.webtatic.com
+id do repo                      nome do repo                                                  status
+base/7/x86_64                   CentOS-7 - Base                                               10.097
+epel/x86_64                     Extra Packages for Enterprise Linux 7 - x86_64                13.413
+extras/7/x86_64                 CentOS-7 - Extras                                                304
+pgdg10/7/x86_64                 PostgreSQL 10 for RHEL/CentOS 7 - x86_64                       1.062
+pgdg11/7/x86_64                 PostgreSQL 11 for RHEL/CentOS 7 - x86_64                         887
+pgdg12/7/x86_64                 PostgreSQL 12 for RHEL/CentOS 7 - x86_64                         171
+pgdg94/7/x86_64                 PostgreSQL 9.4 for RHEL/CentOS 7 - x86_64                        979
+pgdg95/7/x86_64                 PostgreSQL 9.5 for RHEL/CentOS 7 - x86_64                      1.056
+pgdg96/7/x86_64                 PostgreSQL 9.6 for RHEL/CentOS 7 - x86_64                      1.089
+updates/7/x86_64                CentOS-7 - Updates                                               319
+webtatic/x86_64                 Webtatic Repository EL7 - x86_64                                 587
+repolist: 29.964
+[administrator@flavis ~]$

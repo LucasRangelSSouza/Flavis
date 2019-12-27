@@ -1,0 +1,103 @@
+[root@localhost ~]# hostname -I
+192.169.40.183 192.168.122.1 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# curl -4 icanhazip.com
+187.32.49.173
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# pg_config --version
+PostgreSQL 9.2.24
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# php -v
+PHP 5.4.16 (cli) (built: Oct 30 2018 19:30:51) 
+Copyright (c) 1997-2013 The PHP Group
+Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# httpd -v
+Server version: Apache/2.4.6 (CentOS)
+Server built:   Aug  8 2019 11:41:18
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+     Docs: man:httpd(8)
+           man:apachectl(8)
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# systemctl start httpd
+[root@localhost ~]# systemctl enable httpd
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Ter 2019-10-08 13:30:35 -04; 16min ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+  Process: 27935 ExecStop=/bin/kill -WINCH ${MAINPID} (code=exited, status=0/SUCCESS)
+ Main PID: 27942 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+    Tasks: 9
+   CGroup: /system.slice/httpd.service
+           ├─27942 /usr/sbin/httpd -DFOREGROUND
+           ├─27943 /usr/libexec/nss_pcache 917507 off
+           ├─27945 /usr/sbin/httpd -DFOREGROUND
+           ├─27948 /usr/sbin/httpd -DFOREGROUND
+           ├─27949 /usr/sbin/httpd -DFOREGROUND
+           ├─27950 /usr/sbin/httpd -DFOREGROUND
+           ├─27951 /usr/sbin/httpd -DFOREGROUND
+           └─27952 /usr/sbin/httpd -DFOREGROUND
+
+Out 08 13:30:34 localhost.localdomain systemd[1]: Starting The Apache HTTP Se...
+Out 08 13:30:35 localhost.localdomain systemd[1]: Started The Apache HTTP Ser...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# php -v
+PHP 7.0.33 (cli) (built: Dec  6 2018 22:30:44) ( NTS )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# sudo su postgres
+bash-4.2$ psql
+could not change directory to "/root": Permissão negada
+psql (9.6.15)
+Type "help" for help.
+
+postgres=# 
+
+

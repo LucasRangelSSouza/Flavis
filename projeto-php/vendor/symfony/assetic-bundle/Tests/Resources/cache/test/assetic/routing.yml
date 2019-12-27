@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:\Apache2.4\htdocs\flavis\projeto-php\vendor\symfony\assetic-bundle\Tests\Resources/config/routing.yml'

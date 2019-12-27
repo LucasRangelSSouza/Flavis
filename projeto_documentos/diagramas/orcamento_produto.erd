@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="orcamento_produto.erd" time="201906241330">
+	<entities>
+		<data-source id="postgres-jdbc-16b6b0023fc-24cfbaf8df4dfd57">
+			<entity id="1" name="orcamento_produto" fq-name="public.orcamento_produto" order="0" x="381" y="363">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="colaborador" fq-name="public.colaborador" order="1" x="748" y="20">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="orcamento_produto_produto_solicitacao" fq-name="public.orcamento_produto_produto_solicitacao" order="2" x="20" y="475">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="ordem_compra_produto" fq-name="public.ordem_compra_produto" order="3" x="20" y="219">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes/>
+	<relations>
+		<relation name="fk_f3aee7d897d582bf" fq-name="public.orcamento_produto_produto_solicitacao.fk_f3aee7d897d582bf" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="fk_b484dddea01cf1ca" fq-name="public.ordem_compra_produto.fk_b484dddea01cf1ca" type="fk" pk-ref="1" fk-ref="4"/>
+		<relation name="fk_aced428b8c2aa04c" fq-name="public.orcamento_produto.fk_aced428b8c2aa04c" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="fk_aced428bf1cb264e" fq-name="public.orcamento_produto.fk_aced428bf1cb264e" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="fk_aced428bf40b147f" fq-name="public.orcamento_produto.fk_aced428bf40b147f" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="fk_b484ddde8c2aa04c" fq-name="public.ordem_compra_produto.fk_b484ddde8c2aa04c" type="fk" pk-ref="2" fk-ref="4"/>
+		<relation name="fk_b484dddef1cb264e" fq-name="public.ordem_compra_produto.fk_b484dddef1cb264e" type="fk" pk-ref="2" fk-ref="4"/>
+	</relations>
+</diagram>

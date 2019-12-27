@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="cliente.erd" time="201906240953">
+	<entities>
+		<data-source id="postgres-jdbc-16b6b0023fc-24cfbaf8df4dfd57">
+			<entity id="1" name="cliente" fq-name="public.cliente" order="0" x="578" y="221">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="cliente_documento" fq-name="public.cliente_documento" order="1" x="322" y="20">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="cliente_endereco" fq-name="public.cliente_endereco" order="2" x="322" y="382">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="cliente_equipamento" fq-name="public.cliente_equipamento" order="3" x="322" y="486">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="5" name="cliente_responsavel_cliente" fq-name="public.cliente_responsavel_cliente" order="4" x="20" y="314">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="6" name="cliente_telefone" fq-name="public.cliente_telefone" order="5" x="322" y="761">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="7" name="filial_empresa" fq-name="public.filial_empresa" order="6" x="863" y="269">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="8" name="ordem_servico" fq-name="public.ordem_servico" order="7" x="20" y="419">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="9" name="responsavel_cliente" fq-name="public.responsavel_cliente" order="8" x="322" y="124">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="10" name="tipo_negocio" fq-name="public.tipo_negocio" order="9" x="863" y="430">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="11" name="usuario_cliente_cliente" fq-name="public.usuario_cliente_cliente" order="10" x="322" y="865">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="12" name="fos_user_user" fq-name="public.fos_user_user" order="11" x="600" y="740">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes/>
+	<relations>
+		<relation name="fk_f41c9b255263402" fq-name="public.cliente.fk_f41c9b255263402" type="fk" pk-ref="1" fk-ref="1">
+			<bend type="rel" x="883" y="617"/>
+			<bend type="rel" x="700" y="716"/>
+		</relation>
+		<relation name="fk_a1bca103de734e51" fq-name="public.cliente_documento.fk_a1bca103de734e51" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="fk_42d15190de734e51" fq-name="public.cliente_endereco.fk_42d15190de734e51" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="fk_62035dc4de734e51" fq-name="public.cliente_equipamento.fk_62035dc4de734e51" type="fk" pk-ref="1" fk-ref="4"/>
+		<relation name="fk_578edbdade734e51" fq-name="public.cliente_responsavel_cliente.fk_578edbdade734e51" type="fk" pk-ref="1" fk-ref="5"/>
+		<relation name="fk_9b0364ffde734e51" fq-name="public.cliente_telefone.fk_9b0364ffde734e51" type="fk" pk-ref="1" fk-ref="6"/>
+		<relation name="fk_844b5727de734e51" fq-name="public.ordem_servico.fk_844b5727de734e51" type="fk" pk-ref="1" fk-ref="8"/>
+		<relation name="fk_a64a0d0ede734e51" fq-name="public.responsavel_cliente.fk_a64a0d0ede734e51" type="fk" pk-ref="1" fk-ref="9"/>
+		<relation name="fk_f0192390de734e51" fq-name="public.usuario_cliente_cliente.fk_f0192390de734e51" type="fk" pk-ref="1" fk-ref="11"/>
+		<relation name="fk_f41c9b25299b2577" fq-name="public.cliente.fk_f41c9b25299b2577" type="fk" pk-ref="7" fk-ref="1"/>
+		<relation name="fk_844b5727392f5351" fq-name="public.ordem_servico.fk_844b5727392f5351" type="fk" pk-ref="8" fk-ref="8">
+			<bend type="rel" x="347" y="1081"/>
+			<bend type="rel" x="151" y="1247"/>
+		</relation>
+		<relation name="fk_578edbda4f783e5f" fq-name="public.cliente_responsavel_cliente.fk_578edbda4f783e5f" type="fk" pk-ref="9" fk-ref="5"/>
+		<relation name="fk_f41c9b25ec019c67" fq-name="public.cliente.fk_f41c9b25ec019c67" type="fk" pk-ref="10" fk-ref="1"/>
+	</relations>
+</diagram>

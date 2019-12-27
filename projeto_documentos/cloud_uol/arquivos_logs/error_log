@@ -1,0 +1,207 @@
+
+[Thu Oct 03 13:50:52.126430 2019] [mpm_prefork:notice] [pid 6631] AH00170: 
+caught SIGWINCH, shutting down gracefully
+
+[Thu Oct 03 13:51:51.119316 2019] [core:notice] [pid 1546] 
+SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+
+[Thu Oct 03 13:51:51.149647 2019] [suexec:notice] [pid 1546] AH01232: 
+suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00557: httpd: apr_sockaddr_info_get() failed for flavis
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, 
+	using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+
+[Thu Oct 03 13:51:51.321441 2019] [lbmethod_heartbeat:notice] [pid 1546] AH02282: 
+No slotmem from mod_heartmonitor
+
+[Thu Oct 03 13:51:52.991851 2019] [mpm_prefork:notice] [pid 1546] AH00163: Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+
+[Thu Oct 03 13:51:52.992033 2019] [core:notice] [pid 1546] AH00094: 
+Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+[Thu Oct 03 13:57:31.264054 2019] [autoindex:error] [pid 1767] [client ::1:41258] AH01276: 
+Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html,index.php,index.phtml,index.php) found, and server-generated directory index forbidden by Options directive
+
+[Thu Oct 03 11:27:59.674655 2019] [:error] [pid 6632] [client ::1:41406] PHP Fatal error:  Uncaught UnexpectedValueException: 
+The stream or file "/var/www/html/flavis/app/logs/prod.log" could not be opened: 
+failed to open stream: Permission denied 
+in 
+/var/www/html/flavis/app/cache/prod/classes.php:5822\nStack trace:\n#0 
+/var/www/html/flavis/app/cache/prod/classes.php(5752): 
+Monolog\\Handler\\StreamHandler->write(Array)\n#1 
+/var/www/html/flavis/app/cache/prod/classes.php(5677): 
+Monolog\\Handler\\AbstractProcessingHandler->handle(Array)\n#2 
+/var/www/html/flavis/app/cache/prod/classes.php(5910): 
+Monolog\\Handler\\AbstractHandler->handleBatch(Array)\n#3 
+/var/www/html/flavis/app/cache/prod/classes.php(6197): 
+Monolog\\Handler\\FingersCrossedHandler->handle(Array)\n#4 
+/var/www/html/flavis/app/cache/prod/classes.php(6302): 
+Monolog\\Logger->addRecord(500, 'Uncaught PHP Ex...', Array)\n#5 
+/var/www/html/flavis/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ExceptionListener.php(92): 
+Monolog\\Logger->critical('Uncaught PHP Ex...', Array)\n#6 
+/var/www/html/flavis/vendor/symfony/symfony/src/Symfony/Componen 
+in 
+/var/www/html/flavis/app/cache/prod/classes.php on line 5822
+
+
+
+
+
+[Thu Oct 03 15:29:45.739977 2019] [core:notice] [pid 11241] 
+SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+
+[Thu Oct 03 15:29:45.743068 2019] [suexec:notice] [pid 11241] 
+AH01232: 
+suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00557: 
+httpd: apr_sockaddr_info_get() failed for flavis
+AH00558: 
+httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. 
+	Set the 'ServerName' directive globally to suppress this message
+
+[Thu Oct 03 15:29:45.828810 2019] [lbmethod_heartbeat:notice] [pid 11241] 
+AH02282: No slotmem from mod_heartmonitor
+PHP Warning:  
+PHP Startup: 
+Unable to load dynamic library '/usr/lib64/php/modules/pgsql.so' - /usr/lib64/php/modules/pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+
+[Thu Oct 03 15:29:46.056752 2019] [mpm_prefork:notice] [pid 11241] 
+AH00163: 
+Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+[Thu Oct 03 15:29:46.056895 2019] [core:notice] [pid 11241] 
+AH00094: 
+Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+
+
+
+
+[Thu Oct 03 15:36:13.587383 2019] [lbmethod_heartbeat:notice] [pid 11554] AH02282: No slotmem from mod_heartmonitor
+PHP Warning:  
+PHP Startup: Unable to load dynamic library '/usr/pgsql-9.5/lib/plpgsql.so' - /usr/pgsql-9.5/lib/plpgsql.so: undefined symbol: error_context_stack in Unknown on line 0
+
+[Thu Oct 03 15:36:13.812047 2019] [mpm_prefork:notice] [pid 11554] 
+AH00163: 
+Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+
+[Thu Oct 03 15:36:13.812162 2019] [core:notice] [pid 11554] 
+AH00094: 
+Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+
+
+
+
+[Thu Oct 03 16:01:33.091719 2019] [lbmethod_heartbeat:notice] [pid 3329] 
+AH02282: No slotmem from mod_heartmonitor
+PHP Warning:  
+PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/pdo_pgsql.so' - /usr/lib64/php/modules/pdo_pgsql.so: undefined symbol: pdo_parse_params in Unknown on line 0
+PHP Warning:  Module 'pgsql' already loaded in Unknown on line 0
+
+
+
+
+
+[Thu Oct 03 16:04:21.947590 2019] [core:notice] [pid 3776] 
+SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+
+[Thu Oct 03 16:04:21.950065 2019] [suexec:notice] [pid 3776] 
+AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00557: httpd: apr_sockaddr_info_get() failed for flavis
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+
+
+
+
+
+=> Iniciando o apache
+[Fri Oct 04 07:56:49.282248 2019] [core:notice] [pid 1544] 
+SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+
+[Fri Oct 04 07:56:49.332830 2019] [suexec:notice] [pid 1544] 
+AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00557: httpd: apr_sockaddr_info_get() failed for flavis
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+
+[Fri Oct 04 07:56:49.511264 2019] [lbmethod_heartbeat:notice] [pid 1544] AH02282: No slotmem from mod_heartmonitor
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/pdo_pgsql.so' - /usr/lib64/php/modules/pdo_pgsql.so: undefined symbol: pdo_parse_params in Unknown on line 0
+PHP Warning:  Module 'pgsql' already loaded in Unknown on line 0
+
+[Fri Oct 04 07:56:51.860854 2019] [mpm_prefork:notice] [pid 1544] 
+AH00163: Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+
+[Fri Oct 04 07:56:51.861030 2019] [core:notice] [pid 1544] 
+AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+[Fri Oct 04 08:10:37.781961 2019] [autoindex:error] [pid 1871] [client ::1:47594] 
+AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html,index.php,index.phtml,index.php,index.php) found, and server-generated directory index forbidden by Options directive
+
+
+
+
+
+=> Reiniciando o apache
+[Fri Oct 04 08:59:56.942200 2019] [core:notice] [pid 4053] 
+SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+
+[Fri Oct 04 08:59:56.944477 2019] [suexec:notice] [pid 4053] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+
+AH00557: httpd: apr_sockaddr_info_get() failed for flavis
+
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+
+[Fri Oct 04 08:59:57.007457 2019] [lbmethod_heartbeat:notice] [pid 4053] AH02282: No slotmem from mod_heartmonitor
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/pdo_pgsql.so' - /usr/lib64/php/modules/pdo_pgsql.so: undefined symbol: pdo_parse_params in Unknown on line 0
+PHP Warning:  Module 'pgsql' already loaded in Unknown on line 0
+
+[Fri Oct 04 08:59:57.158052 2019] [mpm_prefork:notice] [pid 4053] 
+AH00163: Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+
+[Fri Oct 04 08:59:57.158155 2019] [core:notice] [pid 4053] 
+AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+
+
+
+
+[Fri Oct 04 14:58:58.521430 2019] [core:notice] [pid 419] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+
+[Fri Oct 04 14:58:58.523788 2019] [suexec:notice] [pid 419] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00557: httpd: apr_sockaddr_info_get() failed for flavis
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+
+[Fri Oct 04 14:58:58.629595 2019] [lbmethod_heartbeat:notice] [pid 419] AH02282: No slotmem from mod_heartmonitor
+
+[Fri Oct 04 14:58:58.760659 2019] [mpm_prefork:notice] [pid 419] AH00163: Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+
+[Fri Oct 04 14:58:58.760730 2019] [core:notice] [pid 419] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+
+
+
+[Fri Oct 04 23:47:40.210631 2019] [mpm_prefork:notice] [pid 1200] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Oct 04 23:48:27.478522 2019] [core:notice] [pid 1423] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Oct 04 23:48:27.528355 2019] [suexec:notice] [pid 1423] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Oct 04 23:48:27.590279 2019] [lbmethod_heartbeat:notice] [pid 1423] AH02282: No slotmem from mod_heartmonitor
+[Fri Oct 04 23:48:29.424195 2019] [mpm_prefork:notice] [pid 1423] AH00163: Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+[Fri Oct 04 23:48:29.424305 2019] [core:notice] [pid 1423] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Oct 04 23:50:39.275839 2019] [cgi:error] [pid 1729] [client 95.110.58.75:40316] script not found or unable
+ to stat: /var/www/cgi-bin/ViewLog.asp
+
+
+
+=> Reiniando o apache
+[Wed Oct 09 11:45:10.442581 2019] [core:notice] [pid 5688] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Wed Oct 09 11:45:10.445718 2019] [suexec:notice] [pid 5688] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Oct 09 11:45:10.540180 2019] [lbmethod_heartbeat:notice] [pid 5688] AH02282: No slotmem from mod_heartmonitor
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/pdo_pgsql.so' - /usr/lib64/php/modules/pdo_pgsql.so: undefined symbol: pdo_parse_params in Unknown on line 0
+[Wed Oct 09 11:45:10.812731 2019] [mpm_prefork:notice] [pid 5688] AH00163: Apache/2.4.6 (CentOS) PHP/7.0.33 configured -- resuming normal operations
+[Wed Oct 09 11:45:10.812901 2019] [core:notice] [pid 5688] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+
+
+[Thu Oct 17 16:04:44.331106 2019] [core:notice] [pid 1430] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Thu Oct 17 16:04:44.398644 2019] [suexec:notice] [pid 1430] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Oct 17 16:04:44.557090 2019] [lbmethod_heartbeat:notice] [pid 1430] AH02282: No slotmem from mod_heartmonitor
+[Thu Oct 17 16:04:46.185245 2019] [mpm_prefork:notice] [pid 1430] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.0.33 configured -- resuming normal operations
+[Thu Oct 17 16:04:46.185467 2019] [core:notice] [pid 1430] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'

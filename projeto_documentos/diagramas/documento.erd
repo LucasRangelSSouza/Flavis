@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="documento.erd" time="201906240845">
+	<entities>
+		<data-source id="postgres-jdbc-16b6b0023fc-24cfbaf8df4dfd57">
+			<entity id="1" name="documento" fq-name="public.documento" order="0" x="327" y="143">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="tipo_documento" fq-name="public.tipo_documento" order="1" x="606" y="71">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="perfil" fq-name="public.perfil" order="2" x="606" y="251">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="cliente_documento" fq-name="public.cliente_documento" order="3" x="20" y="20">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="5" name="colaborador_documento" fq-name="public.colaborador_documento" order="4" x="20" y="124">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="6" name="ferramenta_almoxarifado_documento" fq-name="public.ferramenta_almoxarifado_documento" order="5" x="20" y="228">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="7" name="fornecedor_documento" fq-name="public.fornecedor_documento" order="6" x="20" y="332">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="8" name="produto_almoxarifado_documento" fq-name="public.produto_almoxarifado_documento" order="7" x="20" y="436">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes/>
+	<relations>
+		<relation name="fk_a1bca10345c0cf75" fq-name="public.cliente_documento.fk_a1bca10345c0cf75" type="fk" pk-ref="1" fk-ref="4"/>
+		<relation name="fk_c6b3cae45c0cf75" fq-name="public.colaborador_documento.fk_c6b3cae45c0cf75" type="fk" pk-ref="1" fk-ref="5"/>
+		<relation name="fk_303edadd45c0cf75" fq-name="public.ferramenta_almoxarifado_documento.fk_303edadd45c0cf75" type="fk" pk-ref="1" fk-ref="6"/>
+		<relation name="fk_40dc7b8445c0cf75" fq-name="public.fornecedor_documento.fk_40dc7b8445c0cf75" type="fk" pk-ref="1" fk-ref="7"/>
+		<relation name="fk_28188a9745c0cf75" fq-name="public.produto_almoxarifado_documento.fk_28188a9745c0cf75" type="fk" pk-ref="1" fk-ref="8"/>
+		<relation name="fk_b6b12ec7f6939175" fq-name="public.documento.fk_b6b12ec7f6939175" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="fk_documento_perfil" fq-name="public.documento.fk_documento_perfil" type="fk" pk-ref="3" fk-ref="1"/>
+	</relations>
+</diagram>

@@ -1,0 +1,62 @@
+[administrator@flavis ~]$ cd /var
+[administrator@flavis var]$ sudo chmod 777 cache
+[administrator@flavis var]$ sudo chmod 777 log
+
+Last login: Wed Oct  2 14:53:24 2019 from 177.107.32.46
+[administrator@flavis ~]$ cd /var
+[administrator@flavis var]$ ls -l
+total 20
+drwxrwxrwx.  2 root root   18 Set 30 21:29 account
+drwxrwxrwx.  2 root root    6 Abr 11  2018 adm
+drwxrwxrwx. 15 root root 4096 Out  2 11:26 cache
+drwxrwxrwx.  2 root root    6 Ago  8 11:41 crash
+drwxrwxrwx.  3 root root   32 Set 30 19:35 db
+drwxrwxrwx.  3 root root   17 Abr 11  2018 empty
+drwxrwxrwx.  2 root root    6 Abr 11  2018 games
+drwxrwxrwx.  2 root root    6 Abr 11  2018 gopher
+drwxrwxrwx.  3 root root   17 Set 13 18:05 kerberos
+drwxr-xr-x. 65 root root 4096 Out  2 11:26 lib
+drwxrwxrwx.  2 root root    6 Abr 11  2018 local
+lrwxrwxrwx.  1 root root   11 Abr  1  2016 lock -> ../run/lock
+drwxrwxrwx. 21 root root 4096 Out  2 12:51 log
+lrwxrwxrwx.  1 root root   10 Set  6  2018 mail -> spool/mail
+drwxrwxrwx.  2 root root    6 Abr 11  2018 nis
+drwxrwxrwx.  2 root root    6 Abr 11  2018 opt
+drwxrwxrwx.  2 root root    6 Abr 11  2018 preserve
+lrwxrwxrwx.  1 root root    6 Abr  1  2016 run -> ../run
+drwxr-xr-x. 12 root root 4096 Set 30 21:29 spool
+drwxrwxrwx.  4 root root   26 Set 30 21:21 target
+drwxrwxrwt. 15 root root 4096 Out  2 14:29 tmp
+drwxrwxrwx.  5 root root   45 Out  2 12:46 www
+drwxrwxrwx.  2 root root    6 Abr 11  2018 yp
+[administrator@flavis var]$
+
+
+[administrator@flavis ~]$ cd /var/www/html/flavis/app
+[administrator@flavis var]$ sudo chmod 777 cache
+[administrator@flavis var]$ sudo chmod 777 logs
+
+Last login: Wed Oct  2 14:17:20 2019 from 177.107.32.46
+[administrator@flavis ~]$ cd /var
+[administrator@flavis var]$ cd www
+[administrator@flavis www]$ cd html
+[administrator@flavis html]$ cd flavis
+[administrator@flavis flavis]$ cd app
+[administrator@flavis app]$ ls -l
+total 160
+-rw-r--r--. 1 administrator administrator   141 Jun 28 11:02 AppCache.php
+-rw-r--r--. 1 administrator administrator  3377 Jul 18 16:55 AppKernel.php
+-rw-r--r--. 1 administrator administrator   267 Jun 28 11:02 autoload.php
+-rw-r--r--. 1 administrator administrator 95447 Jul 15 16:03 bootstrap.php.cache
+drwxrwxrwx. 3 administrator administrator    17 Ago 19 08:40 cache
+-rw-r--r--. 1 administrator administrator  3958 Jun 28 11:03 check.php
+drwxr-xr-x. 3 administrator administrator  4096 Ago 20 16:30 config
+-rw-r--r--. 1 administrator administrator   867 Jun 28 11:03 console
+drwxr-xr-x. 2 administrator administrator  4096 Jun 28 11:02 DoctrineMigrations
+drwxrwxrwx. 2 administrator administrator    35 Out  2 11:45 logs
+-rw-r--r--. 1 administrator administrator  1298 Jun 28 11:03 phpunit.xml.dist
+drwxr-xr-x. 4 administrator administrator    35 Jun 28 11:02 Resources
+-rw-r--r--. 1 administrator administrator 31336 Jul 15 11:38 SymfonyRequirements.php
+
+
+[administrator@flavis var]$ sudo systemctl restart http

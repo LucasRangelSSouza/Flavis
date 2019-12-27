@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>f08f115d-fd05-4cc0-bbb5-bc0f15665855</OriginalElement>
+  <nodes>
+    <node x="3143.4483251633974" y="806.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user_group</node>
+    <node x="680.9999999999999" y="3132.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.revisions</node>
+    <node x="2786.9483251633974" y="2693.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.foto_os</node>
+    <node x="3953.6983251633974" y="2360.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_documento</node>
+    <node x="2320.4215277777776" y="3014.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico_foto_os</node>
+    <node x="3459.1983251633974" y="2316.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_estoque</node>
+    <node x="3407.4483251633974" y="1744.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado</node>
+    <node x="3923.1654411764703" y="795.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.telefone</node>
+    <node x="1847.1983251633976" y="0.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user</node>
+    <node x="1577.6983251633976" y="1700.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico</node>
+    <node x="889.1983251633976" y="762.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.bairro</node>
+    <node x="287.29999999999995" y="3332.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_entries</node>
+    <node x="2278.6983251633974" y="1898.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor_endereco</node>
+    <node x="4318.073325163397" y="2360.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado_documento</node>
+    <node x="2158.9483251633974" y="2737.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto_produto_saida</node>
+    <node x="4640.56544117647" y="1415.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.contato_telefone</node>
+    <node x="1975.1983251633976" y="542.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador</node>
+    <node x="1183.3233251633976" y="806.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_endereco</node>
+    <node x="358.25" y="1898.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_endereco</node>
+    <node x="858.8125" y="1316.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco</node>
+    <node x="1309.0625" y="3014.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico_foto_os</node>
+    <node x="101.99999999999997" y="3132.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identities</node>
+    <node x="851.9999999999999" y="3132.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.migration_versions</node>
+    <node x="3475.3073529411754" y="2737.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto_produto_solicitacao</node>
+    <node x="48.299999999999955" y="3431.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identity_ancestors</node>
+    <node x="2533.9483251633974" y="2737.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto_produto_saida</node>
+    <node x="3928.6654411764703" y="209.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_telefone</node>
+    <node x="594.0108251633976" y="165.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_negocio</node>
+    <node x="879.1983251633976" y="154.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cidade</node>
+    <node x="3152.4483251633974" y="1294.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto</node>
+    <node x="4601.073325163397" y="2360.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor_documento</node>
+    <node x="4808.073325163397" y="2360.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ferramenta_almoxarifado_documento</node>
+    <node x="2387.4483251633974" y="2360.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_documento</node>
+    <node x="4434.56544117647" y="1371.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_documento</node>
+    <node x="529.9999999999999" y="3165.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_classes</node>
+    <node x="2353.1983251633974" y="165.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.funcao</node>
+    <node x="3069.9483251633974" y="1810.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto</node>
+    <node x="4382.323325163397" y="1810.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento</node>
+    <node x="3767.6983251633974" y="2327.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_solicitacao</node>
+    <node x="524.0108251633976" y="685.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente</node>
+    <node x="3201.4483251633974" y="198.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_group</node>
+    <node x="1195.0625" y="2594.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico</node>
+    <node x="4088.5654411764704" y="1294.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor</node>
+    <node x="0.0" y="2360.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_responsavel_cliente</node>
+    <node x="92.25" y="1821.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.responsavel_cliente</node>
+    <node x="2128.6983251633974" y="2316.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto</node>
+    <node x="2992.9483251633974" y="2737.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto_produto_saida</node>
+    <node x="652.8125" y="1371.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.usuario_cliente</node>
+    <node x="2063.6983251633974" y="1898.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_endereco</node>
+    <node x="1153.0625" y="2250.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.agendamento_ordem_servico</node>
+    <node x="336.9999999999999" y="3154.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_security_identities</node>
+    <node x="4918.823325163397" y="1843.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ferramenta_almoxarifado</node>
+    <node x="1319.5733251633976" y="1415.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_telefone</node>
+    <node x="2485.6983251633974" y="1821.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto</node>
+    <node x="3874.5654411764704" y="1415.5">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_telefone</node>
+    <node x="4649.81544117647" y="740.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.contato</node>
+    <node x="2619.1983251633974" y="2338.0">f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_saida</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.funcao">
+      <point x="146.5" y="-301.0" />
+      <point x="2414.6983251633974" y="522.0" />
+      <point x="2446.1983251633974" y="522.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento">
+      <point x="-46.75" y="-36.5" />
+      <point x="4647.823325163397" y="2230.0" />
+      <point x="4568.523325163397" y="2230.0" />
+      <point x="53.19999999999982" y="125.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_solicitacao" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado">
+      <point x="-41.5" y="-70.0" />
+      <point x="3809.1983251633974" y="2210.0" />
+      <point x="3648.6983251633974" y="2210.0" />
+      <point x="48.25" y="191.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.agendamento_ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico">
+      <point x="114.75" y="-147.0" />
+      <point x="1420.8125" y="2230.0" />
+      <point x="1655.3649918300644" y="2230.0" />
+      <point x="-155.33333333333326" y="235.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.usuario_cliente" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user">
+      <point x="46.5" y="-81.0" />
+      <point x="792.3125" y="1184.0" />
+      <point x="1085.6983251633976" y="1184.0" />
+      <point x="1085.6983251633976" y="522.0" />
+      <point x="1928.1983251633976" y="522.0" />
+      <point x="-162.0" y="246.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_estoque" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado">
+      <point x="0.0" y="-81.0" />
+      <point x="-48.25" y="191.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="0.0" y="-158.0" />
+      <point x="3315.4483251633974" y="1224.0" />
+      <point x="2440.5512663398686" y="1224.0" />
+      <point x="172.35294117647072" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user_group" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user">
+      <point x="-41.0" y="-36.5" />
+      <point x="3184.4483251633974" y="512.0" />
+      <point x="2252.1983251633974" y="512.0" />
+      <point x="162.0" y="246.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-39.5" y="-36.5" />
+      <point x="2426.9483251633974" y="2200.0" />
+      <point x="526.7500000000002" y="2200.0" />
+      <point x="526.7500000000002" y="1254.0" />
+      <point x="666.6358251633976" y="1254.0" />
+      <point x="-20.375" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto_produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_saida">
+      <point x="-70.0" y="-36.5" />
+      <point x="3062.9483251633974" y="2574.0" />
+      <point x="2740.8649918300644" y="2574.0" />
+      <point x="48.666666666666515" y="59.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.responsavel_cliente" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="0.0" y="-114.0" />
+      <point x="215.25" y="1234.0" />
+      <point x="585.1358251633976" y="1234.0" />
+      <point x="-101.875" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.telefone">
+      <point x="39.5" y="-36.5" />
+      <point x="1438.0733251633976" y="1274.0" />
+      <point x="3944.1654411764703" y="1274.0" />
+      <point x="-42.0" y="48.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="46.5" y="-81.0" />
+      <point x="0.0" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco">
+      <point x="39.5" y="-36.5" />
+      <point x="476.75" y="1680.0" />
+      <point x="894.5625" y="1680.0" />
+      <point x="-107.25" y="136.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico">
+      <point x="-46.5" y="-81.0" />
+      <point x="2175.1983251633974" y="2230.0" />
+      <point x="1966.0316584967309" y="2230.0" />
+      <point x="155.33333333333326" y="235.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor_endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco">
+      <point x="-46.75" y="-36.5" />
+      <point x="2325.4483251633974" y="1640.0" />
+      <point x="1109.0625" y="1640.0" />
+      <point x="107.25" y="136.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="-99.75" y="-125.0" />
+      <point x="3103.1983251633974" y="1630.0" />
+      <point x="3030.5874999999996" y="1630.0" />
+      <point x="3030.5874999999996" y="1254.0" />
+      <point x="2337.1395016339857" y="1254.0" />
+      <point x="68.94117647058829" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto_produto_solicitacao" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_solicitacao">
+      <point x="72.0" y="-36.5" />
+      <point x="3691.3073529411754" y="2574.0" />
+      <point x="3850.6983251633974" y="2574.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_responsavel_cliente" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-51.25" y="-36.5" />
+      <point x="51.25" y="2230.0" />
+      <point x="81.75" y="2230.0" />
+      <point x="81.75" y="1224.0" />
+      <point x="544.3858251633976" y="1224.0" />
+      <point x="-142.625" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.contato_telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.telefone">
+      <point x="-40.75" y="-36.5" />
+      <point x="4681.31544117647" y="1274.0" />
+      <point x="4028.1654411764703" y="1274.0" />
+      <point x="42.0" y="48.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_entries" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identities">
+      <point x="-95.33333333333337" y="-136.0" />
+      <point x="334.9666666666666" y="3312.0" />
+      <point x="247.24999999999997" y="3312.0" />
+      <point x="62.25" y="70.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="-61.5" y="-114.0" />
+      <point x="2547.1983251633974" y="1264.0" />
+      <point x="2302.668913398692" y="1264.0" />
+      <point x="34.470588235294144" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.usuario_cliente" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-46.5" y="-81.0" />
+      <point x="699.3125" y="1274.0" />
+      <point x="748.1358251633976" y="1274.0" />
+      <point x="61.125" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.telefone">
+      <point x="48.5" y="-36.5" />
+      <point x="4020.0654411764704" y="1274.0" />
+      <point x="3986.1654411764703" y="1274.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_negocio">
+      <point x="0.0" y="-158.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.agendamento_ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="-38.25" y="-147.0" />
+      <point x="1267.8125" y="2210.0" />
+      <point x="1488.0733251633976" y="2210.0" />
+      <point x="1488.0733251633976" y="1214.0" />
+      <point x="2026.9042075163388" y="1214.0" />
+      <point x="-241.29411764705878" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor">
+      <point x="99.75" y="-125.0" />
+      <point x="3302.6983251633974" y="1660.0" />
+      <point x="4224.398774509804" y="1660.0" />
+      <point x="-27.16666666666697" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto">
+      <point x="33.25" y="-125.0" />
+      <point x="3236.1983251633974" y="1630.0" />
+      <point x="3233.9483251633974" y="1630.0" />
+      <point x="-81.5" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-186.39999999999986" y="-235.0" />
+      <point x="1624.2983251633977" y="1670.0" />
+      <point x="537.7500000000002" y="1670.0" />
+      <point x="537.7500000000002" y="1264.0" />
+      <point x="707.3858251633976" y="1264.0" />
+      <point x="20.375" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto_produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_saida">
+      <point x="62.75" y="-36.5" />
+      <point x="2347.1983251633974" y="2574.0" />
+      <point x="2643.5316584967313" y="2574.0" />
+      <point x="-48.666666666666515" y="59.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="93.20000000000005" y="-235.0" />
+      <point x="1903.8983251633977" y="1680.0" />
+      <point x="1989.0125" y="1680.0" />
+      <point x="1989.0125" y="1254.0" />
+      <point x="2164.7865604575154" y="1254.0" />
+      <point x="-103.41176470588243" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento">
+      <point x="48.5" y="-36.5" />
+      <point x="4099.198325163397" y="2230.0" />
+      <point x="4462.123325163398" y="2230.0" />
+      <point x="-53.19999999999982" y="125.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-39.5" y="-36.5" />
+      <point x="1359.0733251633976" y="1164.0" />
+      <point x="829.6358251633976" y="1164.0" />
+      <point x="142.625" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="-48.5" y="-36.5" />
+      <point x="3923.0654411764704" y="1194.0" />
+      <point x="2543.9630310457505" y="1194.0" />
+      <point x="275.76470588235316" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto_produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_saida">
+      <point x="58.25" y="-36.5" />
+      <point x="2708.6983251633974" y="2574.0" />
+      <point x="2692.1983251633974" y="2574.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento">
+      <point x="39.5" y="-36.5" />
+      <point x="2505.9483251633974" y="2220.0" />
+      <point x="4408.923325163398" y="2220.0" />
+      <point x="-106.39999999999964" y="125.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto_produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_compra_produto">
+      <point x="70.0" y="-36.5" />
+      <point x="0.0" y="125.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado">
+      <point x="-65.75" y="-36.5" />
+      <point x="4383.823325163397" y="2190.0" />
+      <point x="3745.1983251633974" y="2190.0" />
+      <point x="144.75" y="191.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_responsavel_cliente" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.responsavel_cliente">
+      <point x="51.25" y="-36.5" />
+      <point x="-61.5" y="114.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_documento">
+      <point x="0.0" y="-125.0" />
+      <point x="4515.323325163397" y="1680.0" />
+      <point x="4527.56544117647" y="1680.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="91.5" y="-180.0" />
+      <point x="1469.5625" y="2574.0" />
+      <point x="1567.1983251633976" y="2574.0" />
+      <point x="1567.1983251633976" y="1234.0" />
+      <point x="2095.845383986927" y="1234.0" />
+      <point x="-172.35294117647072" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor">
+      <point x="61.5" y="-114.0" />
+      <point x="2670.1983251633974" y="1650.0" />
+      <point x="4170.06544117647" y="1650.0" />
+      <point x="-81.5" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado">
+      <point x="0.0" y="-59.0" />
+      <point x="2692.1983251633974" y="2210.0" />
+      <point x="3455.6983251633974" y="2210.0" />
+      <point x="-144.75" y="191.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico_foto_os" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico">
+      <point x="-53.0" y="-36.5" />
+      <point x="2373.4215277777776" y="2974.0" />
+      <point x="1810.6983251633976" y="2974.0" />
+      <point x="0.0" y="235.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico_foto_os" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.foto_os">
+      <point x="69.0" y="-36.5" />
+      <point x="1516.0625" y="2984.0" />
+      <point x="2833.4483251633974" y="2984.0" />
+      <point x="-46.5" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor_endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor">
+      <point x="46.75" y="-36.5" />
+      <point x="2418.9483251633974" y="1640.0" />
+      <point x="4115.732107843138" y="1640.0" />
+      <point x="-135.83333333333303" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user">
+      <point x="-146.5" y="-301.0" />
+      <point x="2121.6983251633974" y="522.0" />
+      <point x="2090.1983251633974" y="522.0" />
+      <point x="0.0" y="246.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_entries" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_security_identities">
+      <point x="-5.6843418860808015E-14" y="-136.0" />
+      <point x="430.2999999999999" y="3312.0" />
+      <point x="423.4999999999999" y="3312.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user_group" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_group">
+      <point x="41.0" y="-36.5" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto_produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.requisicao_produto">
+      <point x="-62.75" y="-36.5" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identity_ancestors" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identities">
+      <point x="54.75" y="-36.5" />
+      <point x="212.54999999999995" y="3312.0" />
+      <point x="205.74999999999997" y="3312.0" />
+      <point x="20.75" y="70.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor">
+      <point x="46.75" y="-36.5" />
+      <point x="4741.323325163397" y="1670.0" />
+      <point x="4387.398774509804" y="1670.0" />
+      <point x="135.83333333333303" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico_foto_os" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.foto_os">
+      <point x="53.0" y="-36.5" />
+      <point x="2479.4215277777776" y="2994.0" />
+      <point x="2926.4483251633974" y="2994.0" />
+      <point x="46.5" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.agendamento_ordem_servico">
+      <point x="-91.5" y="-180.0" />
+      <point x="1286.5625" y="2574.0" />
+      <point x="1306.0625" y="2574.0" />
+      <point x="0.0" y="147.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto_produto_saida" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.entrada_produto">
+      <point x="-58.25" y="-36.5" />
+      <point x="2592.1983251633974" y="2564.0" />
+      <point x="2608.6983251633974" y="2564.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor">
+      <point x="0.0" y="-191.0" />
+      <point x="3600.4483251633974" y="1670.0" />
+      <point x="4278.732107843138" y="1670.0" />
+      <point x="27.16666666666697" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-107.25" y="-136.0" />
+      <point x="894.5625" y="1174.0" />
+      <point x="788.8858251633976" y="1174.0" />
+      <point x="101.875" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto_produto_solicitacao" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.orcamento_produto">
+      <point x="-72.0" y="-36.5" />
+      <point x="3547.3073529411754" y="2574.0" />
+      <point x="3396.9483251633974" y="2574.0" />
+      <point x="81.5" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico_foto_os" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.relatorio_ordem_servico">
+      <point x="-69.0" y="-36.5" />
+      <point x="0.0" y="180.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_telefone">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="-48.5" y="-36.5" />
+      <point x="4002.1983251633974" y="2200.0" />
+      <point x="3851.8233251633974" y="2200.0" />
+      <point x="3851.8233251633974" y="1204.0" />
+      <point x="2509.492442810457" y="1204.0" />
+      <point x="241.294117647059" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.bairro">
+      <point x="-35.75" y="-136.0" />
+      <point x="966.0625" y="1174.0" />
+      <point x="982.1983251633976" y="1174.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente_endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cliente">
+      <point x="-39.5" y="-36.5" />
+      <point x="397.7500000000002" y="1244.0" />
+      <point x="625.8858251633976" y="1244.0" />
+      <point x="-61.125" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ferramenta_almoxarifado_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento">
+      <point x="-71.25" y="-36.5" />
+      <point x="4879.323325163397" y="2220.0" />
+      <point x="4621.723325163397" y="2220.0" />
+      <point x="106.39999999999964" y="125.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco">
+      <point x="-93.20000000000005" y="-235.0" />
+      <point x="1717.4983251633976" y="1660.0" />
+      <point x="966.0625" y="1660.0" />
+      <point x="-35.75" y="136.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identities" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_object_identities">
+      <point x="-62.25" y="70.0" />
+      <point x="122.74999999999997" y="3292.0" />
+      <point x="82.0" y="3292.0" />
+      <point x="82.0" y="3202.0" />
+      <point x="-83.0" y="-0.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_almoxarifado_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.documento">
+      <point x="65.75" y="-36.5" />
+      <point x="0.0" y="125.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.tipo_endereco">
+      <point x="35.75" y="-136.0" />
+      <point x="1037.5625" y="1194.0" />
+      <point x="1243.8233251633976" y="1194.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="48.5" y="-36.5" />
+      <point x="2209.1983251633974" y="1264.0" />
+      <point x="2233.7277369281037" y="1264.0" />
+      <point x="-34.470588235294144" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.agendamento_ordem_servico" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.responsavel_cliente">
+      <point x="-114.75" y="-147.0" />
+      <point x="1191.3125" y="2230.0" />
+      <point x="276.75" y="2230.0" />
+      <point x="61.5" y="114.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador_endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco">
+      <point x="-48.5" y="-36.5" />
+      <point x="2112.1983251633974" y="1650.0" />
+      <point x="1037.5625" y="1650.0" />
+      <point x="35.75" y="136.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.contato_telefone" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.contato">
+      <point x="40.75" y="-36.5" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.endereco" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.colaborador">
+      <point x="107.25" y="-136.0" />
+      <point x="1109.0625" y="1204.0" />
+      <point x="1992.4336192810447" y="1204.0" />
+      <point x="-275.7647058823529" y="301.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.produto_solicitacao" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fornecedor">
+      <point x="41.5" y="-70.0" />
+      <point x="3892.1983251633974" y="2210.0" />
+      <point x="4002.4571078431372" y="2210.0" />
+      <point x="4002.4571078431372" y="1680.0" />
+      <point x="4333.06544117647" y="1680.0" />
+      <point x="81.5" y="158.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.bairro" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.cidade">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ferramenta_almoxarifado_documento" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.ferramenta_almoxarifado">
+      <point x="71.25" y="-36.5" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_entries" target="f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.acl_classes">
+      <point x="95.33333333333331" y="-136.0" />
+      <point x="525.6333333333332" y="3312.0" />
+      <point x="582.9999999999999" y="3312.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7010689990281826" x="1141.9531466592737" y="342.6540060992515" />
+  <SelectedNodes>
+    <node>f08f115d-fd05-4cc0-bbb5-bc0f15665855.table:flavis.public.fos_user_user</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

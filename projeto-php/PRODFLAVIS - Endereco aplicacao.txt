@@ -1,0 +1,74 @@
+=> Copiei o projeto para dentro do apache
+C:\Apache2.4\htdocs\PRODFLAVIS
+
+=> Alterado as configurações do banco postgres para localhost
+C:\Apache2.4\htdocs\PRODFLAVIS\app\cache\prod\appProdProjectContainer.php
+C:\Apache2.4\htdocs\PRODFLAVIS\app\cache\dev\appDevDebugProjectContainer.php
+C:\Apache2.4\htdocs\flavis_master\projeto-php\app\config\parameters.yml
+
+ADICIONANDO O SERVIÇO DO APACHE NO WINDOWS
+Abra o Prompt de Comando como Administrador e digite o comando:
+cd\
+cd C:\Apache24\bin
+httpd.exe -k install
+
+Reinicie o apache utilizando o comando 
+httpd.exe -k restart
+
+********************************************************
+
+Exibe as conexões da porta (opcional)
+netstat -a -n -o | findstr 80
+
+Remove porta 4 (id) ativa
+Taskkill /PID 4 /F
+
+Caso de Acesso negado reinicie o computador e remove novamente
+ERRO: o processo com PID 4 não pôde ser finalizado.
+Razão: Acesso negado.
+
+********************************************************
+
+=>Valida os requisitos do PHP no servidor
+http://localhost:80/PRODFLAVIS/app/check.php
+
+
+********************************************************
+
+Web
+https://prod.flavis.com.br/login
+App
+https://prod.flavis.com.br/api/v1/users/login.json
+
+Web
+http://localhost:80/PRODFLAVIS/web/app.php
+App
+\app\src\main\java\br\com\logics\flavis\model\routes\RetrofitSingleton.java
+public static final String BASE_URL = 
+\app\src\main\java\br\com\logics\flavis\model\routes\Users.java
+RetrofitSingleton.BASE_URL + RetrofitSingleton.API_V1 + USER + "login.json"
+http://localhost:8080/flavis/projeto-php/web/app.php/api/v1/users/login.json
+
+Veja qual o IP da máquina para alterar o endereco externo
+ipconfig
+http://192.169.40.212:80/PRODFLAVIS/web/app.php/app
+
+Web
+usuário: marconi@flavis.com.br
+senha: 123456
+App
+usuário: tecmarconi@flavis.com.br
+senha: 123456
+
+DataSource: PostgreSQL
+Host: localhost
+Porta: 5432
+Database: postgres
+User: postgres
+Passord: admin
+
+
+********************************************************
+
+http://10.21.153.103:8080/summary/?r=fatesg/flavis.git
+

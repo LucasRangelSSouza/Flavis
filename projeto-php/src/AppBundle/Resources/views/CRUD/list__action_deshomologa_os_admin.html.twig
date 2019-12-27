@@ -1,0 +1,7 @@
+{% if object.isHomologada %}
+	<a class="btn btn-sm btn-warning view_link" style="width: 120px;"
+       href="{{ admin.generateObjectUrl('deshomologa', object) }}">
+	   <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        Desohomologadar
+    </a>
+{% endif %}

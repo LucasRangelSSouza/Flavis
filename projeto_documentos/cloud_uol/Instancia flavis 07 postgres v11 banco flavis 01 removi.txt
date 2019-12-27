@@ -1,0 +1,171 @@
+Last login: Tue Oct  1 13:26:16 2019 from 187.32.49.173
+[administrator@flavis ~]$ sudo su - postgres
+Último login:Ter Out  1 13:33:26 UTC 2019em pts/1
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$ psql
+postgres=# CREATE DATABASE flavis_prod;
+CREATE DATABASE
+postgres=# \l
+                                Lista dos bancos de dados
+    Nome     |   Dono   | Codificação |   Collate   |    Ctype    | Privilégios de acesso
+-------------+----------+-------------+-------------+-------------+-----------------------
+ flavis_prod | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ postgres    | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ template0   | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+             |          |             |             |             | postgres=CTc/postgres
+ template1   | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+             |          |             |             |             | postgres=CTc/postgres
+(4 registros)
+
+postgres=# \q
+-bash-4.2$ 
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$ psql flavis_prod
+psql (11.5)
+Digite "help" para ajuda.
+
+flavis_prod=# CREATE USER flavis_usr WITH PASSWORD 'Tp83$mh4';
+CREATE ROLE
+flavis_prod=#
+flavis_prod=#
+flavis_prod=#
+flavis_prod=#
+flavis_prod=#
+flavis_prod=# \l
+                                Lista dos bancos de dados
+    Nome     |   Dono   | Codificação |   Collate   |    Ctype    | Privilégios de acesso
+-------------+----------+-------------+-------------+-------------+-----------------------
+ flavis_prod | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ postgres    | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ template0   | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+             |          |             |             |             | postgres=CTc/postgres
+ template1   | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+             |          |             |             |             | postgres=CTc/postgres
+(4 registros)
+
+flavis_prod=#
+flavis_prod=#
+flavis_prod=#
+flavis_prod=#
+flavis_prod=#
+**************** ESSA PARTE NÃO FIZ ****************
+postgres=# CREATE USER sti WITH PASSWORD 'sti@123';
+CREATE ROLE
+postgres=# CREATE USER flavis_usr WITH PASSWORD 'Tp83$mh4';
+CREATE ROLE
+postgres=# GRANT ALL PRIVILEGES ON DATABASE flavis_prod TO flavis_usr;
+GRANT
+postgres=# \l
+                                 Lista dos bancos de dados
+    Nome     |   Dono   | Codificação |   Collate   |    Ctype    |  Privilégios
+ de acesso  
+-------------+----------+-------------+-------------+-------------+-------------
+------------
+ flavis_prod | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =Tc/postgres
+           +
+             |          |             |             |             | postgres=CTc
+/postgres  +
+             |          |             |             |             | flavis_usr=C
+Tc/postgres
+ postgres    | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | 
+ template0   | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres 
+           +
+             |          |             |             |             | postgres=CTc
+/postgres
+ template1   | postgres | UTF8        | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres 
+           +
+             |          |             |             |             | postgres=CTc
+/postgres
+(4 registros)
+***************************************************
+flavis_prod=# exit
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$ exit
+logout
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$
+[administrator@flavis ~]$ sudo su - postgres
+Último login:Ter Out  1 14:33:26 UTC 2019em pts/1
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$
+-bash-4.2$ psql
+postgres=# drop database flavis_prod;
+DROP DATABASE
+
+postgres=# \l
+                                  List of databases
+   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges
+-----------+----------+----------+-------------+-------------+-----------------------
+ postgres  | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ template0 | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+           |          |          |             |             | postgres=CTc/postgres
+ template1 | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+           |          |          |             |             | postgres=CTc/postgres
+(3 rows)
+
+postgres=# CREATE DATABASE flavis_prod;
+CREATE DATABASE
+postgres=# \l
+                                   List of databases
+    Name     |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges
+-------------+----------+----------+-------------+-------------+-----------------------
+ flavis_prod | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ postgres    | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ template0   | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+             |          |          |             |             | postgres=CTc/postgres
+ template1   | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres          +
+             |          |          |             |             | postgres=CTc/postgres
+(4 rows)
+
+postgres=# GRANT ALL PRIVILEGES ON DATABASE flavis_prod TO postgres;
+GRANT
+postgres=# GRANT ALL PRIVILEGES ON DATABASE flavis_prod TO flavis_usr;
+GRANT
+postgres=# \l
+                                    List of databases
+    Name     |  Owner   | Encoding |   Collate   |    Ctype    |    Access privileges
+-------------+----------+----------+-------------+-------------+-------------------------
+ flavis_prod | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =Tc/postgres           +
+             |          |          |             |             | postgres=CTc/postgres  +
+             |          |          |             |             | flavis_usr=CTc/postgres
+ postgres    | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 |
+ template0   | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres            +
+             |          |          |             |             | postgres=CTc/postgres
+ template1   | postgres | UTF8     | pt_BR.UTF-8 | pt_BR.UTF-8 | =c/postgres            +
+             |          |          |             |             | postgres=CTc/postgres
+(4 rows)
+
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=# \du
+                              List of roles
+ Role name  |                   Attributes                   | Member of 
+------------+------------------------------------------------+-----------
+ flavis_usr | idem + Password valid until infinity           | {}
+ postgres   | Superuser, Create role, Create DB, Replication | {}
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=#
+postgres=# DROP ROLE flavis_usr;
+DROP ROLE
+postgres=# 
+ 

@@ -1,0 +1,33 @@
+CHILLER;Atuação do termostato anti-congelamento;MENSAL
+CHILLER;Circuito elétrico de intertravamento;MENSAL
+CHILLER;Componentes do quadro elétrico de força e comando;MENSAL
+CHILLER;Controle de capacidade;MENSAL
+CHILLER;Estado de isolamento térmico;MENSAL
+CHILLER;Filtro secador, válvula de expansão, visor de liquido;MENSAL
+CHILLER;Fixação de tampas do painel do equipamento;MENSAL
+CHILLER;Flow-switches, termostatos e solenóide;MENSAL
+CHILLER;Verificar o funcionamento das resisténcias de carter;MENSAL
+CHILLER;Dispositivos de proteção (pressostatos, relês etc);MENSAL
+CHILLER;Nível do óleo do compressor;MENSAL
+CHILLER;Painel frontal do equipamento;MENSAL
+CHILLER;Pressão de água no evaporador;MENSAL
+CHILLER;Pressão de água no condensador;MENSAL
+CHILLER;Ruidos e/ou vibrações anormais;MENSAL
+CHILLER;Temperatura de entrada de água de condensação;MENSAL
+CHILLER;Temperatura de saída de água de condensação;MENSAL
+CHILLER;Temperatura de entrada de água gelada;MENSAL
+CHILLER;Temperatura de saída de água gelada;MENSAL
+CHILLER;Tensão elétrica de motores / compressores;MENSAL
+CHILLER;Corrente elétrica de motores / compressores;MENSAL
+CHILLER;Vazamento de gás refrigerante;MENSAL
+CHILLER;Pressão de óleo;MENSAL
+CHILLER;Pressão de alta ;MENSAL
+CHILLER;Pressão de baixa;MENSAL
+CHILLER;Ventiladores do condensador (condensação a ar);MENSAL
+CHILLER;Focos de corrosão e corrigir pintura;TRIMESTRAL
+CHILLER;Manobrar e lubrificar os registros hidráulicos;TRIMESTRAL
+CHILLER;Condesador shell and tube (varetar);SEMESTRAL
+CHILLER;Serpentina do condensador (jatear);SEMESTRAL
+CHILLER;Balanceamento frigorigeno do(s) circuito(s);SEMESTRAL
+CHILLER;Resistência ohmica de motores e compressores (megar);ANUAL
+CHILLER;Nível de acidez do óleo do compressor;ANUAL

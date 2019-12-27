@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="perfil.erd" time="201906241521">
+	<entities>
+		<data-source id="postgres-jdbc-16b6b0023fc-24cfbaf8df4dfd57">
+			<entity id="1" name="perfil" fq-name="public.perfil" order="0" x="1079" y="1640">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="2" name="empresa" fq-name="public.empresa" order="1" x="1349" y="1678">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="3" name="cliente_equipamento" fq-name="public.cliente_equipamento" order="2" x="20" y="1133">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="4" name="cliente" fq-name="public.cliente" order="3" x="433" y="1286">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="5" name="colaborador" fq-name="public.colaborador" order="4" x="800" y="1803">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="6" name="contato" fq-name="public.contato" order="5" x="800" y="20">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="7" name="documento" fq-name="public.documento" order="6" x="800" y="257">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="8" name="entrada_produto" fq-name="public.entrada_produto" order="7" x="433" y="3005">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="9" name="equipamento_cliente" fq-name="public.equipamento_cliente" order="8" x="433" y="779">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="10" name="ferramenta_almoxarifado" fq-name="public.ferramenta_almoxarifado" order="9" x="800" y="913">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="11" name="ficha_tecnica_produto" fq-name="public.ficha_tecnica_produto" order="10" x="20" y="2852">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="12" name="filial_empresa" fq-name="public.filial_empresa" order="11" x="800" y="1531">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="13" name="foto_os" fq-name="public.foto_os" order="12" x="800" y="1131">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="14" name="marca_equipamento" fq-name="public.marca_equipamento" order="13" x="800" y="532">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="15" name="modelo_equipamento" fq-name="public.modelo_equipamento" order="14" x="800" y="712">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="16" name="norma" fq-name="public.norma" order="15" x="800" y="2458">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="17" name="orcamento_produto" fq-name="public.orcamento_produto" order="16" x="433" y="1774">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="18" name="ordem_compra_produto" fq-name="public.ordem_compra_produto" order="17" x="20" y="1983">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="19" name="ordem_servico" fq-name="public.ordem_servico" order="18" x="433" y="2188">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="20" name="produto_estoque" fq-name="public.produto_estoque" order="19" x="20" y="3556">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="21" name="relatorio_execucao_de_procedimento_equipamento" fq-name="public.relatorio_execucao_de_procedimento_equipamento" order="20" x="20" y="2653">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="22" name="requisicao_produto" fq-name="public.requisicao_produto" order="21" x="20" y="2435">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="23" name="responsavel_cliente" fq-name="public.responsavel_cliente" order="22" x="20" y="1609">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="24" name="usuario_cliente" fq-name="public.usuario_cliente" order="23" x="800" y="1330">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="25" name="fornecedor" fq-name="public.fornecedor" order="24" x="800" y="2984">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+			<entity id="26" name="produto_almoxarifado" fq-name="public.produto_almoxarifado" order="25" x="433" y="3261">
+				<path name="public"/>
+				<path name="postgres"/>
+			</entity>
+		</data-source>
+	</entities>
+	<notes/>
+	<relations>
+		<relation name="fk_cliente_equipamento_perfil" fq-name="public.cliente_equipamento.fk_cliente_equipamento_perfil" type="fk" pk-ref="1" fk-ref="3">
+			<bend type="abs" x="433" y="1255"/>
+			<bend type="abs" x="800" y="1500"/>
+		</relation>
+		<relation name="fk_cliente_perfil" fq-name="public.cliente.fk_cliente_perfil" type="fk" pk-ref="1" fk-ref="4"/>
+		<relation name="fk_colaborador_perfil" fq-name="public.colaborador.fk_colaborador_perfil" type="fk" pk-ref="1" fk-ref="5"/>
+		<relation name="fk_contato_perfil" fq-name="public.contato.fk_contato_perfil" type="fk" pk-ref="1" fk-ref="6"/>
+		<relation name="fk_documento_perfil" fq-name="public.documento.fk_documento_perfil" type="fk" pk-ref="1" fk-ref="7"/>
+		<relation name="fk_entrada_produto_perfil" fq-name="public.entrada_produto.fk_entrada_produto_perfil" type="fk" pk-ref="1" fk-ref="8"/>
+		<relation name="fk_equipamento_cliente_perfil" fq-name="public.equipamento_cliente.fk_equipamento_cliente_perfil" type="fk" pk-ref="1" fk-ref="9"/>
+		<relation name="fk_ferramenta_almoxarifado_perfil" fq-name="public.ferramenta_almoxarifado.fk_ferramenta_almoxarifado_perfil" type="fk" pk-ref="1" fk-ref="10"/>
+		<relation name="fk_ficha_tecnica_produto_perfil" fq-name="public.ficha_tecnica_produto.fk_ficha_tecnica_produto_perfil" type="fk" pk-ref="1" fk-ref="11">
+			<bend type="abs" x="433" y="2953"/>
+			<bend type="abs" x="800" y="2953"/>
+		</relation>
+		<relation name="fk_filial_empresa_perfil" fq-name="public.filial_empresa.fk_filial_empresa_perfil" type="fk" pk-ref="1" fk-ref="12"/>
+		<relation name="fk_foto_os_perfil" fq-name="public.foto_os.fk_foto_os_perfil" type="fk" pk-ref="1" fk-ref="13"/>
+		<relation name="fk_marca_equipamento_perfil" fq-name="public.marca_equipamento.fk_marca_equipamento_perfil" type="fk" pk-ref="1" fk-ref="14"/>
+		<relation name="fk_modelo_equipamento_perfil" fq-name="public.modelo_equipamento.fk_modelo_equipamento_perfil" type="fk" pk-ref="1" fk-ref="15"/>
+		<relation name="fk_norma_perfil" fq-name="public.norma.fk_norma_perfil" type="fk" pk-ref="1" fk-ref="16"/>
+		<relation name="fk_orcamento_produto_perfil" fq-name="public.orcamento_produto.fk_orcamento_produto_perfil" type="fk" pk-ref="1" fk-ref="17"/>
+		<relation name="fk_ordem_compra_produto_perfil" fq-name="public.ordem_compra_produto.fk_ordem_compra_produto_perfil" type="fk" pk-ref="1" fk-ref="18">
+			<bend type="abs" x="433" y="1743"/>
+			<bend type="abs" x="800" y="1743"/>
+		</relation>
+		<relation name="fk_ordem_servico_perfil" fq-name="public.ordem_servico.fk_ordem_servico_perfil" type="fk" pk-ref="1" fk-ref="19"/>
+		<relation name="fk_produto_estoque_perfil" fq-name="public.produto_estoque.fk_produto_estoque_perfil" type="fk" pk-ref="1" fk-ref="20">
+			<bend type="abs" x="433" y="3640"/>
+			<bend type="abs" x="800" y="3640"/>
+		</relation>
+		<relation name="fk_relatorio_execucao_de_procedimento_equipamento_perfil" fq-name="public.relatorio_execucao_de_procedimento_equipamento.fk_relatorio_execucao_de_procedimento_equipamento_perfil" type="fk" pk-ref="1" fk-ref="21">
+			<bend type="abs" x="433" y="2932"/>
+			<bend type="abs" x="800" y="2932"/>
+		</relation>
+		<relation name="fk_requisicao_produto_perfil" fq-name="public.requisicao_produto.fk_requisicao_produto_perfil" type="fk" pk-ref="1" fk-ref="22">
+			<bend type="abs" x="433" y="2890"/>
+			<bend type="abs" x="800" y="2890"/>
+		</relation>
+		<relation name="fk_responsavel_cliente_perfil" fq-name="public.responsavel_cliente.fk_responsavel_cliente_perfil" type="fk" pk-ref="1" fk-ref="23">
+			<bend type="abs" x="433" y="1722"/>
+			<bend type="abs" x="800" y="1722"/>
+		</relation>
+		<relation name="fk_usuario_cliente_perfil" fq-name="public.usuario_cliente.fk_usuario_cliente_perfil" type="fk" pk-ref="1" fk-ref="24"/>
+		<relation name="fk_fornecedor_perfil" fq-name="public.fornecedor.fk_fornecedor_perfil" type="fk" pk-ref="1" fk-ref="25"/>
+		<relation name="fk_produto_almoxarifado_perfil" fq-name="public.produto_almoxarifado.fk_produto_almoxarifado_perfil" type="fk" pk-ref="1" fk-ref="26"/>
+		<relation name="fk_perfil_empresa" fq-name="public.perfil.fk_perfil_empresa" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="fk_62035dc4de734e51" fq-name="public.cliente_equipamento.fk_62035dc4de734e51" type="fk" pk-ref="4" fk-ref="3"/>
+		<relation name="fk_f41c9b255263402" fq-name="public.cliente.fk_f41c9b255263402" type="fk" pk-ref="4" fk-ref="4">
+			<bend type="rel" x="738" y="1702"/>
+			<bend type="rel" x="555" y="1806"/>
+		</relation>
+		<relation name="fk_844b5727de734e51" fq-name="public.ordem_servico.fk_844b5727de734e51" type="fk" pk-ref="4" fk-ref="19"/>
+		<relation name="fk_a64a0d0ede734e51" fq-name="public.responsavel_cliente.fk_a64a0d0ede734e51" type="fk" pk-ref="4" fk-ref="23"/>
+		<relation name="fk_1c982489f1cb264e" fq-name="public.entrada_produto.fk_1c982489f1cb264e" type="fk" pk-ref="5" fk-ref="8"/>
+		<relation name="fk_aced428b8c2aa04c" fq-name="public.orcamento_produto.fk_aced428b8c2aa04c" type="fk" pk-ref="5" fk-ref="17"/>
+		<relation name="fk_aced428bf1cb264e" fq-name="public.orcamento_produto.fk_aced428bf1cb264e" type="fk" pk-ref="5" fk-ref="17"/>
+		<relation name="fk_aced428bf40b147f" fq-name="public.orcamento_produto.fk_aced428bf40b147f" type="fk" pk-ref="5" fk-ref="17"/>
+		<relation name="fk_b484ddde8c2aa04c" fq-name="public.ordem_compra_produto.fk_b484ddde8c2aa04c" type="fk" pk-ref="5" fk-ref="18"/>
+		<relation name="fk_b484dddef1cb264e" fq-name="public.ordem_compra_produto.fk_b484dddef1cb264e" type="fk" pk-ref="5" fk-ref="18"/>
+		<relation name="fk_844b57278b674866" fq-name="public.ordem_servico.fk_844b57278b674866" type="fk" pk-ref="5" fk-ref="19"/>
+		<relation name="fk_844b5727cd3b12c7" fq-name="public.ordem_servico.fk_844b5727cd3b12c7" type="fk" pk-ref="5" fk-ref="19"/>
+		<relation name="fk_844b5727f008ab6" fq-name="public.ordem_servico.fk_844b5727f008ab6" type="fk" pk-ref="5" fk-ref="19"/>
+		<relation name="fk_844b5727fc6e767b" fq-name="public.ordem_servico.fk_844b5727fc6e767b" type="fk" pk-ref="5" fk-ref="19"/>
+		<relation name="fk_c1785dd0f1cb264e" fq-name="public.requisicao_produto.fk_c1785dd0f1cb264e" type="fk" pk-ref="5" fk-ref="22"/>
+		<relation name="fk_62035dc4c20f76de" fq-name="public.cliente_equipamento.fk_62035dc4c20f76de" type="fk" pk-ref="9" fk-ref="3"/>
+		<relation name="fk_f41c9b25299b2577" fq-name="public.cliente.fk_f41c9b25299b2577" type="fk" pk-ref="12" fk-ref="4"/>
+		<relation name="fk_a8183bb598a1b0b8" fq-name="public.equipamento_cliente.fk_a8183bb598a1b0b8" type="fk" pk-ref="14" fk-ref="9"/>
+		<relation name="fk_a8183bb5c04160f0" fq-name="public.equipamento_cliente.fk_a8183bb5c04160f0" type="fk" pk-ref="15" fk-ref="9"/>
+		<relation name="fk_844b5727e06fc29e" fq-name="public.ordem_servico.fk_844b5727e06fc29e" type="fk" pk-ref="16" fk-ref="19"/>
+		<relation name="fk_b484dddea01cf1ca" fq-name="public.ordem_compra_produto.fk_b484dddea01cf1ca" type="fk" pk-ref="17" fk-ref="18"/>
+		<relation name="fk_688b5eb03dca04d1" fq-name="public.ficha_tecnica_produto.fk_688b5eb03dca04d1" type="fk" pk-ref="19" fk-ref="11"/>
+		<relation name="fk_844b5727392f5351" fq-name="public.ordem_servico.fk_844b5727392f5351" type="fk" pk-ref="19" fk-ref="19">
+			<bend type="rel" x="760" y="2870"/>
+			<bend type="rel" x="564" y="3040"/>
+		</relation>
+		<relation name="fk_7858de263dca04d1" fq-name="public.relatorio_execucao_de_procedimento_equipamento.fk_7858de263dca04d1" type="fk" pk-ref="19" fk-ref="21"/>
+		<relation name="fk_c1785dd03dca04d1" fq-name="public.requisicao_produto.fk_c1785dd03dca04d1" type="fk" pk-ref="19" fk-ref="22"/>
+		<relation name="fk_1c982489d3ebb69d" fq-name="public.entrada_produto.fk_1c982489d3ebb69d" type="fk" pk-ref="25" fk-ref="8"/>
+		<relation name="fk_688b5eb0c0a0fdfa" fq-name="public.ficha_tecnica_produto.fk_688b5eb0c0a0fdfa" type="fk" pk-ref="25" fk-ref="11"/>
+		<relation name="fk_b484ddded3ebb69d" fq-name="public.ordem_compra_produto.fk_b484ddded3ebb69d" type="fk" pk-ref="25" fk-ref="18"/>
+		<relation name="fk_451a39ddd3ebb69d" fq-name="public.produto_almoxarifado.fk_451a39ddd3ebb69d" type="fk" pk-ref="25" fk-ref="26"/>
+		<relation name="fk_a6de2587105cfd56" fq-name="public.produto_estoque.fk_a6de2587105cfd56" type="fk" pk-ref="26" fk-ref="20"/>
+	</relations>
+</diagram>
